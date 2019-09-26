@@ -11,24 +11,30 @@ export default class Login extends React.Component {
             
             <div className="Login">
 
-            <header className="Login-header"></header>
-
                 <p className="Login-intro">
                     <Link to="/login"></Link>
                 </p>
 
-                <div className="forme">
-                    <form>
-                    <label className="nmForm">Entre em sua conta</label>
-                    <span className="nmSpan">E-mail</span>
-                    <input className='input1 pdr' type="text"></input>
-                    <span className="nmSpan pdr">Senha</span>
-                    <input className='input2' type="password"></input>
+                <div className="fundo">
+
+                </div>
+
+                <form>
+                <div className="container">
+                    <label id="titulo">Entre em sua conta</label>
+
+                    <label>E-mail</label>
+                    <input className='input' type="text"></input>
+
+                    <label> Senha</label>
+                    <input className='input'  type="password"></input>
+
                     <span className="link1"><a href="#">Esqueceu sua senha?</a></span>
                     <span className="link2"><a href="#">Cadastre-se</a></span>
-                    <button className='btnEntrar'>Entrar</button>
-                    </form>
+
+                    <button type="submit"  className='btnEntrar'>Entrar</button>
                 </div>
+                </form>
             </div>
         );
     }
