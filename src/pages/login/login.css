@@ -28,8 +28,6 @@ body{
  .Login label {
      color: white;
      display: flex;
-    /* margin: 0;
-    padding: 0; */
 } 
 
 h1{
@@ -46,21 +44,6 @@ span{
 
 }
 
-/* form {
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);                                           
-} */
-
-
- 
- /* form{
-
-
-
-} */
 
 .btnEntrar{
     position: relative;
@@ -71,7 +54,7 @@ span{
     color: #FF9900;
     width: 150px; 
     height: 30px;
-    top: 40px;
+    top: 50px;
 } 
 
 
@@ -97,18 +80,6 @@ span{
     font-size: 20px;
 
 }
-/* 
-.link1 {
-    position: absolute;
-    top:325px;
-    left: 38px;
-}
-
-.link2 {
-    position: absolute;
-    top:325px;
-    left: 340px;
-} */
 
 a:hover{
     color: #FF9900;
