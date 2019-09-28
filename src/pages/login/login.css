@@ -1,7 +1,7 @@
 body{
     position: absolute;
     background: rgba(35, 31, 32, 0.877);
-    background-image: url(fundo3.jpg);
+    /* background-image: url(fundo3.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     top: 50%;

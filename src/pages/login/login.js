@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css';
 
-export default class Login extends React.Component {
+export class Login extends React.Component {
     render() {
         return (
 
