@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import './login.css';
 
 export default class Login extends React.Component {
-    render() {
+    render() { 
         return (
 
             <div className="Login">
@@ -27,11 +27,11 @@ export default class Login extends React.Component {
                     <label> Senha</label>
                     <input className='input' type="password"></input>
 
-                    <span className="link1"><a href="#">Esqueceu sua senha?</a></span>
-                    <span className="link2"><a href="#">Cadastre-se</a></span>
+                    <span className="link1"><a href="/">Esqueceu sua senha?</a></span> 
+                    <span className="link2"><a href="/">Cadastre-se</a></span> 
                     <br/>
 
-                    <button type="submit" className='btnEntrar'>Entrar</button>
+                    <button type="submit" className='btnEntrar'>Entrar</button> 
 
                 </form>
             </div>
