@@ -1,7 +1,7 @@
 body{
     position: absolute;
     background: rgba(35, 31, 32, 0.877);
-    /* background-image: url(fundo3.jpg); */
+    background-image: url(fundo3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     top: 50%;
@@ -15,7 +15,7 @@ body{
     height: 500px;
     background-color: rgba(0, 0, 0, 0.75);
     position: relative;
-    padding: 10px 50px 10px 50px;
+    padding: 30px 45px 30px 45px;
     border-radius: 5px;
     line-height: 35px;
     display: flex;
@@ -32,6 +32,7 @@ body{
 
 h1{
     color: white;
+    font-size: 25px;
 }
 
 .Login input {
