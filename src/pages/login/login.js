@@ -27,10 +27,11 @@ class Login extends React.Component {
                     <input styleName='input' type="text"></input>
 
                     <label> Senha</label>
-                    <input styleName='input' type="password"></input>
+                    <input styleName='input' type="password"></input> 
 
                     <span styleName="link1"><a href="#">Esqueceu sua senha?</a></span>
                     <span styleName="link2"><a href="#">Cadastre-se</a></span>
+                    
                     <br/>
 
                     <button type="submit" styleName='btnEntrar'>Entrar</button>

@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';// eslint-disable-line no-unused-vars
 import './index.css';
 import App from './App';
 
