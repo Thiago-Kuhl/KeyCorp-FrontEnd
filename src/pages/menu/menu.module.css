@@ -137,7 +137,7 @@
 }
 
 .icons span {
- background: white;
+
  float: left;
  margin-left: 70px;
  margin-top: -20px;
@@ -159,10 +159,10 @@
 
 }
 
-.user-options .bell{
+.icons .icon{
     float: left;
     margin-left: -35px;
     margin-top: 0px;
-    font-size: 35px;
+    font-size: 23px;
     color: #FF9900;
 }

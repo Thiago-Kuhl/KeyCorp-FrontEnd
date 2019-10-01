@@ -7,13 +7,12 @@ import Login from './pages/login/login';
 import Home from './pages/home/home'
 import Menu from './pages/menu/menu'
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChevronDown, faUserCircle, faBell, faCartArrowDown, faKey } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faUserCircle,  faBell, faHeart, faShoppingCart, faKey } from '@fortawesome/free-solid-svg-icons';
 
+ 
+library.add(faChevronDown, faUserCircle,  faBell, faHeart, faShoppingCart, faKey);
 
-
-library.add(faChevronDown, faUserCircle, faBell, faCartArrowDown, faKey);
-
-
+       
 
 // import Cadastro from './pages/cadastro/cadastro';
 

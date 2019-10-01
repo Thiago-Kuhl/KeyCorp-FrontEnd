@@ -56,11 +56,23 @@ class Menu extends React.Component {
 
                 <div styleName="icons">
                     <span>
-                    <FontAwesomeIcon styleName="" icon="fa-cart-arrow-down" />
-                    <a href="">1</a>
+                        <a href="">
+                            <FontAwesomeIcon styleName="icon" icon="bell" />
+                        </a>
                     </span>
-                    <span><a href="">1</a></span>
-                    <span><a href="">1</a></span>
+
+                    <span>
+                        <a href="">
+                            <FontAwesomeIcon styleName="icon" icon="shopping-cart" />
+                        </a></span>
+
+                    <span>
+                        <a href="">
+                            <FontAwesomeIcon styleName="icon" icon="heart" />
+                        </a>
+                    </span>
+
+
                 </div>
             </div>
         );
