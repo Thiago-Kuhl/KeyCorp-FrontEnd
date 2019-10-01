@@ -3,19 +3,20 @@ import React from 'react';
 /*eslist-disable 
 import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
-import './home.css';
+import CSSModule from 'react-css-modules';
+import style from './home.module.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-export default class Home extends React.Component {
+class Home extends React.Component {
     render() {
         return (
             <>
-                <div className="Home">
+                <div styleName="Home">
 
-                    <header className="Home-header"></header>
+                    <header styleName="Home-header"></header>
 
-                    <p className="Home-intro">
+                    <p styleName="Home-intro">
                         <Link to="/">Ir para home\o/</Link>
                     </p>
 
@@ -24,3 +25,5 @@ export default class Home extends React.Component {
         );
     }
 }
+
+export default CSSModule(Home, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })

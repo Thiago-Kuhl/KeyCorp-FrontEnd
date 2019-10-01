@@ -4,15 +4,17 @@ import React from 'react';
 import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 //import 'bootstrap/dist/css/bootstrap.min.css';
-import './login.css';
-
-export default class Login extends React.Component {
+import CSSModule from 'react-css-modules';
+import style from './login.module.css';
+class Login extends React.Component {
     render() {
         return (
 
-            <div className="Login">
+            <div styleName="bg">
 
-                <p className="Login-intro">
+            <div styleName="Login">
+
+                <p styleName="Login-intro">
                     <Link to="/login"></Link>
                 </p>
 
@@ -22,19 +24,23 @@ export default class Login extends React.Component {
                     <br />
 
                     <label> E-mail</label>
-                    <input className='input' type="text"></input>
+                    <input styleName='input' type="text"></input>
 
                     <label> Senha</label>
-                    <input className='input' type="password"></input>
+                    <input styleName='input' type="password"></input>
 
-                    <span className="link1"><a href="#">Esqueceu sua senha?</a></span>
-                    <span className="link2"><a href="#">Cadastre-se</a></span>
+                    <span styleName="link1"><a href="#">Esqueceu sua senha?</a></span>
+                    <span styleName="link2"><a href="#">Cadastre-se</a></span>
                     <br/>
 
-                    <button type="submit" className='btnEntrar'>Entrar</button>
+                    <button type="submit" styleName='btnEntrar'>Entrar</button>
 
                 </form>
+            </div>
+
             </div>
         );
     }
 }
+
+export default CSSModule(Login, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })

@@ -1,15 +1,10 @@
-body{
-    position: absolute;
-    background: rgba(35, 31, 32, 0.877);
-    background-image: url(fundo3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
 
+.bg{
+    background: url(./fundo3.jpg) no-repeat; 
+    height: 1000px;
+    background-size: cover;
+
+}
 .Login{
     width: 400px;
     height: 500px;
@@ -23,6 +18,9 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal; 
+    top: 385px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
  .Login label {
@@ -30,7 +28,7 @@ body{
      display: flex;
 } 
 
-h1{
+.Login h1{
     color: white;
     font-size: 25px;
 }
@@ -40,7 +38,7 @@ h1{
     margin-bottom: 25px;
 }
 
-span{
+.Login span{
      margin-right: 30px; 
 
 }
@@ -82,10 +80,10 @@ span{
 
 }
 
-a:hover{
+.Login a:hover{
     color: #FF9900;
 }
 
-a{
+.Login a{
     color: white;
 }
