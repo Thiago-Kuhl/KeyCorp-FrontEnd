@@ -5,6 +5,7 @@ import './App.css';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'; // eslint-disable-line no-unused-vars
 import Login from './pages/login/login';
 import Home from './pages/home/home'
+import Menu from './pages/menu/menu'
 // import Cadastro from './pages/cadastro/cadastro';
 
 // import './pages/home/home.css';
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/login" exact component={Login} />
+            <Route path="/menu" exact component={Menu} />
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));
