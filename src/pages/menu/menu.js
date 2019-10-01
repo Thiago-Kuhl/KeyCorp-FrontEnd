@@ -5,7 +5,9 @@ import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './menu.module.css';
-// import 'use.fontawesome.com/releases/v5.7.0/css/all.css';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 
 class Menu extends React.Component {
@@ -19,14 +21,14 @@ class Menu extends React.Component {
                 <div styleName="prod-options">
                     <ul>
                         <li>
-                            <i>#</i>
+                            <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
                             <a href="">Categoria</a>
                         </li>
 
                         <li><a href="">Histórico</a></li>
 
                         <li>
-                            <i>#</i>
+                            <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
                             <a href="">Ofertas e Descontos</a>
                             <ul>
                                 <li><a href="">Office</a></li>
@@ -37,6 +39,28 @@ class Menu extends React.Component {
 
                         <li><a href="">Contato</a></li>
                     </ul>
+                </div>
+
+                <div styleName="user-options">
+                    <FontAwesomeIcon styleName="user" icon="user-circle" />
+                    <ul>
+                        <li>
+                            <a href="">Fulano da Silva</a>
+                            <ul>
+                                <li><a href="">Minha conta</a></li>
+                                <li><a href="">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div styleName="icons">
+                    <span>
+                    <FontAwesomeIcon styleName="" icon="fa-cart-arrow-down" />
+                    <a href="">1</a>
+                    </span>
+                    <span><a href="">1</a></span>
+                    <span><a href="">1</a></span>
                 </div>
             </div>
         );
