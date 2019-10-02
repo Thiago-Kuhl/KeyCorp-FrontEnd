@@ -14,30 +14,93 @@
 
 
 .container{
-    margin: -100px 100px 0 100px;
+    margin: -100px 150px 0 150px;
 }
 
 .container .bloco{
     background: #000000;
     height: 500px;
+    width: 300px;
     border-radius: 10px;
+
 }
 
+.container p{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.container .img{
+    background: red;
+    height: 250px;
+    padding: 20px 20px 0px 20px;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 50px; 
+    margin-right: 20px;
+}
+
+.container .img-prod1{ background: url(./office.png) no-repeat; }
+
+.container .img-prod2{ background: url(./vscode.png) no-repeat;}
+
+.container .img-prod3{ background: url(./photoshop.png) no-repeat;}
+
+.container .img-prod4{ background: url(./database.png) no-repeat;}
+
+.container p{
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    
+}
+
+.container .desc{
+    height: 125px;
+    width: 270px;
+    padding: 10px 10px 10px 10px;
+    margin-top: -20px;
+  
+}
+
+.container .desc p{
+    font-size: 20px;
+}
+
+.container .desc p{
+    text-align: left;
+}
 
 .box{
-    margin: 50px 100px 0 100px;
+    margin: 50px 150px 0 150px;
     padding: 25px 0 25px 0;
 }
 
 .box .faixa {
     background: #000000;
-    height: 130px;
+    height: 120px;
 }
 
 
+.box .line{
+    height: 80px;
+    width: 2px;
+    border:1px solid #FF9900;
+    margin: 10px 0 0 10px;
+    border-radius: 10px;
+}
+
+.faixa .desc {
+    color: white;
+    margin-left: 100px;
+}
+
 
 .container-pop{
-    margin: 120px 100px 0 100px;
+    margin: 30px 150px 0 150px;
     padding: 25px 0 25px 0;
 }
 
@@ -45,3 +108,29 @@
     background: #000000;
     height: 400px;
 }
+
+
+.titulo h4{
+    color: white;
+}
+
+.titulo{
+    margin: 120px 150px 0 150px;
+    padding: 0px 0 25px 0;
+    
+}
+
+.container-faixa{
+    margin-top: 100px;    
+}
+
+.container-faixa .faixa{
+    background: #000000;
+    height: 250px;
+}
+
+.faixa .desc{
+    font-size: 18px;
+    margin-top: -70px;
+}
+
