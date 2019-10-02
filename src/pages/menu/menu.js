@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './menu.module.css';
 
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -71,8 +72,6 @@ class Menu extends React.Component {
                             <FontAwesomeIcon styleName="icon" icon="heart" />
                         </a>
                     </span>
-
-
                 </div>
             </div>
         );

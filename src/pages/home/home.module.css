@@ -1,1 +1,47 @@
+.home{
+    height: 100%;
+}
 
+.bg{
+    display: grid;
+    height: 392px;
+    left: 0px;
+    top: 97px;
+
+    background:  url(./bg.png), linear-gradient(180deg, #000000 86.98%, rgba(35, 31, 32, 0.9) 100%);
+    background-size: cover;
+}
+
+
+.container{
+    margin: -100px 100px 0 100px;
+}
+
+.container .bloco{
+    background: #000000;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+.box{
+    margin: 50px 100px 0 100px;
+    padding: 25px 0 25px 0;
+}
+
+.box .faixa {
+    background: #000000;
+    height: 130px;
+}
+
+
+
+.container-pop{
+    margin: 120px 100px 0 100px;
+    padding: 25px 0 25px 0;
+}
+
+.container-pop .pop{
+    background: #000000;
+    height: 400px;
+}

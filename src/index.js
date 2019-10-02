@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';// eslint-disable-line no-unused-vars
 import './index.css';
+import 'react-bootstrap';
 import App from './App';
 
 
