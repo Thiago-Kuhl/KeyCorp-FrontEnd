@@ -88,15 +88,78 @@ class Home extends React.Component {
                     </section>
 
 
-                    
+
                     <section styleName="categorias">
                         <div styleName="hearder">
                             <h1><b>Categorias Populares</b></h1>
                         </div>
                         <div className="row" styleName="container">
+                            <div styleName="galeria">
+                                <div styleName="galeria1">
 
+                                    <div styleName="g">
+                                        <div styleName="image foto1"> </div>
+                                        <div styleName="categ">
+                                            <h1>Escritório</h1>
+                                        </div>
+                                    </div>
+
+                                    <div styleName="g" >
+                                        <div styleName="image foto2"></div>
+                                        <div styleName="categ">
+                                            <h1>Designer</h1>
+                                        </div>
+                                    </div>
+
+                                    <div styleName="g">
+                                        <div styleName="image foto3"></div>
+                                        <div styleName="categ">
+                                            <h1>Modelagens</h1>
+                                        </div>
+                                    </div>
+
+                                    <div styleName="g">
+                                        <div styleName="image foto4"></div>
+                                        <div styleName="categ">
+                                            <h1>Fluxogramas</h1>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div styleName="galeria2">
+
+                                      <div styleName="g">
+                                        <div styleName="image foto1"> </div>
+                                        <div styleName="categ">
+                                            <h1>Editores</h1>
+                                        </div>
+                                    </div>
+
+                                    <div styleName="g" >
+                                        <div styleName="image foto2"></div>
+                                        <div styleName="categ">
+                                            <h1>IDEs</h1>
+                                        </div>
+                                    </div>
+
+                                    <div styleName="g">
+                                        <div styleName="image foto3"></div>
+                                        <div styleName="categ">
+                                            <h1>Banco de dados</h1>
+                                        </div>
+                                    </div>
+
+                                    <div styleName="g">
+                                        <div styleName="image foto4"></div>
+                                        <div styleName="categ">
+                                            <h1>Outros</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
+
 
                     <section styleName="site-info">
                         <div className="container">
