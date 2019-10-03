@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './home.module.css';
 import Menu from '../menu/menu.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import 'react-bootstrap';
 
@@ -76,18 +77,27 @@ class Home extends React.Component {
                                     <div className="row">
                                         <div className="col-4">
                                             <div styleName="line"></div>
-                                            <div styleName="desc">
+                                            <div styleName="desc1">
                                                 <p><b>Todos os software que você precisa em um só lugar</b></p>
                                                 <p>Enviado pelo próprio fornecedor</p>
                                             </div>
                                         </div>
 
                                         <div className="col-4 cols">
+                                            <div styleName="line2"></div>
 
+                                            <div styleName="desc2">
+                                                <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
+                                                <p>Enviado pelo próprio fornecedor</p>
+                                            </div>
                                         </div>
 
                                         <div className="col-4 cols">
-
+                                         
+                                            <div styleName="desc3">
+                                                <i></i>
+                                                <p>Enviado pelo próprio fornecedor</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
