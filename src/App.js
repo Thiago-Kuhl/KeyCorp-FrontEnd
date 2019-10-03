@@ -8,11 +8,13 @@ import Home from './pages/home/home'
 import Menu from './pages/menu/menu'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronDown, faUserCircle,  faBell,
-faHeart, faShoppingCart, faInbox,faCheckCircle, faKey } from '@fortawesome/free-solid-svg-icons';
+faHeart, faShoppingCart, faInbox,faCheckCircle, 
+faCreditCard,faCheckDouble, faShieldAlt, faKey } from '@fortawesome/free-solid-svg-icons';
 
  
 library.add(faChevronDown, faUserCircle,  faBell,
-faHeart, faShoppingCart, faInbox, faCheckCircle, faKey);
+faHeart, faShoppingCart, faInbox, faCheckCircle,
+faCheckDouble, faCreditCard, faShieldAlt, faKey);
 
        
 

@@ -166,7 +166,7 @@
         .site-info {
             overflow: hidden;
             background-color: black;
-            margin-top: 20px;
+            margin-top: 30px;
             height: 250px;
         }
         
@@ -180,13 +180,18 @@
             float: left;
             width: 33.33333%;
             box-sizing: border-box;
-            padding: 35px 45px 20px;
+            padding: 55px 45px 20px;
             text-align: center;
             position: relative;
         }
         
         .site-info .img-container {
             height: 55px;
+        }
+        
+        .img-container .icon {
+            font-size: 55px;
+            color: #FF9900;
         }
         
         .site-info .info-slide h1 {
@@ -220,7 +225,7 @@
         .categorias .hearder h1 {
             font-family: Roboto;
             font-style: normal;
-            font-size: 30px;
+            font-size: 25px;
             line-height: 35px;
             color: #FFFFFF;
         }

@@ -24,6 +24,11 @@ class Menu extends React.Component {
                         <li>
                             <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
                             <a href="">Categoria</a>
+                            <ul>
+                                <li><a href="">Exclusivos</a></li>
+                                <li><a href="">Escola</a></li>
+                                <li><a href="">Criatividade</a></li>
+                            </ul>
                         </li>
 
                         <li><a href="">Histórico</a></li>

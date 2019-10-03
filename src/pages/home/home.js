@@ -17,7 +17,7 @@ class Home extends React.Component {
             <>
                 <div styleName="Home">
 
-                    {/* <Menu /> */}
+                    <Menu />
 
                     <div styleName=" bg">
 
@@ -128,7 +128,7 @@ class Home extends React.Component {
 
                                 <div styleName="galeria2">
 
-                                      <div styleName="g">
+                                    <div styleName="g">
                                         <div styleName="image foto1"> </div>
                                         <div styleName="categ">
                                             <h1>Editores</h1>
@@ -165,7 +165,7 @@ class Home extends React.Component {
                         <div className="container">
                             <div styleName="info-slide">
                                 <div styleName="img-container">
-
+                                    <FontAwesomeIcon styleName="icon" icon="credit-card" />
                                 </div>
 
                                 <h1>Formas de pagamento</h1>
@@ -174,7 +174,7 @@ class Home extends React.Component {
 
                             <div styleName="info-slide">
                                 <div styleName="img-container">
-
+                                    <FontAwesomeIcon styleName="icon" icon="check-double" />
                                 </div>
 
                                 <h1>Entrega na hora</h1>
@@ -183,7 +183,7 @@ class Home extends React.Component {
 
                             <div styleName="info-slide">
                                 <div styleName="img-container">
-
+                                    <FontAwesomeIcon styleName="icon" icon="shield-alt" />
                                 </div>
 
                                 <h1>Segurança, do início ao fim</h1>
