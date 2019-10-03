@@ -35,7 +35,7 @@ class Home extends React.Component {
                                     <div styleName="img img-prod1"></div>
 
                                     <div styleName="desc">
-                                        <p>Pacote de aplicativos para escritório</p>
+                                        <p>Aplicativos para escritório</p>
                                     </div>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ class Home extends React.Component {
                                     <p>PhotoShop</p>
                                     <div styleName="img img-prod3"></div>
                                     <div styleName="desc">
-                                        <p>Editor de imagens bidimensionais do tipo raster</p>
+                                        <p>Editor de imagens bidimensionais</p>
                                     </div>
                                 </div>
                             </div>
@@ -72,65 +72,61 @@ class Home extends React.Component {
 
                     <section styleName="box">
                         <div className="row">
-                            <div className="col-12">
-                                <div styleName="faixa">
-                                    <div className="row">
-                                        <div className="col-4">
-                                            <div styleName="line"></div>
-                                            <div styleName="desc1">
-                                                <p><b>Todos os software que você precisa em um só lugar</b></p>
-                                                <p>Enviado pelo próprio fornecedor</p>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-4 cols">
-                                            <div styleName="line2"></div>
-
-                                            <div styleName="desc2">
-                                                <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
-                                                <p>Enviado pelo próprio fornecedor</p>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-4 cols">
-                                         
-                                            <div styleName="desc3">
-                                                <i></i>
-                                                <p>Enviado pelo próprio fornecedor</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="col-4 " styleName="col1">
+                                <p><b>Todos os software que você precisa em um só lugar</b></p>
+                                <p>Enviado pelo próprio fornecedor</p>
                             </div>
-                        </div>
-                    </section>
-
-                    <section styleName="titulo">
-                        <div className="row">
-                            <div className="col-12">
-                                <h4>Categoria Popular</h4>
+                            <div className="col-4" styleName="col2">
+                                <FontAwesomeIcon styleName="icon" icon="inbox" />
+                                <p>Reserva antecipada do produto</p>
+                            </div>
+                            <div className="col-4" styleName="col3">
+                                <FontAwesomeIcon styleName="icon" icon="check-circle" />
+                                <p>Licença de software autenticada </p>
                             </div>
                         </div>
                     </section>
 
 
-                    <section styleName="container-pop">
-                        <div className="row">
-                            <div className="col-12 ">
-                                <div styleName="pop">
-                                </div>
-                            </div>
+                    
+                    <section styleName="categorias">
+                        <div styleName="hearder">
+                            <h1><b>Categorias Populares</b></h1>
                         </div>
+                        <div className="row" styleName="container">
 
+                        </div>
                     </section>
 
+                    <section styleName="site-info">
+                        <div className="container">
+                            <div styleName="info-slide">
+                                <div styleName="img-container">
 
-                    <section styleName="container-faixa">
-                        <div className="row">
-                            <div className="col-12">
-                                <div styleName="faixa">
                                 </div>
+
+                                <h1>Formas de pagamento</h1>
+                                <p>Diversas formas de pagamento incluindo a licença estudantil</p>
                             </div>
+
+                            <div styleName="info-slide">
+                                <div styleName="img-container">
+
+                                </div>
+
+                                <h1>Entrega na hora</h1>
+                                <p>Entrega do produto imediata ao pagamento </p>
+                            </div>
+
+                            <div styleName="info-slide">
+                                <div styleName="img-container">
+
+                                </div>
+
+                                <h1>Segurança, do início ao fim</h1>
+                                <p>Garatimos o sigilo dos seus dados, não se preocupe</p>
+                            </div>
+
                         </div>
                     </section>
 
