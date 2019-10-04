@@ -1,11 +1,10 @@
-
-.bg{
-    background: url(./fundo3.jpg) no-repeat; 
+.bg {
+    background: url(./imagens/fundo3.jpg) no-repeat;
     height: 790px;
     background-size: cover;
-
 }
-.Login{
+
+.Login {
     width: 400px;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.75);
@@ -14,21 +13,21 @@
     border-radius: 5px;
     line-height: 35px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: normal; 
+    font-style: normal;
     top: 385px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
- .Login label {
-     color: white;
-     display: flex;
-} 
+.Login label {
+    color: white;
+    display: flex;
+}
 
-.Login h1{
+.Login h1 {
     color: white;
     font-size: 25px;
 }
@@ -38,27 +37,23 @@
     margin-bottom: 25px;
 }
 
-.Login span{
-     margin-right: 30px; 
-
+.Login span {
+    margin-right: 30px;
 }
 
-
-.btnEntrar{
+.btnEntrar {
     position: relative;
     background: #000000;
     border-radius: 3px;
     border: none;
     text-align: center;
     color: #FF9900;
-    width: 150px; 
+    width: 150px;
     height: 30px;
     top: 50px;
-} 
+}
 
-
-
-#titulo{
+#titulo {
     position: relative;
     width: 245px;
     height: 35px;
@@ -69,7 +64,7 @@
     font-weight: bold;
 }
 
-.input{
+.input {
     border-left: none;
     border-right: none;
     border-top: none;
@@ -77,13 +72,12 @@
     height: 20px;
     color: white;
     font-size: 20px;
-
 }
 
-.Login a:hover{
+.Login a:hover {
     color: #FF9900;
 }
 
-.Login a{
+.Login a {
     color: white;
 }

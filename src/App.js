@@ -1,23 +1,3 @@
-import React from 'react';
-// import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import './App.css';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'; // eslint-disable-line no-unused-vars
-import Login from './pages/login/login';
-import Home from './pages/home/home'
-import Menu from './pages/menu/menu'
-import Carrinho from './pages/carrinho/carrinho'
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChevronDown, faUserCircle,  faBell,
-faHeart, faShoppingCart, faInbox,faCheckCircle, 
-faCreditCard,faCheckDouble, faShieldAlt, faKey } from '@fortawesome/free-solid-svg-icons';
-
- 
-library.add(faChevronDown, faUserCircle,  faBell,
-faHeart, faShoppingCart, faInbox, faCheckCircle,
-faCheckDouble, faCreditCard, faShieldAlt, faKey);
-
-       
 
 // import Cadastro from './pages/cadastro/cadastro';
 
@@ -26,16 +6,6 @@ faCheckDouble, faCreditCard, faShieldAlt, faKey);
 // //import 'bootstrap/dist/css/bootstrap.min.css';
 // //import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-    <BrowserRouter>
-        <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/login" exact component={Login} />
-            <Route path="/menu" exact component={Menu} />
-            <Route path="/carrinho" exact component={Carrinho} />
-        </Switch>
-    </BrowserRouter>
-    , document.getElementById('root'));
 
 
 // export default class App extends Component {
