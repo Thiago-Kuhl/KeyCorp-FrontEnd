@@ -14,69 +14,87 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class Menu extends React.Component {
     render() {
         return (
-            <div styleName="menu">
+            <div styleName="hearder">
+                <div styleName="container">
+                    <div className="row">
 
-                <a href="#" styleName="brand-logo">Logo</a>
-                <input placeholder="Pesquise aqui..." type="seach" />
+                        <div className="col col-lg-1" styleName="logo">
+                            <a href="#" styleName="brand-logo">Logo</a>
+                        </div>
 
-                <div styleName="prod-options">
-                    <ul>
-                        <li>
-                            <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
-                            <a href="">Categoria</a>
-                            <ul>
-                                <li><a href="">Exclusivos</a></li>
-                                <li><a href="">Escola</a></li>
-                                <li><a href="">Criatividade</a></li>
-                            </ul>
-                        </li>
+                        <div className="col-md-7" styleName="navegacao">
+                            <div className="row" styleName="barra">
+                                <input placeholder="Pesquise aqui..." type="seach" />
+                            </div>
 
-                        <li><a href="">Histórico</a></li>
+                            <div className="row" styleName="produto">
 
-                        <li>
-                            <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
-                            <a href="">Ofertas e Descontos</a>
-                            <ul>
-                                <li><a href="">Office</a></li>
-                                <li><a href="">IDEs</a></li>
-                                <li><a href="">Design</a></li>
-                            </ul>
-                        </li>
+                                <div styleName="prod-options">
+                                    <ul>
+                                        <li>
+                                            <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
+                                            <a href="">Categoria</a>
+                                            <ul>
+                                                <li><a href="">Exclusivos</a></li>
+                                                <li><a href="">Escola</a></li>
+                                                <li><a href="">Criatividade</a></li>
+                                            </ul>
+                                        </li>
 
-                        <li><a href="">Contato</a></li>
-                    </ul>
-                </div>
+                                        <li><a href="">Histórico</a></li>
 
-                <div styleName="user-options">
-                    <FontAwesomeIcon styleName="user" icon="user-circle" />
-                    <ul>
-                        <li>
-                            <a href="">Fulano da Silva</a>
-                            <ul>
-                                <li><a href="">Minha conta</a></li>
-                                <li><a href="">Sair</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                                        <li>
+                                            <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
+                                            <a href="">Ofertas e Descontos</a>
+                                            <ul>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">IDEs</a></li>
+                                                <li><a href="">Design</a></li>
+                                            </ul>
+                                        </li>
 
-                <div styleName="icons">
-                    <span>
-                        <a href="">
-                            <FontAwesomeIcon styleName="icon" icon="bell" />
-                        </a>
-                    </span>
+                                        <li><a href="">Contato</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-                    <span>
-                        <a href="">
-                            <FontAwesomeIcon styleName="icon" icon="shopping-cart" />
-                        </a></span>
+                        <div className="col col-lg-1" styleName="usuario">
+                            <div styleName="user-options">
+                                <FontAwesomeIcon styleName="user" icon="user-circle" />
+                                <ul>
+                                    <li>
+                                        <a href="">Fulano da Silva</a>
+                                        <ul>
+                                            <li><a href="">Minha conta</a></li>
+                                            <li><a href="">Sair</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                    <span>
-                        <a href="">
-                            <FontAwesomeIcon styleName="icon" icon="heart" />
-                        </a>
-                    </span>
+                        <div className="col col-lg-2" styleName="atalhos">
+                            <div styleName="icons">
+                                <span>
+                                    <a href="">
+                                        <FontAwesomeIcon styleName="icon" icon="bell" />
+                                    </a>
+                                </span>
+
+                                <span>
+                                    <a href="">
+                                        <FontAwesomeIcon styleName="icon" icon="shopping-cart" />
+                                    </a></span>
+
+                                <span>
+                                    <a href="">
+                                        <FontAwesomeIcon styleName="icon" icon="heart" />
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

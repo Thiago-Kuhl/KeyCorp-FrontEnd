@@ -1,167 +1,177 @@
-.menu{
-    background: #000000;    
-    height: 85px;
-
+.hearder {
+    width: 100%;
+    height: 75px;
+    background: black;
+    display: grid;
 }
 
-/*Logo*/
+.container {
+    width: 100%;
+    margin: 0;
+}
 
-.brand-logo{
-    position: relative;
-    height: 60px;
+.logo {
+    left: 80px;
+}
+
+.brand-logo {
+    /* position: relative; */
+    height: 40px;
     padding: 5px 25px 5px 25px;
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
-    margin-left: 100px;
-    top: 10px;
-    
+    float: left;
+    margin-top: 15px;
+    left: 200px;
 }
 
-/*Barra de pesquisa*/
+.navegacao {
+    margin: 0 25px 0 25px;
+}
 
-.menu input{
-    margin: 20px 100px 10px 100px;
+.barra input {
+    margin: 15px 100px 10px 100px;
     background: rgba(255, 255, 255, 0.78);
-    width: 40%;
+    width: 75%;
     height: 20px;
     border: none;
     text-align: center;
     border-radius: 30px;
 }
 
-/*Menu de opções*/
-
- .prod-options{
+.produto .prod-options {
     background-color: white;
     position: relative;
-    border:none; 
-    float:left; 
-    top:  -5px;
-    margin: 0 100px 0 300px;
+    border: none;
+    float: left;
+    top: -20px;
+    margin: 15px 100px 10px 100px;
     background: none;
-    
+    width: 75%;
+    font-size: 1em;
 }
 
-
-.prod-options li{
-    list-style:none; 
-    position:relative; 
-    float:left; 
-    border-right:none; 
+.produto .prod-options li {
+    list-style: none;
+    position: relative;
+    float: left;
+    border-right: none;
     margin-right: 70px;
- 
     color: #FFFFFF;
 }
 
-.prod-options li a{color: white;; text-decoration:none; padding:5px 10px; display:block;}
- 
-
-
-.prod-options li  ul{
-    position:absolute; 
-    top:30px; 
-    left:0;
-    background-color: black; 
-    display:none;
-}   
-
-    
-
-.prod-options li:hover ul, .menu li.over ul{display:block;}
-
-.prod-options li ul li{
-    border: none;
-    display:block; 
-    width:150px;
-  
+.produto .prod-options li a {
+    color: white;
+    ;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
 }
 
-.prod-options i{
+.produto .prod-options li ul {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: black;
+    display: none;
+}
+
+.produto .prod-options li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.produto .prod-options li ul li {
+    border: none;
+    display: block;
+    width: 75px;
+}
+
+.produto .prod-options i {
     float: left;
+}
+
+.prod-options .icon1 {
+    float: right;
+    margin-right: -20px;
+    margin-top: 10px;
 }
 
 
 /*Menu do usuário*/
 
-.user-options{
+.usuario .user-options {
     position: relative;
-    border:none; 
-    float:left; 
-    margin: -25px 70px 0 0;
+    border: none;
+    float: left;
+    margin: 25px 0 0 -100px;
     background: none;
 }
 
-
-.user-options li{
-    list-style:none; 
-    position:relative; 
-    float:left; 
-    border-right:none; 
+.usuario .user-options li {
+    list-style: none;
+    position: relative;
+    float: left;
+    border-right: none;
     color: #FFFFFF;
 }
 
-
-.user-options li a{color: white;; text-decoration:none; padding:5px 10px; display:block;}
- 
-.user-options  u li a:hover{
-    -webkit-box-shadow:0 1px 5px 0 #FF9900; 
-
+.usuario .user-options li a {
+    color: white;
+    ;
+    text-decoration: none;
+    padding: 0px 10px;
+    display: block;
 }
 
-.user-options  li  ul{
-    position:absolute; 
-    top:30px; 
-    left:0;
-    background-color: black; 
-    display:none;
-}   
+.usuario .user-options li ul {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: black;
+    display: none;
+}
 
-    
+.usuario .user-options li:hover ul,
+.menu li.over ul {
+    display: block;
+}
 
-.user-options  li:hover ul, .menu li.over ul{display:block;}
-
-.user-options  li ul li{
+.usuario .user-options li ul li {
     border: none;
-    display:block; 
-    width:150px;
+    display: block;
+    width: 150px;
 }
-.user-options  i{
+
+.usuario .user-options i {
     float: left;
-    margin-left: -30px;
+    margin-left: -20px;
     margin-top: 5px;
     margin-bottom: 10px;
     background-color: #FFFFFF;
     padding-right: 15px;
 }
 
-.icons span {
-
- float: left;
- margin-left: 70px;
- margin-top: -20px;
- padding: 0 20px 0 0;
-}
-.prod-options .icon1{
-    float: right;
-    margin-right: -20px;
-    margin-top: 10px;
-
-}
-
-.user-options .user{
+.user-options .user {
     float: left;
     margin-left: -35px;
-    margin-top: 0px;
+    margin-top: -5px;
     font-size: 35px;
     color: #FF9900;
-
 }
 
-.icons .icon{
+
+/* atalhos */
+
+.atalhos .icons span {
     float: left;
-    margin-left: -35px;
-    margin-top: 0px;
-    font-size: 23px;
+    margin: 25px 30px;
+}
+
+.atalhos .icons .icon {
+    float: left;
+    font-size: 20px;
     color: #FF9900;
+    padding: 0 0px 0 0;
 }
