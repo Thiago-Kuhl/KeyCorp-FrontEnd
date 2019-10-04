@@ -1,0 +1,28 @@
+.breadcrumb {
+    margin: 50px 25px 50px 50px;
+}
+
+.breadcrumb ol {
+    background: #231F20;
+    color: white;
+}
+
+.container {
+    display: grid;
+    background: red;
+    height: 400px;
+    width: 100%;
+}
+
+.container .col1 {
+    margin: 0 50px 5px 75px;
+}
+
+.container .col2 {
+    margin: 0 50px 5px 75px;
+}
+
+.container .col1,
+.col2 {
+    background: blue;
+}

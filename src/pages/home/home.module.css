@@ -7,7 +7,7 @@
             height: 392px;
             left: 0px;
             top: 97px;
-            background: url(./bg.png), linear-gradient(180deg, #000000 86.98%, rgba(35, 31, 32, 0.9) 100%);
+            background: url(./imagens/bg.png), linear-gradient(180deg, #000000 86.98%, rgba(35, 31, 32, 0.9) 100%);
             background-size: cover;
         }
         
@@ -39,19 +39,19 @@
         }
         
         .container .img-prod1 {
-            background: url(./office.png) no-repeat;
+            background: url(./imagens/office.png) no-repeat;
         }
         
         .container .img-prod2 {
-            background: url(./vscode.png) no-repeat;
+            background: url(./imagens/vscode.png) no-repeat;
         }
         
         .container .img-prod3 {
-            background: url(./photoshop.png) no-repeat;
+            background: url(./imagens/photoshop.png) no-repeat;
         }
         
         .container .img-prod4 {
-            background: url(./database.png) no-repeat;
+            background: url(./imagens/database.png) no-repeat;
         }
         
         .container p {
@@ -281,48 +281,48 @@
         }
         
         .galeria1 .g .foto1 {
-            background: url(./escritorio.png) no-repeat;
+            background: url(./imagens/escritorio.png) no-repeat;
             margin-left: 40%;
         }
         
         .galeria1 .g .foto2 {
-            background: url(./photoshop-cp.png) no-repeat;
+            background: url(./imagens/photoshop-cp.png) no-repeat;
             margin-left: 37%;
             background-size: 70px 70px;
         }
         
         .galeria1 .g .foto3 {
-            background: url(./visio.png) no-repeat;
+            background: url(./imagens/visio.png) no-repeat;
             margin-left: 40%;
             background-size: 55px 60px;
         }
         
         .galeria1 .g .foto4 {
-            background: url(./bizagi.png) no-repeat;
+            background: url(./imagens/bizagi.png) no-repeat;
             margin-left: 30%;
             background-size: 100px 75px;
         }
         
         .galeria2 .g .foto1 {
-            background: url(./vs.png) no-repeat;
+            background: url(./imagens/vs.png) no-repeat;
             margin-left: 40%;
             background-size: 60px 65px;
         }
         
         .galeria2 .g .foto2 {
-            background: url(./intellij.svg.png) no-repeat;
+            background: url(./imagens/intellij.svg.png) no-repeat;
             margin-left: 37%;
             background-size: 70px 60px;
         }
         
         .galeria2 .g .foto3 {
-            background: url(./bd.png) no-repeat;
+            background: url(./imagens/bd.png) no-repeat;
             margin-left: 40%;
             background-size: 55px 60px;
         }
         
         .galeria2 .g .foto4 {
-            background: url(./cloud.png) no-repeat;
+            background: url(./imagens/cloud.png) no-repeat;
             margin-left: 35%;
             background-size: 80px 75px;
         }

@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'; // es
 import Login from './pages/login/login';
 import Home from './pages/home/home'
 import Menu from './pages/menu/menu'
+import Carrinho from './pages/carrinho/carrinho'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox,faCheckCircle, 
@@ -31,6 +32,7 @@ ReactDOM.render(
             <Route path="/" exact component={Home} />
             <Route path="/login" exact component={Login} />
             <Route path="/menu" exact component={Menu} />
+            <Route path="/carrinho" exact component={Carrinho} />
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));
