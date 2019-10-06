@@ -17,13 +17,14 @@ class Footer extends React.Component {
                             <a href></a>
                         </div>
                         <span>
-                            <p>A <b>KEY CORP</b> é um e-commerce especializado em atender os estudantes, 
+                            <p>A <b>KEY CORP</b> é um e-commerce especializado em atender os estudantes,
                             fornecendo as melhores novidades do mercado tecnológico.</p>
                         </span>
                     </div>
 
                     <div styleName="uteis main">
                         <ul>
+                            <p><b>Links uteis</b></p>
                             <li><a href="">FAQ</a>  </li>
                             <li><a href="">Pessoa Jurídica</a></li>
                             <li><a href="">Política e privacidade</a></li>
@@ -32,6 +33,7 @@ class Footer extends React.Component {
 
                     <div styleName="navegacao main">
                         <ul>
+                            <p><b>Navegação</b></p>
                             <li><a href="./">Home</a></li>
                             <li><a href="./categorias">Categorias</a></li>
                             <li><a href="./historico">Histórico</a></li>
@@ -41,6 +43,7 @@ class Footer extends React.Component {
                     </div>
                     <div styleName="redes main">
                         <ul>
+                            <p><b>Redes Sociais</b></p>
                             <li><a href="">Instagram</a>  </li>
                             <li><a href="">Linkedin</a></li>
                             <li><a href="">Twitter</a></li>

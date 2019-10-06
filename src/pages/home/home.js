@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './home.module.css';
 import Menu from '../menu/menu.js';
+import Footer from '../footer/footer.js';
 import SiteInfo from '../site-info/site-info';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
@@ -158,7 +159,10 @@ class Home extends React.Component {
                             </div>
                         </div>
                     </section>
+
                     <SiteInfo />
+
+                    <Footer />
 
                 </div>
 

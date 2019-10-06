@@ -13,7 +13,7 @@ class SiteInfo extends React.Component {
         return (
             <>
                 <section styleName="site-info">
-                    <div className="container">
+                    <div styleName="container">
                         <div styleName="info-slide">
                             <div styleName="img-container">
                                 <FontAwesomeIcon styleName="icon" icon="credit-card" />
