@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './footer.module.css';
-import Menu from '../menu/menu.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import 'react-bootstrap';
