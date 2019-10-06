@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -16,7 +13,7 @@ import Footer from './pages/footer/footer'
 import Cadastro from './pages/cadastro/cadastro'
 
 //Para os icones
-import { library } from '@fontawesome/fontawesome-svg-core';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 import { faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox,faCheckCircle, 
