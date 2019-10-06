@@ -9,7 +9,6 @@ import Login from './pages/login/login';
 import Home from './pages/home/home'
 import Menu from './pages/menu/menu'
 import Carrinho from './pages/carrinho/carrinho'
-import Footer from './pages/footer/footer'
 import Cadastro from './pages/cadastro/cadastro'
 
 //Para os icones
@@ -34,7 +33,6 @@ ReactDOM.render(
             <Route path="/cadastro" exact component={Cadastro} />
             <Route path="/menu" exact component={Menu} />
             <Route path="/carrinho" exact component={Carrinho} />
-            <Route path="/footer" exact component={Footer} />
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));
