@@ -13,9 +13,10 @@ import Home from './pages/home/home'
 import Menu from './pages/menu/menu'
 import Carrinho from './pages/carrinho/carrinho'
 import Footer from './pages/footer/footer'
+import Cadastro from './pages/cadastro/cadastro'
 
 //Para os icones
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from '@fontawesome/fontawesome-svg-core';
 
 import { faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox,faCheckCircle, 
@@ -33,6 +34,7 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/login" exact component={Login} />
+            <Route path="/cadastro" exact component={Cadastro} />
             <Route path="/menu" exact component={Menu} />
             <Route path="/carrinho" exact component={Carrinho} />
             <Route path="/footer" exact component={Footer} />
