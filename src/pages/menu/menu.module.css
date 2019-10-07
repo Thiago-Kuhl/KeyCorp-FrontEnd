@@ -33,7 +33,7 @@
 .barra input {
     margin: 15px 100px 10px 100px;
     background: rgba(255, 255, 255, 0.78);
-    width: 75%;
+    width: 70%;
     height: 20px;
     border: none;
     text-align: center;
@@ -105,7 +105,7 @@
     position: relative;
     border: none;
     float: left;
-    margin: 25px 0 0 -100px;
+    margin: 25px auto auto -70px;
     background: none;
 }
 
@@ -165,12 +165,12 @@
 
 .atalhos .icons span {
     float: left;
-    margin: 25px 30px;
+    margin: 25px;
 }
 
 .atalhos .icons .icon {
     float: left;
-    font-size: 20px;
+    font-size: 16px;
     color: #FF9900;
     padding: 0 0px 0 0;
 }

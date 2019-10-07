@@ -5,37 +5,38 @@ import { Link } from 'react-router-dom';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import CSSModule from 'react-css-modules';
 import style from './cadastro.module.css';
-import Menu from '../menu/menu.js'
-import SiteInfo from '../site-info/site-info.js'
+import Menu from '../menu/menu.js';
+import Footer from '../footer/footer.js';
+import SiteInfo from '../site-info/site-info.js';
 
 class Cadastro extends React.Component {
     render() {
         return (
             <>
-            <Menu />
+                <Menu />
                 <div styleName="signup">
                     <h1>Cadastre-se agora para aproveitar nossos preços!</h1>
                     <br /><br />
                     <h2>Já possui conta? <a href="/login">Login</a></h2>
-                    
+
                     <div styleName="signup-form">
                         <form>
-                            <label> Nome</label>
+                            <label> Nome</label><br />
                             <input styleName='input' type="text"></input>
 
-                            <label> Sobrenome</label>
+                            <label> Sobrenome</label><br />
+                            <input styleName='input' type="text"></input>
+                            <br />
+                            <label> CPF</label><br />
                             <input styleName='input' type="text"></input>
 
-                            <label> CPF</label>
-                            <input styleName='input' type="text"></input>
-
-                            <label> Data de Nascimento</label>
+                            <label> Data de Nascimento</label><br />
                             <input styleName='input' type="date"></input>
-
-                            <label> E-mail</label>
+                            <br />
+                            <label> E-mail</label><br />
                             <input styleName='input' type="text"></input>
-
-                            <label> Senha</label>
+                            <br />
+                            <label> Senha</label><br />
                             <input styleName='input' type="password"></input>
 
                             <br />
@@ -44,6 +45,7 @@ class Cadastro extends React.Component {
                     </div>
                 </div>
                 <SiteInfo />
+                <Footer />
             </>
         )
     }
