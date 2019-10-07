@@ -1,4 +1,4 @@
-
+import axios from 'axios';
 // import Cadastro from './pages/cadastro/cadastro';
 
 // import './pages/home/home.css';

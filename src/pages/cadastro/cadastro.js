@@ -8,8 +8,12 @@ import style from './cadastro.module.css';
 import Menu from '../menu/menu.js';
 import Footer from '../footer/footer.js';
 import SiteInfo from '../site-info/site-info.js';
+import axios from 'axios';
 
 class Cadastro extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (
             <>
@@ -40,7 +44,7 @@ class Cadastro extends React.Component {
                             <input styleName='input' type="password"></input>
 
                             <br />
-                            <button type="submit" styleName='btnSignup'>Criar Conta</button>
+                            <button type="submit" styleName='btnSignup' onClick='doSignup()'>Criar Conta</button>
                         </form>
                     </div>
                 </div>
