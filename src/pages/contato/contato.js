@@ -56,7 +56,7 @@ class Contato extends React.Component {
                         <div styleName="wrapper3 wr">
                             <span>
                                 <label>Mensagem</label> <br />
-                                <textarea type="text" placeholder="Insira sua mensagem aqui"></textarea>
+                                <textarea styleName="textArea" type="text" placeholder="Insira sua mensagem aqui"></textarea>
                             </span>
                         </div>
 
