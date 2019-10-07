@@ -22,34 +22,37 @@ class Footer extends React.Component {
                         </span>
                     </div>
 
-                    <div styleName="uteis main">
-                        <ul>
-                            <p><b>Links uteis</b></p>
-                            <li><a href="">FAQ</a>  </li>
-                            <li><a href="">Pessoa Jurídica</a></li>
-                            <li><a href="">Política e privacidade</a></li>
-                        </ul>
+                    <div styleName="links">
+                        <div styleName="uteis main">
+                            <ul>
+                                <p><b>Links uteis</b></p>
+                                <li><a href="">FAQ</a>  </li>
+                                <li><a href="">Pessoa Jurídica</a></li>
+                                <li><a href="">Política e privacidade</a></li>
+                            </ul>
+                        </div>
+
+                        <div styleName="navegacao main">
+                            <ul>
+                                <p><b>Navegação</b></p>
+                                <li><a href="./">Home</a></li>
+                                <li><a href="./categorias">Categorias</a></li>
+                                <li><a href="./historico">Histórico</a></li>
+                                <li><a href="./ofertas">Ofertas e descontos</a></li>
+                                <li><a href="./contato">Contato</a></li>
+                            </ul>
+                        </div>
+                        <div styleName="redes main">
+                            <ul>
+                                <p><b>Redes Sociais</b></p>
+                                <li><a href="">Instagram</a>  </li>
+                                <li><a href="">Linkedin</a></li>
+                                <li><a href="">Twitter</a></li>
+                                <li><a href="">suporte@keycorp.com</a></li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div styleName="navegacao main">
-                        <ul>
-                            <p><b>Navegação</b></p>
-                            <li><a href="./">Home</a></li>
-                            <li><a href="./categorias">Categorias</a></li>
-                            <li><a href="./historico">Histórico</a></li>
-                            <li><a href="./ofertas">Ofertas e descontos</a></li>
-                            <li><a href="./contato">Contato</a></li>
-                        </ul>
-                    </div>
-                    <div styleName="redes main">
-                        <ul>
-                            <p><b>Redes Sociais</b></p>
-                            <li><a href="">Instagram</a>  </li>
-                            <li><a href="">Linkedin</a></li>
-                            <li><a href="">Twitter</a></li>
-                            <li><a href="">suporte@keycorp.com</a></li>
-                        </ul>
-                    </div>
                 </div>
 
             </div>

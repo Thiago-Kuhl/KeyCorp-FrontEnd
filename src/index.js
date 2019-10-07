@@ -10,18 +10,21 @@ import Home from './pages/home/home'
 import Menu from './pages/menu/menu'
 import Carrinho from './pages/carrinho/carrinho'
 import Cadastro from './pages/cadastro/cadastro'
+import Contato from './pages/contato/contato'
 
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 import { faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox,faCheckCircle, 
-faCreditCard,faCheckDouble, faShieldAlt, faKey } from '@fortawesome/free-solid-svg-icons';
+faCreditCard,faCheckDouble, faShieldAlt, faPhoneAlt,
+faEnvelopeOpenText,  faKey } from '@fortawesome/free-solid-svg-icons';
 
  
 library.add(faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox, faCheckCircle,
-faCheckDouble, faCreditCard, faShieldAlt, faKey);
+faCheckDouble, faCreditCard, faShieldAlt, faPhoneAlt,
+faEnvelopeOpenText, faKey);
 
 //Rotas
 
@@ -33,6 +36,7 @@ ReactDOM.render(
             <Route path="/cadastro" exact component={Cadastro} />
             <Route path="/menu" exact component={Menu} />
             <Route path="/carrinho" exact component={Carrinho} />
+            <Route path="/contato" exact component={Contato} />
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));

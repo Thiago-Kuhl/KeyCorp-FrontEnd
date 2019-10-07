@@ -13,18 +13,20 @@
         
         .container {
             margin: -100px 150px 0 150px;
+            display: grid;
         }
         
         .container .bloco {
             background: #000000;
             height: 500px;
             border-radius: 30px;
+            display: block;
         }
         
         .container p {
             padding-top: 20px;
             text-align: center;
-            font-size: 25px;
+            font-size: 1.5em;
             color: #FFFFFF;
             margin-left: auto;
             margin-right: auto;
@@ -155,7 +157,7 @@
         .container-pop .row {
             margin-left: 75px;
         }
-
+        
         .categorias {
             margin-bottom: 100px;
             position: relative;
