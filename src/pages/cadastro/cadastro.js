@@ -81,10 +81,10 @@ class Cadastro extends React.Component {
                             <input onChange = {(event) => this.handleChange(event)} id = "dtNasc" styleName='input' type="date" name="dtNasc"></input>
                             <br />
                             <label> E-mail</label><br />
-                            <input onChange = {(event) => this.handleChange(event)} id = "email"  styleName='input' type="text" name="email"></input>
+                            <input onChange = {(event) => this.handleChange(event)} id = "email" styleName='input' type="text" name="email"></input>
                             <br />
                             <label> Senha</label><br />
-                            <input onChange = {(event) => this.handleChange(event)} id = "password"  styleName='input' type="password" name="password"></input>
+                            <input onChange = {(event) => this.handleChange(event)} id = "password" styleName='input' type="password" name="password"></input>
 
                             <br />
                             <button type="submit" styleName='btnSignup'>Criar Conta</button>
