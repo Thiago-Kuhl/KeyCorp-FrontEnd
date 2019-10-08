@@ -8,7 +8,7 @@ import style from './cadastro.module.css';
 import Menu from '../menu/menu.js';
 import Footer from '../footer/footer.js';
 import SiteInfo from '../site-info/site-info.js';
-import axios from 'axios';
+// import axios from 'axios';
 
 class Cadastro extends React.Component {
     constructor(props) {

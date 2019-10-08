@@ -28,10 +28,10 @@ class Carrinho extends React.Component {
                             <div styleName="car">
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Carrinho</a>
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Carrinho" role="tab" aria-controls="home" aria-selected="true">Carrinho</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="profile" aria-selected="false">Salvos</a>
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Salvos" role="tab" aria-controls="profile" aria-selected="false">Salvos</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">

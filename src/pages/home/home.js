@@ -15,13 +15,10 @@ class Home extends React.Component {
     render() {
         return (
             <>
+                <Menu />
+
                 <div styleName="Home">
-
-                    <Menu />
-
-                    <div styleName=" bg">
-
-                    </div>
+                    <div styleName=" bg"></div>
 
                     <section styleName="container">
 
@@ -29,40 +26,42 @@ class Home extends React.Component {
                             <div className="col-3">
                                 <div styleName="bloco">
                                     <span>
-                                        <p>Office 365</p>
+                                        <h3>Office 365</h3>
                                     </span>
 
-                                    <div styleName="img img-prod1"></div>
+                                    <div styleName="img img-prod1">
+                                       
+                                    </div>
 
                                     <div styleName="desc">
-                                        <p>Aplicativos para escritório</p>
+                                        <h3>Aplicativos para escritório</h3>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-3">
                                 <div styleName="bloco">
-                                    <p>VS Code</p>
+                                    <h3>VS Code</h3>
                                     <div styleName="img img-prod2"></div>
                                     <div styleName="desc">
-                                        <p>Editor de código-fonte</p>
+                                        <h3>Editor de código-fonte</h3>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-3">
                                 <div styleName="bloco">
-                                    <p>PhotoShop</p>
+                                    <h3>PhotoShop</h3>
                                     <div styleName="img img-prod3"></div>
                                     <div styleName="desc">
-                                        <p>Editor de imagens bidimensionais</p>
+                                        <h3>Editor de imagens bidimensionais</h3>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-3">
                                 <div styleName="bloco">
-                                    <p>Oracle Database</p>
+                                    <h3>Oracle Database</h3>
                                     <div styleName="img img-prod4"></div>
                                     <div styleName="desc">
-                                        <p>Oracle database 18c</p>
+                                        <h3>Oracle database 18c</h3>
                                     </div>
                                 </div>
                             </div>
@@ -90,9 +89,11 @@ class Home extends React.Component {
 
 
                     <section styleName="categorias">
+
                         <div styleName="hearder">
                             <h1><b>Categorias Populares</b></h1>
                         </div>
+
                         <div className="row" styleName="container">
                             <div styleName="galeria">
                                 <div styleName="galeria1">
@@ -100,28 +101,28 @@ class Home extends React.Component {
                                     <div styleName="g">
                                         <div styleName="image foto1"> </div>
                                         <div styleName="categ">
-                                            <h1>Escritório</h1>
+                                            <h3>Escritório</h3>
                                         </div>
                                     </div>
 
                                     <div styleName="g" >
                                         <div styleName="image foto2"></div>
                                         <div styleName="categ">
-                                            <h1>Designer</h1>
+                                            <h3>Designer</h3>
                                         </div>
                                     </div>
 
                                     <div styleName="g">
                                         <div styleName="image foto3"></div>
                                         <div styleName="categ">
-                                            <h1>Modelagens</h1>
+                                            <h3>Modelagens</h3>
                                         </div>
                                     </div>
 
                                     <div styleName="g">
                                         <div styleName="image foto4"></div>
                                         <div styleName="categ">
-                                            <h1>Fluxogramas</h1>
+                                            <h3>Fluxogramas</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -131,28 +132,28 @@ class Home extends React.Component {
                                     <div styleName="g">
                                         <div styleName="image foto1"> </div>
                                         <div styleName="categ">
-                                            <h1>Editores</h1>
+                                            <h3>Editores</h3>
                                         </div>
                                     </div>
 
                                     <div styleName="g" >
                                         <div styleName="image foto2"></div>
                                         <div styleName="categ">
-                                            <h1>IDEs</h1>
+                                            <h3>IDEs</h3>
                                         </div>
                                     </div>
 
                                     <div styleName="g">
                                         <div styleName="image foto3"></div>
                                         <div styleName="categ">
-                                            <h1>Banco de dados</h1>
+                                            <h3>Banco de dados</h3>
                                         </div>
                                     </div>
 
                                     <div styleName="g">
                                         <div styleName="image foto4"></div>
                                         <div styleName="categ">
-                                            <h1>Outros</h1>
+                                            <h3>Outros</h3>
                                         </div>
                                     </div>
                                 </div>

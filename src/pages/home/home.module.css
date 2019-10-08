@@ -23,7 +23,7 @@
             display: block;
         }
         
-        .container p {
+        .container h3 {
             padding-top: 20px;
             text-align: center;
             font-size: 1.5em;
@@ -36,11 +36,9 @@
         .container .img {
             background: red;
             height: 250px;
-            padding: 20px 20px 0px 20px;
+            padding: 20px;
             align-items: center;
             margin-top: 80px;
-            margin-left: 60px;
-            margin-right: 20px;
         }
         
         .container .img-prod1 {
@@ -61,18 +59,17 @@
         
         .container .desc {
             height: 125px;
-            width: 270px;
+            width: 100%;
             padding: 10px 10px 10px 10px;
             margin-top: -20px;
         }
         
-        .container .desc p {
-            font-size: 17.5px;
-        }
-        
-        .container .desc p {
-            text-align: left;
-            margin-left: 50px;
+        .container .desc h3 {
+            font-size: 17px;
+            color: white;
+            word-wrap: break-word;
+            text-align: center;
+            /* margin-left: 50px; */
         }
         
         .box {
@@ -105,14 +102,14 @@
         .box .col2 p,
         .col3 p {
             color: #FFFFFF;
-            margin: 20px 50px 0 0px;
+            margin: 15px 20px 0 0px;
             float: right;
         }
         
         .box .icon {
             color: #FF9900;
-            font-size: 50px;
-            margin: 5px 0px 25px 30px;
+            font-size: 30px;
+            margin: 15px 0px 25px 30px;
         }
         
         .box .line {
@@ -165,15 +162,17 @@
         
         .categorias .hearder {
             margin-left: 150px;
-            margin-top: 100px;
+            margin-top: 150px;
         }
         
         .categorias .hearder h1 {
             font-style: normal;
             font-weight: 400;
-            font-size: 2.5em;
+            font-size: 25px;
             line-height: 35px;
-            text-align: center;
+            text-align: left;
+            left: 155px;
+            top: 45px;
             color: #FFFFFF;
         }
         
@@ -190,8 +189,9 @@
         }
         
         .galeria .g {
-            margin: 20px 50px 20px 50px;
-            height: 100px;
+            margin: 20px 50px 20px 0px;
+            height: 100%;
+            width: 100%;
         }
         
         .galeria1 {
@@ -209,7 +209,7 @@
         .galeria1 .image,
         .galeria2 .image {
             width: 100%;
-            height: 70%;
+            height: 80%;
             background: #FFFFFF;
         }
         
@@ -219,12 +219,11 @@
             height: 30%;
         }
         
-        .categ h1 {
-            width: 100%;
-            font-size: 1.6em;
-            text-align: left;
+        .categ h3 {
             color: #FFFFFF;
             position: relative;
+            font-size: 1em;
+            text-align: center;
         }
         
         .galeria1 .g .foto1 {
