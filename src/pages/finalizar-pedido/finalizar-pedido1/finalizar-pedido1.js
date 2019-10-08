@@ -6,6 +6,7 @@ import CSSModule from 'react-css-modules';
 import style from './finalizar-pedido1.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
+import ResumoPedido from '../resumo-pedido/resumo-pedido.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
@@ -14,6 +15,8 @@ class Pedido1 extends React.Component {
         return (<>
 
             <Menu />
+
+            <ResumoPedido/>
 
             <div styleName="finalizar-pedido">
                 <div aria-label="breadcrumb" styleName="breadcrumb">
@@ -66,6 +69,7 @@ class Pedido1 extends React.Component {
                             </a>
                         </div>
                     </form>
+
                 </div>
             </div>
 

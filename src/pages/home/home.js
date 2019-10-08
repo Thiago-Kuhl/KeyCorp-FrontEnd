@@ -71,6 +71,7 @@ class Home extends React.Component {
 
                     <section styleName="box">
                         <div className="row">
+                            <span styleName="linha"></span>
                             <div className="col-4 " styleName="col1">
                                 <p><b>Todos os software que você precisa em um só lugar</b></p>
                                 <p>Enviado pelo próprio fornecedor</p>
