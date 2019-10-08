@@ -38,7 +38,7 @@ class Carrinho extends React.Component {
                                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
                                     <div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">jdnwjkdn</div>
                                 </div>
-                            </div>
+                            </div>      
 
 </div>
                             <div className="col-3" styleName="col2">
