@@ -1,7 +1,7 @@
 import React from 'react';
 /*eslist-disable 
 import ReactDOM from 'react-dom'; */
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import CSSModule from 'react-css-modules';
 import style from './cadastro.module.css';
@@ -16,7 +16,7 @@ class Cadastro extends React.Component {
         dtNasc: '',
         cpf: '',
         email: '',
-        password: '',
+        password: ''
     }
 
     handleChange = event => {
@@ -38,10 +38,9 @@ class Cadastro extends React.Component {
             senha: this.state.password
         };
 
-        axios.defaults.baseURL = 'http://35.237.84.170/';
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
         axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-        axios.post('http://35.237.84.170/a/signup/', { signup })
+        axios.post('http://35.237.84.170/b/signup/', { signup })
             .then(res => {
                 console.log(res);
                 console.log(res.data);
