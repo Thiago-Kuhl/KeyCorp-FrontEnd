@@ -15,6 +15,7 @@ import Pedido1 from './pages/finalizar-pedido/finalizar-pedido1/finalizar-pedido
 import Pedido2 from './pages/finalizar-pedido/finalizar-pedido2/finalizar-pedido2';
 import Pedido3 from './pages/finalizar-pedido/finalizar-pedido3/finalizar-pedido3';
 import Processamento from './pages/finalizar-pedido/processamento/processamento';
+import ResumoPedido from './pages/finalizar-pedido/resumo-pedido/resumo-pedido';
 
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -45,6 +46,7 @@ ReactDOM.render(
             <Route path="/pedido3" exact component={Pedido3} />
             <Route path="/contato" exact component={Contato} />
             <Route path="/processamento" exact component={Processamento} />
+            <Route path="/resumo" exact component={ResumoPedido} />
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));

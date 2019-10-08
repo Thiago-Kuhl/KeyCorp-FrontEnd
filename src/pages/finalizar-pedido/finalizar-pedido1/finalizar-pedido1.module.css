@@ -1,5 +1,6 @@
 .finalizar-pedido {
     border-bottom: 1px solid rgba(255, 255, 255, 0.315);
+    height: 600px;
 }
 
 .breadcrumb {
@@ -58,11 +59,11 @@
 }
 
 .wrapper3 label {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .wr {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .wr input {
