@@ -42,8 +42,10 @@ class Cadastro extends React.Component {
             nome: this.state.nome,
             dataNascimento: this.state.dtNasc,
             cpf: this.state.cpf,
-            email: this.state.email,
-            senha: this.state.password
+            credenciais : {
+                email: this.state.email,
+                senha: this.state.password
+            }
         };
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
