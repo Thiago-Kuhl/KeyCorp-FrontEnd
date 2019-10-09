@@ -1,0 +1,176 @@
+.hearder {
+    width: 100%;
+    height: 75px;
+    background: black;
+    display: grid;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+.logo {
+    left: 80px;
+}
+
+.brand-logo {
+    /* position: relative; */
+    height: 40px;
+    padding: 5px 25px 5px 25px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 15px;
+    left: 200px;
+}
+
+.navegacao {
+    margin: 0 25px 0 25px;
+}
+
+.barra input {
+    margin: 15px 100px 10px 100px;
+    background: rgba(255, 255, 255, 0.78);
+    width: 70%;
+    height: 20px;
+    border: none;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.produto .prod-options {
+    background-color: white;
+    position: relative;
+    border: none;
+    float: left;
+    top: -20px;
+    margin: 15px 100px 10px 100px;
+    background: none;
+    width: 75%;
+    font-size: 1em;
+}
+
+.produto .prod-options li {
+    list-style: none;
+    position: relative;
+    float: left;
+    border-right: none;
+    margin-right: 70px;
+    color: #FFFFFF;
+}
+
+.produto .prod-options li a {
+    color: white;
+    ;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.produto .prod-options li ul {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: black;
+    display: none;
+}
+
+.produto .prod-options li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.produto .prod-options li ul li {
+    border: none;
+    display: block;
+    width: 75px;
+}
+
+.produto .prod-options i {
+    float: left;
+}
+
+.prod-options .icon1 {
+    float: right;
+    margin-right: -20px;
+    margin-top: 10px;
+}
+
+
+/*Menu do usuário*/
+
+.usuario .user-options {
+    position: relative;
+    border: none;
+    float: left;
+    margin: 25px auto auto -70px;
+    background: none;
+}
+
+.usuario .user-options li {
+    list-style: none;
+    position: relative;
+    float: left;
+    border-right: none;
+    color: #FFFFFF;
+}
+
+.usuario .user-options li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+    display: block;
+}
+
+.usuario .user-options li ul {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: black;
+    display: none;
+}
+
+.usuario .user-options li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.usuario .user-options li ul li {
+    border: none;
+    display: block;
+    width: 150px;
+}
+
+.usuario .user-options i {
+    float: left;
+    margin-left: -20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    padding-right: 15px;
+}
+
+.user-options .user {
+    float: left;
+    margin-left: -35px;
+    margin-top: -5px;
+    font-size: 35px;
+    color: #FF9900;
+}
+
+
+/* atalhos */
+
+.atalhos .icons span {
+    float: left;
+    margin: 25px;
+}
+
+.atalhos .icons .icon {
+    float: left;
+    font-size: 16px;
+    color: #FF9900;
+    padding: 0 0px 0 0;
+}

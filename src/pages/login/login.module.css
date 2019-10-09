@@ -1,0 +1,83 @@
+.bg {
+    background: url(./imagens/fundo3.jpg) no-repeat;
+    height: 790px;
+    background-size: cover;
+}
+
+.Login {
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: relative;
+    padding: 30px 45px 30px 45px;
+    border-radius: 5px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    top: 385px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Login label {
+    color: white;
+    display: flex;
+}
+
+.Login h1 {
+    color: white;
+    font-size: 25px;
+}
+
+.Login input {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.Login span {
+    margin-right: 30px;
+}
+
+.btnEntrar {
+    position: relative;
+    background: #000000;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    color: #FF9900;
+    width: 150px;
+    height: 30px;
+    top: 50px;
+}
+
+#titulo {
+    position: relative;
+    width: 245px;
+    height: 35px;
+    left: 90px;
+    top: -60px;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    height: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.Login a:hover {
+    color: #FF9900;
+}
+
+.Login a {
+    color: white;
+}

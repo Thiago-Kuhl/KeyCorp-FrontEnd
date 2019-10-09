@@ -1,0 +1,116 @@
+.breadcrumb {
+    margin: 50px 25px 50px 110px;
+}
+
+.breadcrumb ol {
+    background: #231F20;
+    color: white;
+}
+
+.container {
+    display: grid;
+    /* background: red; */
+    height: 400px;
+    width: 100%;
+}
+
+.container .col1 {
+    margin: 0 50px 5px 8%;
+}
+
+.container .col2 {
+    margin: 0 50px 5px 75px;
+}
+
+.container .col1,
+.col2 {
+    color: white;
+    background: #000000;
+    border-radius: 5px;
+}
+
+.titulo {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+}
+
+.button {
+    margin: 30px 0 0 0;
+}
+
+.total {
+    font-size: 20px;
+    float: left;
+    margin: 60px 0 0 0;
+}
+
+.btnFinalizar {
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 180px 0 0 0;
+}
+
+.btnFinalizar button {
+    width: 200px;
+    height: 39px;
+    border: none;
+    background: #231F20;
+    border-radius: 5px;
+    color: #FF9900;
+}
+
+.car {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    text-align: left;
+    font-size: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+}
+
+.car a {
+    font-size: 20px;
+}
+
+.imagem-carrinho {
+    background: red;
+    position: absolute;
+    width: 20%;
+    height: 100px;
+    left: 20px;
+    top: 100px;
+    background: url(./imagens/ebook-capa.png) no-repeat;
+    background-size: 100px 100px;
+}
+
+.info-carrinho {
+    position: absolute;
+    width: 713px;
+    left: 20%;
+    top: 110px;
+}
+
+.info-carrinho .desc h3 {
+    font-size: 13px;
+}
+
+.iptCar {
+    position: absolute;
+    left: 85%;
+    top: 42%;
+}
+
+.iptCar input {
+    width: 70px;
+    height: 26.99px;
+    background: #231F20;
+    border: none;
+    color: white;
+    padding-left: 25px;
+}
