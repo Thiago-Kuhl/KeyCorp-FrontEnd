@@ -77,3 +77,40 @@
 .car a {
     font-size: 20px;
 }
+
+.imagem-carrinho {
+    background: red;
+    position: absolute;
+    width: 20%;
+    height: 100px;
+    left: 20px;
+    top: 100px;
+    background: url(./imagens/ebook-capa.png) no-repeat;
+    background-size: 100px 100px;
+}
+
+.info-carrinho {
+    position: absolute;
+    width: 713px;
+    left: 20%;
+    top: 110px;
+}
+
+.info-carrinho .desc h3 {
+    font-size: 13px;
+}
+
+.iptCar {
+    position: absolute;
+    left: 85%;
+    top: 42%;
+}
+
+.iptCar input {
+    width: 70px;
+    height: 26.99px;
+    background: #231F20;
+    border: none;
+    color: white;
+    padding-left: 25px;
+}
