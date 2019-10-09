@@ -50,6 +50,7 @@ class Login extends React.Component {
     }
 
     render() {
+        console.log(this.state)
         return (
 
             <div styleName="bg">
@@ -60,7 +61,7 @@ class Login extends React.Component {
                     <Link to="/login"></Link>
                 </p>
 
-                <form>
+                <form onSubmit={this.handleSubmit}>
 
                     <h1>Entre em sua conta</h1>
                     <br />
