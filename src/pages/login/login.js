@@ -1,4 +1,3 @@
-
 import React from 'react';
 /*eslist-disable 
 import ReactDOM from 'react-dom'; */
@@ -6,7 +5,50 @@ import { Link } from 'react-router-dom';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import CSSModule from 'react-css-modules';
 import style from './login.module.css';
+import axios from 'axios';
+
 class Login extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            email: '',
+            password: ''
+        }
+    }
+    
+
+    handleChange = (event) => {
+        console.log("id",event.target.name)
+
+        const state = Object.assign({}, this.state);
+
+        let field = event.target.name;
+        
+        state[field] = event.target.value
+
+        this.setState(state)
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+
+        const login = {
+            email: this.state.email,
+            senha: this.state.password
+        };
+
+        axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+        axios.post('http://35.237.84.170/login/',  login )
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
+            .catch(error => {
+                    return error;
+                }
+            )
+    }
+
     render() {
         return (
 
@@ -24,10 +66,10 @@ class Login extends React.Component {
                     <br />
 
                     <label> E-mail</label>
-                    <input styleName='input' type="text"></input>
+                    <input onChange = {(event) => this.handleChange(event)} id = "email" styleName='input' type="text" name="email"></input>
 
                     <label> Senha</label>
-                    <input styleName='input' type="password"></input> 
+                    <input onChange = {(event) => this.handleChange(event)} id = "password" styleName='input' type="password" name="password"></input> 
 
                     <span styleName="link1"><a href="#">Esqueceu sua senha?</a></span>
                     <span styleName="link2"><a href="#">Cadastre-se</a></span>

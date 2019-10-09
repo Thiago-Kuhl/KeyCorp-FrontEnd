@@ -1,7 +1,7 @@
 import React from 'react';
 /*eslist-disable 
 import ReactDOM from 'react-dom'; */
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import CSSModule from 'react-css-modules';
 import style from './cadastro.module.css';
@@ -11,37 +11,45 @@ import SiteInfo from '../site-info/site-info.js';
 import axios from 'axios';
 
 class Cadastro extends React.Component {
-    state = {
-        nome: '',
-        dtNasc: '',
-        cpf: '',
-        email: '',
-        password: '',
+    constructor(props){
+        super(props);
+        this.state = {
+            nome: '',
+            dtNasc: '',
+            cpf: '',
+            email: '',
+            password: ''
+        }
+    }
+    
+
+    handleChange = (event) => {
+        console.log("id",event.target.name)
+
+        const state = Object.assign({}, this.state);
+
+        let field = event.target.name;
+        
+        state[field] = event.target.value
+
+        this.setState(state)
     }
 
-    handleChange = event => {
-        this.setState({ nome: event.target.value });
-        this.setState({ dtNasc: event.target.value });
-        this.setState({ cpf: event.target.value });
-        this.setState({ email: event.target.value });
-        this.setState({ password: event.target.value });
-    }
-
-    handleSubmit = event => {
+    handleSubmit = (event) => {
         event.preventDefault();
 
         const signup = {
             nome: this.state.nome,
             dataNascimento: this.state.dtNasc,
             cpf: this.state.cpf,
-            email: this.state.email,
-            senha: this.state.password
+            credenciais : {
+                email: this.state.email,
+                senha: this.state.password
+            }
         };
 
-        axios.defaults.baseURL = 'http://35.237.84.170/';
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-        axios.post('http://35.237.84.170/a/signup/', { signup })
+        axios.post('http://35.237.84.170/signup/',  signup )
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -53,6 +61,7 @@ class Cadastro extends React.Component {
     }
 
     render() {
+        console.log(this.state)
         return (
             <>
                 <Menu />
@@ -64,20 +73,20 @@ class Cadastro extends React.Component {
                     <div styleName="signup-form">
                         <form onSubmit={this.handleSubmit}>
                             <label> Nome Completo</label><br />
-                            <input styleName='input' type="text" name="nome"></input>
+                            <input onChange = {(event) => this.handleChange(event)} id = "nome" styleName='input' type="text" name="nome"></input>
 
                             <br />
                             <label> CPF</label><br />
-                            <input styleName='input' type="text" name="cpf"></input>
+                            <input onChange = {(event) => this.handleChange(event)} id = "cpf" styleName='input' type="text" name="cpf"></input>
 
                             <label> Data de Nascimento</label><br />
-                            <input styleName='input' type="date" name="dtNasc"></input>
+                            <input onChange = {(event) => this.handleChange(event)} id = "dtNasc" styleName='input' type="date" name="dtNasc"></input>
                             <br />
                             <label> E-mail</label><br />
-                            <input styleName='input' type="text" name="email"></input>
+                            <input onChange = {(event) => this.handleChange(event)} id = "email" styleName='input' type="text" name="email"></input>
                             <br />
                             <label> Senha</label><br />
-                            <input styleName='input' type="password" name="password"></input>
+                            <input onChange = {(event) => this.handleChange(event)} id = "password" styleName='input' type="password" name="password"></input>
 
                             <br />
                             <button type="submit" styleName='btnSignup'>Criar Conta</button>
