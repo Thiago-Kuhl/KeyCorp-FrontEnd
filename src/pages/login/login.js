@@ -41,7 +41,8 @@ class Login extends React.Component {
         axios.post('http://35.237.84.170/login/',  login )
             .then(res => {
                 console.log(res);
-                console.log(res.data);
+                console.log(res.data.idUsuario);
+
             })
             .catch(error => {
                     return error;
