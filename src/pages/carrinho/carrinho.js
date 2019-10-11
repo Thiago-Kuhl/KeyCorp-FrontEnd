@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './carrinho.module.css';
 import Menu from '../menu/menu.js'
+import Footer from '../footer/footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -81,9 +82,12 @@ class Carrinho extends React.Component {
                                 <button>Finalizar</button>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
+
+            <Footer/>
         </>);
     }
 }

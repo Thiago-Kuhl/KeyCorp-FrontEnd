@@ -1,5 +1,10 @@
+.carrinho {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.315);
+    height: 600px;
+}
+
 .breadcrumb {
-    margin: 50px 25px 50px 110px;
+    margin: 50px 25px 50px 80px;
 }
 
 .breadcrumb ol {
@@ -113,4 +118,12 @@
     border: none;
     color: white;
     padding-left: 25px;
+}
+
+.carrinho a:hover {
+    color: #FF9900;
+}
+
+.carrinho a {
+    color: #FFFFFF;
 }

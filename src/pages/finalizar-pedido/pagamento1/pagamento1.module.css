@@ -64,12 +64,21 @@
     grid-template-columns: 150px 200px;
 }
 
+.wrapper3 input {
+    width: 150px;
+}
+
 .wrapper3 label {
     margin-bottom: 30px;
 }
 
 .wrapper3 .cdg {
-    width: 150px;
+    width: 130px;
+    margin-left: 20px;
+}
+
+.wrapper3 .lb {
+    margin-left: 20px;
 }
 
 .wr {

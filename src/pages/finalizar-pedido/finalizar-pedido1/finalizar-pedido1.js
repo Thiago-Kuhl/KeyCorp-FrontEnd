@@ -65,7 +65,7 @@ class Pedido1 extends React.Component {
 
                         <div styleName="botton">
                             <a href="./processamento">Proxima etapa &emsp;
-                            <FontAwesomeIcon styleName="icon" icon="chevron-right" />
+                            <FontAwesomeIcon styleName="icon pxm" icon="chevron-right" />
                             </a>
                         </div>
                     </form>

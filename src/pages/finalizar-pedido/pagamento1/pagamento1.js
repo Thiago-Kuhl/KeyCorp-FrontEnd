@@ -3,20 +3,23 @@ import React from 'react';
 import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
-import style from './finalizar-pedido2.module.css';
+import style from './pagamento1.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
+import ModalPage from '../modal/modal'
 import ResumoPedido from '../resumo-pedido/resumo-pedido.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
-class Pedido2 extends React.Component {
+class Pagamento1 extends React.Component {
+
+
     render() {
         return (<>
 
             <Menu />
 
-            <ResumoPedido/>
+            <ResumoPedido />
 
             <div styleName="finalizar-pedido">
                 <div aria-label="breadcrumb" styleName="breadcrumb">
@@ -61,24 +64,19 @@ class Pedido2 extends React.Component {
                             </span>
 
                             <span>
-                                <label>Código de segurança</label> <br />
+                                <label styleName="lb">Código</label> <br />
                                 <input styleName="cdg" type="phone"></input>
                             </span>
 
                         </div>
-
-                        <div styleName="botton">
-                            <a href="./processamento">Proxima etapa &emsp;
-                            <FontAwesomeIcon styleName="icon" icon="chevron-right" />
-                            </a>
-                        </div>
+                      
                     </form>
                 </div>
             </div>
-
             <Footer />
+
         </>)
     }
 }
 
-export default CSSModule(Pedido2, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
+export default CSSModule(Pagamento1, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })

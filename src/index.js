@@ -11,11 +11,11 @@ import Menu from './pages/menu/menu';
 import Carrinho from './pages/carrinho/carrinho';
 import Cadastro from './pages/cadastro/cadastro';
 import Contato from './pages/contato/contato';
-import Pedido1 from './pages/finalizar-pedido/finalizar-pedido1/finalizar-pedido1';
-import Pedido2 from './pages/finalizar-pedido/finalizar-pedido2/finalizar-pedido2';
-import Pedido3 from './pages/finalizar-pedido/finalizar-pedido3/finalizar-pedido3';
-import Processamento from './pages/finalizar-pedido/processamento/processamento';
+import Pedido1 from './pages/finalizar-pedido/pagamento1/pagamento1';
+import Pagamento1 from './pages/finalizar-pedido/pagamento1/pagamento1';
+import Pagamento2 from './pages/finalizar-pedido/pagamento2/pagamento2';
 import ResumoPedido from './pages/finalizar-pedido/resumo-pedido/resumo-pedido';
+import ModalPage from './pages/finalizar-pedido/modal/modal'
 
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -41,12 +41,12 @@ ReactDOM.render(
             <Route path="/cadastro" exact component={Cadastro} />
             <Route path="/menu" exact component={Menu} />
             <Route path="/carrinho" exact component={Carrinho} />
-            <Route path="/pedido" exact component={Pedido1} />
-            <Route path="/pedido2" exact component={Pedido2} />
-            <Route path="/pedido3" exact component={Pedido3} />
+            <Route path="/pedido1" exact component={Pedido1} />
+            <Route path="/pagamento1" exact component={Pagamento1} />
+            <Route path="/pagamento2" exact component={Pagamento2} />
             <Route path="/contato" exact component={Contato} />
-            <Route path="/processamento" exact component={Processamento} />
             <Route path="/resumo" exact component={ResumoPedido} />
+            <Route path="/modal" exact component={ModalPage} />
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));

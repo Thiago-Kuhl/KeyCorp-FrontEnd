@@ -3,20 +3,20 @@ import React from 'react';
 import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
-import style from './finalizar-pedido3.module.css';
+import style from './pagamento2.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 import ResumoPedido from '../resumo-pedido/resumo-pedido.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
-class Pedido3 extends React.Component {
+class Pagamento2 extends React.Component {
     render() {
         return (<>
 
             <Menu />
 
-            <ResumoPedido/>
+            <ResumoPedido />
 
             <div styleName="finalizar-pedido">
                 <div aria-label="breadcrumb" styleName="breadcrumb">
@@ -71,11 +71,6 @@ class Pedido3 extends React.Component {
 
                         </div>
 
-                        <div styleName="botton">
-                            <a href="./processamento">Proxima etapa &emsp;
-                            <FontAwesomeIcon styleName="icon" icon="chevron-right" />
-                            </a>
-                        </div>
                     </form>
                 </div>
             </div>
@@ -85,4 +80,4 @@ class Pedido3 extends React.Component {
     }
 }
 
-export default CSSModule(Pedido3, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
+export default CSSModule(Pagamento2, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
