@@ -38,23 +38,28 @@
             height: 250px;
             padding: 20px;
             align-items: center;
+            text-align: center;
             margin-top: 80px;
         }
         
         .container .img-prod1 {
             background: url(./imagens/office.png) no-repeat;
+            margin-left: 9%;
         }
         
         .container .img-prod2 {
             background: url(./imagens/vscode.png) no-repeat;
+            margin-left: 9%;
         }
         
         .container .img-prod3 {
             background: url(./imagens/photoshop.png) no-repeat;
+            margin-left: 9%;
         }
         
         .container .img-prod4 {
             background: url(./imagens/database.png) no-repeat;
+            margin-left: 9%;
         }
         
         .container .desc {
@@ -228,49 +233,49 @@
         
         .galeria1 .g .foto1 {
             background: url(./imagens/escritorio.png) no-repeat;
-            margin-left: 40%;
+            margin-left: 32%;
         }
         
         .galeria1 .g .foto2 {
             background: url(./imagens/photoshop-cp.png) no-repeat;
-            margin-left: 37%;
-            background-size: 70px 70px;
+            margin-left: 32%;
+            background-size: 60px 70px;
         }
         
         .galeria1 .g .foto3 {
             background: url(./imagens/visio.png) no-repeat;
-            margin-left: 40%;
+            margin-left: 32%;
             background-size: 55px 60px;
         }
         
         .galeria1 .g .foto4 {
             background: url(./imagens/bizagi.png) no-repeat;
-            margin-left: 30%;
-            background-size: 100px 75px;
+            margin-left: 25%;
+            background-size: 90px 75px;
         }
         
         .galeria2 .g .foto1 {
             background: url(./imagens/vs.png) no-repeat;
-            margin-left: 40%;
+            margin-left: 32%;
             background-size: 60px 65px;
         }
         
         .galeria2 .g .foto2 {
             background: url(./imagens/intellij.svg.png) no-repeat;
-            margin-left: 37%;
+            margin-left: 32%;
             background-size: 70px 60px;
         }
         
         .galeria2 .g .foto3 {
             background: url(./imagens/bd.png) no-repeat;
-            margin-left: 40%;
+            margin-left: 32%;
             background-size: 55px 60px;
         }
         
         .galeria2 .g .foto4 {
             background: url(./imagens/cloud.png) no-repeat;
-            margin-left: 35%;
-            background-size: 80px 75px;
+            margin-left: 32%;
+            background-size: 60px 75px;
         }
         
         .linha {
