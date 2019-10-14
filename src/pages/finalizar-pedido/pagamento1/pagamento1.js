@@ -78,6 +78,12 @@ class Pagamento1 extends React.Component {
                             </span>
 
                         </div>
+               
+                        <div styleName="botton">
+                            <a href="./processamento">Finalizar &emsp;
+                            <FontAwesomeIcon styleName="icon" icon="chevron-right" />
+                            </a>
+                        </div>
                       
                     </form>
                 </div>
