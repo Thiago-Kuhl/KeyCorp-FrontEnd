@@ -1,23 +1,23 @@
 .bg {
     background: url(./imagens/fundo3.jpg) no-repeat;
-    height: 790px;
+    height: 665px;
     background-size: cover;
 }
 
 .Login {
     width: 400px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.75);
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.85);
     position: relative;
     padding: 30px 45px 30px 45px;
-    border-radius: 5px;
+    border-radius: 2px;
     line-height: 35px;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
-    top: 385px;
+    top: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -25,11 +25,13 @@
 .Login label {
     color: white;
     display: flex;
+    line-height: 25px;
 }
 
 .Login h1 {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+    margin: -60px 0 0 -140px;
 }
 
 .Login input {
@@ -50,7 +52,7 @@
     color: #FF9900;
     width: 150px;
     height: 30px;
-    top: 50px;
+    top: 40px;
 }
 
 #titulo {

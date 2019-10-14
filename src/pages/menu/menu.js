@@ -67,7 +67,7 @@ class Menu extends React.Component {
                                         <a href="">Fulano da Silva</a>
                                         <ul>
                                             <li><a href="">Minha conta</a></li>
-                                            <li><a href="">Sair</a></li>
+                                            <li><a href="./login">Sair</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -83,7 +83,7 @@ class Menu extends React.Component {
                                 </span>
 
                                 <span>
-                                    <a href="">
+                                    <a href="./carrinho">
                                         <FontAwesomeIcon styleName="icon" icon="shopping-cart" />
                                     </a></span>
 

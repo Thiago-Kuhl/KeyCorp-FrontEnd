@@ -11,8 +11,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import 'react-bootstrap';
 
-
 class Contato extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            nome: '',
+            phone: '',
+            email: '',
+            mensagem: ''
+        }
+    }
+
     render() {
         return (<>
             <div styleName="contato">
@@ -34,12 +43,12 @@ class Contato extends React.Component {
 
                             <span>
                                 <label>Nome</label> <br />
-                                <input type="text" placeholder=""></input>
+                                <input id="nome" type="text" placeholder=""></input>
                             </span>
 
                             <span>
                                 <label>Telefone</label> <br />
-                                <input type="phone"></input>
+                                <input id="phone" type="text"></input>
                             </span>
 
                         </div>
@@ -48,7 +57,7 @@ class Contato extends React.Component {
 
                             <span>
                                 <label>Email</label> <br />
-                                <input type="text"></input>
+                                <input id="email" type="text"></input>
                             </span>
 
                         </div>
@@ -56,14 +65,14 @@ class Contato extends React.Component {
                         <div styleName="wrapper3 wr">
                             <span>
                                 <label>Mensagem</label> <br />
-                                <textarea styleName="textArea" type="text" placeholder="Insira sua mensagem aqui"></textarea>
+                                <textarea  id="mensagem" styleName="textArea" type="text" placeholder="Insira sua mensagem aqui"></textarea>
                             </span>
                         </div>
 
 
                         <div styleName="botton">
                             <a href="#">Cancelar</a>
-                            <button>Enviar</button>
+                            <button type="submit">Enviar</button>
                         </div>
 
                     </form>

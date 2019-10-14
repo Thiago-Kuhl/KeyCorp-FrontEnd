@@ -39,6 +39,10 @@
     display: inline-block;
 }
 
+.wrapper1 input {
+    width: 180px;
+}
+
 .wrapper2 {
     display: grid;
     grid-template-columns: 430px;
@@ -99,18 +103,18 @@
     position: absolute;
     width: 600px;
     height: 30px;
-    left: 50%;
+    left: 49%;
     top: 218px;
     align-items: center;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.1em;
     line-height: 25px;
     color: white;
 }
 
 .wrapper4 {
     display: inline-grid;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: 300px 300px;
     /* margin-bottom: 20px; */
 }
 
