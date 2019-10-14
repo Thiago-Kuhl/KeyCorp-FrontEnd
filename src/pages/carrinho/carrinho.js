@@ -7,10 +7,17 @@ import CSSModule from 'react-css-modules';
 import style from './carrinho.module.css';
 import Menu from '../menu/menu.js'
 import Footer from '../footer/footer'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 class Carrinho extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            cupom: '',
+            qtd: ''
+        }
+    }
     render() {
         return (<>
 
@@ -51,7 +58,7 @@ class Carrinho extends React.Component {
                                         </div>
 
                                         <div styleName="iptCar">
-                                            <input type="number" placeholder="1" />
+                                            <input id="qtd" type="number" placeholder="1" />
                                         </div>
 
                                     </div>
@@ -67,9 +74,9 @@ class Carrinho extends React.Component {
 
                             <div styleName="button">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Aplicar cupom" aria-label="Aplicar cupom" aria-describedby="basic-addon2" />
+                                    <input id="cupom" type="text" class="form-control" placeholder="Aplicar cupom" aria-label="Aplicar cupom" aria-describedby="basic-addon2" />
                                     <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary" type="button">Aplicar</button>
+                                        <button class="btn btn-outline-secondary" type="submit">Aplicar</button>
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +86,7 @@ class Carrinho extends React.Component {
                             </div>
 
                             <div styleName="btnFinalizar">
-                                <button>Finalizar</button>
+                                <button type="submit">Finalizar</button>
                             </div>
                         </div>
 

@@ -13,7 +13,16 @@ import 'react-bootstrap';
 
 class Pagamento1 extends React.Component {
 
-
+    constructor(props){
+        super(props);
+        this.state = {
+            nome: '',
+            cartao: '',
+            vencimento: '',
+            codigo: ''
+        }
+    }
+    
     render() {
         return (<>
 
@@ -45,14 +54,14 @@ class Pagamento1 extends React.Component {
                         <div styleName="wrapper1 wr">
                             <span>
                                 <label>Nome completo</label> <br />
-                                <input type="text" placeholder=""></input>
+                                <input id="nome" type="text" placeholder=""></input>
                             </span>
                         </div>
 
                         <div styleName="wrapper2 wr">
                             <span>
                                 <label>Número do cartão</label> <br />
-                                <input type="text"></input>
+                                <input id="cartao" type="text"></input>
                             </span>
                         </div>
 
@@ -60,12 +69,12 @@ class Pagamento1 extends React.Component {
 
                             <span>
                                 <label>Vencimento</label> <br />
-                                <input type="date" placeholder=""></input>
+                                <input id="vencimento" type="date" placeholder=""></input>
                             </span>
 
                             <span>
                                 <label styleName="lb">Código</label> <br />
-                                <input styleName="cdg" type="phone"></input>
+                                <input id="codigo" styleName="cdg" type="phone"></input>
                             </span>
 
                         </div>
