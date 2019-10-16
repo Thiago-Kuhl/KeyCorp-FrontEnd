@@ -2,16 +2,14 @@ import React from 'react';
 /*eslist-disable 
 import ReactDOM from 'react-dom'; */
 //import { Link } from 'react-router-dom';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import CSSModule from 'react-css-modules';
 import style from './cadastro.module.css';
 import Menu from '../menu/menu.js';
-import Home from '../home/home.js';
 import Footer from '../footer/footer.js';
 import SiteInfo from '../site-info/site-info.js';
 import axios from 'axios';
 import ReactDOM from 'react-dom';
-import {Redirect} from 'react-router'
+import { Redirect } from 'react-router';
 
 class Cadastro extends React.Component {
     constructor(props) {
@@ -57,7 +55,7 @@ class Cadastro extends React.Component {
                 axios.post('http://35.237.84.170/login/', { "email": signup.email, "senha": signup.senha }).then(res => {
                     console.log(res)
                     console.log(res.data);
-                    return <Redirect to="login/"/>
+                    return <Redirect to="login/" />
                 })
             })
             .catch(error => {
@@ -85,30 +83,45 @@ class Cadastro extends React.Component {
 
                     <div styleName="signup-form">
                         <form onSubmit={this.handleSubmit}>
-                            <label> Nome Completo</label><br />
-                            <input onChange={(event) => this.handleChange(event)} id="nome" styleName='input' type="text" name="nome"></input>
+                            <div className="row">
+                                <div className="col-12">
+                                    <label> Nome Completo</label><br />
+                                    <input onChange={(event) => this.handleChange(event)} id="nome" styleName='input' type="text" name="nome"></input>
+                                </div>
+                            </div>
 
-                            <br />
-                            <label> CPF</label><br />
-                            <input onChange={(event) => this.handleChange(event)} id="cpf" styleName='input' type="text" name="cpf"></input>
+                            <div className="row">
+                                <div className="col-6">
+                                    <label> CPF</label><br />
+                                    <input onChange={(event) => this.handleChange(event)} id="cpf" styleName='input' type="text" name="cpf"></input>
+                                </div>
+                                <div className="col-6">
+                                    <label> Data de Nascimento</label><br />
+                                    <input onChange={(event) => this.handleChange(event)} id="dtNasc" styleName='input' type="date" name="dtNasc"></input>
+                                </div>
+                            </div>
 
-                            <label> Data de Nascimento</label><br />
-                            <input onChange={(event) => this.handleChange(event)} id="dtNasc" styleName='input' type="date" name="dtNasc"></input>
-                            <br />
-                            <label> E-mail</label><br />
-                            <input onChange={(event) => this.handleChange(event)} id="email" styleName='input' type="text" name="email"></input>
-                            <br />
-                            <label> Senha</label><br />
-                            <input onChange={(event) => this.handleChange(event)} id="password" styleName='input' type="password" name="password"></input>
+                            <div className="row">
+                                <div className="col-12">
+                                    <label> E-mail</label><br />
+                                    <input onChange={(event) => this.handleChange(event)} id="email" styleName='input' type="text" name="email"></input>
+                                </div>
+                            </div>
+
+                            <div className="row">
+                                <div className="col-12">
+                                    <label> Senha</label><br />
+                                    <input onChange={(event) => this.handleChange(event)} id="password" styleName='input' type="password" name="password"></input>
+                                </div>
+                            </div>
 
                             <br />
                             <button type="submit" styleName='btnSignup'>Criar Conta</button>
                         </form>
-
-                    </div>
                 </div>
-                <SiteInfo />
-                <Footer />
+            </div>
+            <SiteInfo />
+            <Footer />
             </>
         )
     }

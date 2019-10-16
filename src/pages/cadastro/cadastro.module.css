@@ -2,19 +2,17 @@
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;
+    background-color: #231F20;
 }
 
 .signup-form {
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    width: 50%;
+    width: 35%;
     height: 504px;
     top: 300px;
-    left: 80%;
+    left: 75%;
     position: relative;
     padding: 30px 45px 30px 45px;
     border-radius: 5px;
-    flex-direction: row;
     font-weight: 300;
     font-size: 1em;
     line-height: 23px;
@@ -23,7 +21,7 @@
 }
 
 .signup-form input {
-    width: 40%;
+    width: 100%;
     margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid;
