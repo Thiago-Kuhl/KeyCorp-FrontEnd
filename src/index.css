@@ -14,3 +14,11 @@ a:hover {
 a {
     color: #FFFFFF;
 }
+
+button:hover {
+    background: #D4D4D4;
+}
+
+button {
+    background: #FF9900;
+}

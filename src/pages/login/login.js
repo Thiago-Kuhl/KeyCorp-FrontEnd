@@ -75,7 +75,7 @@ class Login extends React.Component {
                         <input onChange={(event) => this.handleChange(event)} id="password" styleName='input' type="password" name="password"></input>
 
                         <span styleName="link1"><a href="#">Esqueceu sua senha?</a></span>
-                        <span styleName="link2"><a href="#">Cadastre-se</a></span>
+                        <span styleName="link2"><a href="./cadastro">Cadastre-se</a></span>
 
                         <br />
 

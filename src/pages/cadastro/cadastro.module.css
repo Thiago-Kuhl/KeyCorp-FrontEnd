@@ -33,11 +33,11 @@
 
 .btnSignup {
     position: relative;
-    background: #949494;
+    /* background: #949494; */
     border-radius: 3px;
     border: none;
     text-align: center;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     width: 150px;
     height: 30px;
     top: 90%;
@@ -46,7 +46,6 @@
 .signup-form a:hover {
     color: #FF9900;
 }
-
 
 h1 {
     position: absolute;

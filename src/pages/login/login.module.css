@@ -1,5 +1,6 @@
 .bg {
-    background: url(./imagens/fundo3.jpg) no-repeat;
+    background: linear-gradient(180deg, rgba(208, 125, 0, 0.27) 0%, rgba(0, 0, 0, 0.65) 100%), #231F20;
+    ;
     height: 665px;
     background-size: cover;
 }
@@ -45,11 +46,11 @@
 
 .btnEntrar {
     position: relative;
-    background: #000000;
+    background: #FF9900;
     border-radius: 3px;
     border: none;
     text-align: center;
-    color: #FF9900;
+    color: #231F20;
     width: 150px;
     height: 30px;
     top: 40px;
