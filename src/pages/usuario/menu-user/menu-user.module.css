@@ -1,0 +1,47 @@
+.dropdown {
+    color: white;
+}
+
+.menu {
+    height: 100%;
+    margin: 50px 0 0 100px;
+}
+
+.container {
+    font-family: Roboto;
+    color: #FFFFFF;
+}
+
+.container ul {
+    list-style-type: none;
+}
+
+.nav-sidebar li {
+    width: 150px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+.nav-sidebar h3 {
+    width: 150px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.icon1 {
+    margin-left: 65px;
+}
+
+.icon2 {
+    margin-left: 50px;
+}
+
+.icon3 {
+    margin-left: 75px;
+}
+
+.icon4 {
+    margin-left: 38px;
+}

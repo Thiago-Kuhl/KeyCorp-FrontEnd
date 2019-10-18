@@ -7,8 +7,8 @@ import CSSModule from 'react-css-modules';
 import style from './carrinho.module.css';
 import Menu from '../menu/menu.js'
 import Footer from '../footer/footer'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Carrinho extends React.Component {
     constructor(props){
@@ -18,6 +18,8 @@ class Carrinho extends React.Component {
             qtd: ''
         }
     }
+
+  
     render() {
         return (<>
 
@@ -73,10 +75,10 @@ class Carrinho extends React.Component {
                             </div>
 
                             <div styleName="button">
-                                <div class="input-group mb-3">
-                                    <input id="cupom" type="text" class="form-control" placeholder="Aplicar cupom" aria-label="Aplicar cupom" aria-describedby="basic-addon2" />
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary" type="submit">Aplicar</button>
+                                <div className="input-group mb-3">
+                                    <input id="cupom" type="text" className="form-control" placeholder="Aplicar cupom" aria-label="Aplicar cupom" aria-describedby="basic-addon2" />
+                                    <div className="input-group-append">
+                                        <button className="btn btn-outline-secondary" type="submit">Aplicar</button>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +88,7 @@ class Carrinho extends React.Component {
                             </div>
 
                             <div styleName="btnFinalizar">
-                                <button type="submit">Finalizar</button>
+                                <button href="./" type="submit">Finalizar</button>
                             </div>
                         </div>
 

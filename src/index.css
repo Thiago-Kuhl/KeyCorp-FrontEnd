@@ -6,3 +6,11 @@
 body {
     background: #231F20;
 }
+
+a:hover {
+    color: #FF9900;
+}
+
+a {
+    color: #FFFFFF;
+}

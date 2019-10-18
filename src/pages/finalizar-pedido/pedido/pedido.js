@@ -3,22 +3,26 @@ import React from 'react';
 import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
-import style from './finalizar-pedido1.module.css';
+import style from './pedido.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 import ResumoPedido from '../resumo-pedido/resumo-pedido.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
-class Pedido1 extends React.Component {
+class Pedido extends React.Component {
     render() {
         return (<>
 
             <Menu />
 
-            <ResumoPedido/>
+            
+            <ResumoPedido />
+
 
             <div styleName="finalizar-pedido">
+
+
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="./">Home</a></li>
@@ -64,7 +68,7 @@ class Pedido1 extends React.Component {
                         </div>
 
                         <div styleName="botton">
-                            <a href="./processamento">Proxima etapa &emsp;
+                            <a href="">Proxima etapa &emsp;
                             <FontAwesomeIcon styleName="icon pxm" icon="chevron-right" />
                             </a>
                         </div>
@@ -78,4 +82,4 @@ class Pedido1 extends React.Component {
     }
 }
 
-export default CSSModule(Pedido1, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
+export default CSSModule(Pedido, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
