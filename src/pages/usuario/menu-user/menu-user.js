@@ -15,7 +15,7 @@ class MenuUser extends React.Component {
                             <h3>Minha Conta</h3>
                             <ul styleName="nav tabs">
                                 <li>
-                                    <a href="">Meu dados
+                                    <a href="">Meus dados
                                     <FontAwesomeIcon styleName="icon1" icon="chevron-right" />
                                     </a>
                                 </li>

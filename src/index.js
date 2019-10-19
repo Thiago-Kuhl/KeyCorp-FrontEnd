@@ -16,7 +16,8 @@ import Pagamento1 from './pages/finalizar-pedido/pagamento1/pagamento1';
 import Pagamento2 from './pages/finalizar-pedido/pagamento2/pagamento2';
 import ResumoPedido from './pages/finalizar-pedido/resumo-pedido/resumo-pedido';
 import ModalPage from './pages/finalizar-pedido/modal/modal';
-import MenuUser from './pages/usuario/menu-user/menu-user' ;
+import MenuUser from './pages/usuario/menu-user/menu-user';
+import Account from './pages/usuario/minha-conta/account' ;
 
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -50,6 +51,7 @@ ReactDOM.render(
             <Route path="/resumo" exact component={ResumoPedido} />
             <Route path="/modal" exact component={ModalPage} />
             <Route path="/menu-user" exact component={MenuUser} />
+            <Route path="/account" exact component={Account} />
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));
