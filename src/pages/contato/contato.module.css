@@ -71,7 +71,7 @@
 .wr textarea {
     border: none;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.199);
+    background: rgba(0, 0, 0, 0.308);
     color: white;
 }
 
@@ -159,8 +159,6 @@
     margin-left: 50px;
     width: 150px;
     height: 40px;
-    color: #FF9900;
     border: none;
-    background: rgba(0, 0, 0, 0.96);
     border-radius: 3px;
 }
