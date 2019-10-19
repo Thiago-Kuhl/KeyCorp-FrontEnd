@@ -79,7 +79,7 @@ class Cadastro extends React.Component {
                 <div styleName="signup">
                     <h1>Cadastre-se agora para aproveitar nossos preços!</h1>
                     <br /><br />
-                    <h2>Já possui conta? <a href="/login">Login</a></h2>
+                    <h2>Já possui conta? <a href="/login"><u>Login</u></a></h2>
 
                     <div styleName="signup-form">
                         <form onSubmit={this.handleSubmit}>
