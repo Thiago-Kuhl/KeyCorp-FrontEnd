@@ -11,7 +11,7 @@ import Footer from '../footer/footer'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Carrinho extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             cupom: '',
@@ -19,7 +19,7 @@ class Carrinho extends React.Component {
         }
     }
 
-  
+
     render() {
         return (<>
 
@@ -88,7 +88,9 @@ class Carrinho extends React.Component {
                             </div>
 
                             <div styleName="btnFinalizar">
-                                <button href="./" type="submit">Finalizar</button>
+                                <a href="./pedido">
+                                    <button type="submit">Finalizar</button>
+                                </a>
                             </div>
                         </div>
 
@@ -96,7 +98,7 @@ class Carrinho extends React.Component {
                 </div>
             </div>
 
-            <Footer/>
+            <Footer />
         </>);
     }
 }

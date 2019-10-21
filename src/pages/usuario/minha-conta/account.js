@@ -12,6 +12,7 @@ class Account extends React.Component {
         return (
             <>
                 <Menu />
+                
                 <div styleName="account">
                     <MenuUser />
                     <div styleName="update-form">
@@ -47,8 +48,7 @@ class Account extends React.Component {
                     </div>
                 </div>
                 <Footer />
-            </>
-        )
+            </>);
     }
 }
 

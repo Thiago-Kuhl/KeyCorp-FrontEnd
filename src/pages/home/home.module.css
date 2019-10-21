@@ -19,8 +19,13 @@
         .container .bloco {
             background: #000000;
             height: 500px;
-            border-radius: 30px;
+            border-radius: 5px;
             display: block;
+        }
+        
+        .bloco:hover {
+            background: rgba(255, 153, 0);
+            ;
         }
         
         .container h3 {
@@ -83,7 +88,7 @@
             padding: 5px 0 5px 0;
             background: #000000;
             height: 120px;
-            border-radius: 15px;
+            border-radius: 5px;
         }
         
         .box .col1 {
@@ -257,13 +262,13 @@
         .galeria2 .g .foto1 {
             background: url(./imagens/vs.png) no-repeat;
             margin-left: 32%;
-            background-size: 60px 65px;
+            background-size: 55px 65px;
         }
         
         .galeria2 .g .foto2 {
             background: url(./imagens/intellij.svg.png) no-repeat;
             margin-left: 32%;
-            background-size: 70px 60px;
+            background-size: 55px 60px;
         }
         
         .galeria2 .g .foto3 {
@@ -285,4 +290,8 @@
             border-left: 3.5px solid #FF9900;
             border-radius: 2px;
             margin: 5px 0 0 30px;
+        }
+        
+        .categ h3:hover {
+            color: #FF9900;
         }
