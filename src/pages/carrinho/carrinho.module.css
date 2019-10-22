@@ -14,7 +14,6 @@
 
 .container {
     display: grid;
-    /* background: red; */
     height: 400px;
     width: 100%;
 }
@@ -34,13 +33,28 @@
     border-radius: 5px;
 }
 
-.titulo {
+.col1 h3 {
+    font-size: 25px;
     width: 100%;
     margin-top: 20px;
+    font-size: 25px;
+}
+
+.titulo1,
+.titulo2 {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+}
+
+.titulo1 h3 {
+    left: 50px;
+}
+
+.titulo2 {
     align-items: center;
     text-align: center;
-    font-size: 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.48);
 }
 
 .button {
@@ -69,52 +83,44 @@
     color: #231F20;
 }
 
-.car {
-    width: 100%;
-    margin-top: 20px;
-    align-items: center;
-    text-align: left;
-    font-size: 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.48);
-}
-
-.car a {
-    font-size: 20px;
-}
-
-.imagem-carrinho {
-    background: red;
-    position: absolute;
-    width: 20%;
-    height: 100px;
-    left: 20px;
+.prod {
     top: 100px;
+    position: absolute;
+    width: 590px;
+    height: 151px;
+    left: 50px;
+}
+
+.prod:hover {
+    background: #FF9900;
+    color: black;
+}
+
+.img {
+    position: absolute;
+    width: 125px;
+    height: 141px;
+    left: 5px;
+    top: 5px;
     background: url(./imagens/ebook-capa.png) no-repeat;
-    background-size: 100px 100px;
+    background-size: 130px 140px;
 }
 
-.info-carrinho {
+.info-car {
     position: absolute;
-    width: 713px;
-    left: 20%;
-    top: 110px;
+    width: 343px;
+    height: 130px;
+    left: 150px;
+    top: 10px;
 }
 
-.info-carrinho .desc h3 {
-    font-size: 13px;
-}
-
-.iptCar {
+.inpt {
     position: absolute;
-    left: 85%;
-    top: 42%;
-}
-
-.iptCar input {
-    width: 70px;
-    height: 26.99px;
-    background: #231F20;
+    width: 50px;
+    height: 20px;
+    left: 515px;
+    text-align: center;
+    border-radius: 2px;
     border: none;
-    color: white;
-    padding-left: 25px;
+    top: 10px;
 }
