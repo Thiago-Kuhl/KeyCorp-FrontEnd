@@ -8,6 +8,7 @@ import Menu from '../menu/menu.js';
 import Footer from '../footer/footer.js';
 import style from './contato.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SimpleMap from '../../external-components/maps/maps.js'
 
 import 'react-bootstrap';
 
@@ -100,7 +101,10 @@ class Contato extends React.Component {
                             <label>Venha até a gente</label>
                         </span>
 
-                        <div styleName="img"></div>
+
+                        <div styleName="map">
+                            <SimpleMap/>
+                        </div>
 
                     </div>
                 </section>

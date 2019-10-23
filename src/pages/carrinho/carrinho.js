@@ -7,7 +7,6 @@ import CSSModule from 'react-css-modules';
 import style from './carrinho.module.css';
 import Menu from '../menu/menu.js'
 import Footer from '../footer/footer'
-import SimpleMap from '../../external-components/maps/maps.js'
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

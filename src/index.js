@@ -18,6 +18,7 @@ import ResumoPedido from './pages/finalizar-pedido/resumo-pedido/resumo-pedido';
 import ModalPage from './pages/finalizar-pedido/modal/modal';
 import MenuUser from './pages/usuario/menu-user/menu-user';
 import Account from './pages/usuario/minha-conta/account' ;
+import SimpleMap from  './external-components/maps/maps';
 
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -26,7 +27,6 @@ import { faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox,faCheckCircle, 
 faCreditCard,faCheckDouble, faShieldAlt, faPhoneAlt,
 faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey } from '@fortawesome/free-solid-svg-icons';
-import menuUser from './pages/usuario/menu-user/menu-user';
 
  
 library.add(faChevronDown, faUserCircle,  faBell,
@@ -52,6 +52,8 @@ ReactDOM.render(
             <Route path="/modal" exact component={ModalPage} />
             <Route path="/menu-user" exact component={MenuUser} />
             <Route path="/account" exact component={Account} />
+            <Route path="/SimpleMap" exact component={SimpleMap} />
+
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));
