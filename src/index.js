@@ -18,6 +18,7 @@ import ResumoPedido from './pages/finalizar-pedido/resumo-pedido/resumo-pedido';
 import ModalPage from './pages/finalizar-pedido/modal/modal';
 import MenuUser from './pages/usuario/menu-user/menu-user';
 import Account from './pages/usuario/minha-conta/account' ;
+import Password from './pages/usuario/alterar-senha/password' ;
 import SimpleMap from  './external-components/maps/maps';
 
 //Para os icones
@@ -52,6 +53,7 @@ ReactDOM.render(
             <Route path="/modal" exact component={ModalPage} />
             <Route path="/menu-user" exact component={MenuUser} />
             <Route path="/account" exact component={Account} />
+            <Route path="/password" exact component={Password} />
             <Route path="/SimpleMap" exact component={SimpleMap} />
 
         </Switch>

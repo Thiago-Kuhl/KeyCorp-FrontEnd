@@ -88,7 +88,7 @@ class Menu extends React.Component {
                                     </a></span>
 
                                 <span>
-                                    <a href="">
+                                    <a href="/favoritos">
                                         <FontAwesomeIcon styleName="icon" icon="heart" />
                                     </a>
                                 </span>

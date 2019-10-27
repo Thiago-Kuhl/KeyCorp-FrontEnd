@@ -15,23 +15,23 @@ class MenuUser extends React.Component {
                             <h3>Minha Conta</h3>
                             <ul styleName="nav tabs">
                                 <li>
-                                    <a href="">Meus dados
+                                    <a href="/account">Meus dados
                                     <FontAwesomeIcon styleName="icon1" icon="chevron-right" />
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="">Alterar senha
+                                    <a href="/password">Alterar senha
                                     <FontAwesomeIcon styleName="icon2" icon="chevron-right" />
                                     </a> 
                                 </li>
                                 <li>
-                                    <a href="">Histórico de Compras
+                                    <a href="/historico">Histórico de Compras
                                     <FontAwesomeIcon styleName="icon3" icon="chevron-right" />
                                     </a> 
                                 </li>
                                 <li>
-                                    <a href="">Meus favoritos
+                                    <a href="/favoritos">Meus favoritos
                                     <FontAwesomeIcon styleName="icon4" icon="chevron-right" />
                                     </a>
                                 </li>

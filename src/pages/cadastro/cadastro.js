@@ -8,7 +8,6 @@ import Menu from '../menu/menu.js';
 import Footer from '../footer/footer.js';
 import SiteInfo from '../site-info/site-info.js';
 import axios from 'axios';
-import ReactDOM from 'react-dom';
 import { Redirect } from 'react-router';
 
 class Cadastro extends React.Component {
