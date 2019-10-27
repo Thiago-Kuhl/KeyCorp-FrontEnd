@@ -26,7 +26,7 @@ class MenuUser extends React.Component {
                                     </a> 
                                 </li>
                                 <li>
-                                    <a href="">Histórico
+                                    <a href="">Histórico de Compras
                                     <FontAwesomeIcon styleName="icon3" icon="chevron-right" />
                                     </a> 
                                 </li>
