@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './menu.module.css';
+import Usuario from '../menu/usuario/usuario'
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -33,25 +34,25 @@ class Menu extends React.Component {
                                     <ul>
                                         <li>
                                             <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
-                                            <a href="">Categoria</a>
-                                            <ul>
+                                            <a href="">Categorias</a>
+                                            <ul styleName="ul">
                                                 <li><a href="">Exclusivos</a></li>
                                                 <li><a href="">Escola</a></li>
                                                 <li><a href="">Criatividade</a></li>
                                             </ul>
                                         </li>
 
-                                        <li><a href="">Histórico</a></li>
-
                                         <li>
-                                            <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
+                                            {/* <FontAwesomeIcon styleName="icon1" icon="chevron-down" /> */}
                                             <a href="">Ofertas</a>
-                                            <ul>
+                                            {/* <ul>
                                                 <li><a href="">Office</a></li>
                                                 <li><a href="">IDEs</a></li>
                                                 <li><a href="">Design</a></li>
-                                            </ul>
+                                            </ul> */}
                                         </li>
+
+                                        <li><a href="">Saiba mais</a></li>
 
                                         <li><a href="./contato">Contato</a></li>
                                     </ul>
@@ -59,20 +60,7 @@ class Menu extends React.Component {
                             </div>
                         </div>
 
-                        <div className="col col-lg-1" styleName="usuario">
-                            <div styleName="user-options">
-                                <FontAwesomeIcon styleName="user" icon="user-circle" />
-                                <ul>
-                                    <li>
-                                        <a href="">Fulano da Silva</a>
-                                        <ul>
-                                            <li><a href="">Minha conta</a></li>
-                                            <li><a href="./login">Sair</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <Usuario/>
 
                         <div className="col col-lg-2" styleName="atalhos">
                             <div styleName="icons">

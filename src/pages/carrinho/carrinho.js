@@ -55,7 +55,7 @@ class Carrinho extends React.Component {
                                             <p>Ações de comunicação que as empresas podem utilizar por meio da internet</p>
                                         </div>
 
-                                        <input id="qtd" styleName="inpt" placeholder="1" type="number"></input>
+                                        {/* <input id="qtd" styleName="inpt" placeholder="1" type="number" min="1" max=""></input> */}
 
                                     </div>
                                 </div>
