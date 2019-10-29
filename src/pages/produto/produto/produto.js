@@ -17,3 +17,5 @@ class Produto extends React.Component {
         </>
     )}
 }
+
+export default CSSModule(Produto, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })

@@ -17,3 +17,5 @@ class Detalhes extends React.Component {
         </>
     )}
 }
+
+export default CSSModule(Detalhes, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })

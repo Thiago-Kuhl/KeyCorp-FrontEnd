@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 //import das pages
 import Login from './pages/login/login';
 import Home from './pages/home/home';
+import Categoria from './pages/produto/categoria/categoria';
 import Menu from './pages/menu/menu';
 import Carrinho from './pages/carrinho/carrinho';
 import Cadastro from './pages/cadastro/cadastro';
@@ -55,6 +56,7 @@ ReactDOM.render(
             <Route path="/account" exact component={Account} />
             <Route path="/password" exact component={Password} />
             <Route path="/SimpleMap" exact component={SimpleMap} />
+            <Route path="/categoria" exact component={Categoria} />
 
         </Switch>
     </BrowserRouter>
