@@ -12,6 +12,7 @@ import Menu from './pages/menu/menu';
 import Carrinho from './pages/carrinho/carrinho';
 import Cadastro from './pages/cadastro/cadastro';
 import Contato from './pages/contato/contato';
+import Produto from './pages/produto/produto/produto';
 import Pedido from './pages/finalizar-pedido/pedido/pedido';
 import Pagamento1 from './pages/finalizar-pedido/pagamento1/pagamento1';
 import Pagamento2 from './pages/finalizar-pedido/pagamento2/pagamento2';
@@ -58,8 +59,9 @@ ReactDOM.render(
             <Route path="/password" exact component={Password} />
             <Route path="/SimpleMap" exact component={SimpleMap} />
             <Route path="/categoria" exact component={Categoria} />
-            <Route path="/menu1" exact component={Usuario} />
+            <Route path="/produto" exact component={Produto} />
 
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));
+
