@@ -3,6 +3,7 @@ import React from 'react';
 /*eslist-disable 
 import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
+import Cookies from 'universal-cookie';
 import CSSModule from 'react-css-modules';
 import style from './home.module.css';
 import Menu from '../menu/menu.js';
@@ -11,8 +12,23 @@ import SiteInfo from '../site-info/site-info';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
+const cookies = new Cookies();
+
+
 class Home extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: cookies.get('idUsuario')
+        }
+        console.log(cookies.get('idUsuario'));
+    }
+
+
     render() {
+        console.log(this.state);
+
         return (
             <>
                 <Menu />

@@ -1,7 +1,4 @@
 import React from 'react';
-/*eslist-disable 
-import ReactDOM from 'react-dom'; */
-import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './menu-user1.module.css';
 

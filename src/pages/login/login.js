@@ -6,14 +6,20 @@ import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './login.module.css';
 import axios from 'axios';
+import Cookies from 'universal-cookie';
+
+const cookies = new Cookies();
 
 class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            idUsuario: cookies.get('idUsuario')
         }
+
+        console.log(cookies.get('idUsuario'));
     }
 
 
@@ -42,7 +48,7 @@ class Login extends React.Component {
             .then(res => {
                 console.log(res);
                 console.log(res.data.idUsuario);
-
+                console.log(Cookies.get('idUsuario'));
             })
             .catch(error => {
                 return error;
@@ -53,8 +59,6 @@ class Login extends React.Component {
     render() {
         console.log(this.state)
         return (
-
-
             <div styleName="bg">
 
                 <div styleName="Login">

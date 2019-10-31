@@ -1,22 +1,20 @@
 
-import React from 'react';
-import ReactDOM from 'react-dom'; 
+import React, { Component } from 'react';
 import UserUsuario from '../menu-user1/menu-user1'
 import GuestUsuario from '../menu-user2/menu-user2'
 
-
-function Usuario(props) {
-    const isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
-      return <GuestUsuario />;
-    }
-    return <UserUsuario />;
-  }
+class Usuario extends Component {
   
-  ReactDOM.render(
-    // Try changing to isLoggedIn={true}:
-    <Usuario isLoggedIn={false} />,
-    document.getElementById('root')
-  );
+  render(){
 
-  export default Usuario;
+    const isLoggedIn = false;
+
+    if(isLoggedIn){
+        return <UserUsuario/>
+    } 
+      return <GuestUsuario />;
+  }
+}
+
+
+export default Usuario;
