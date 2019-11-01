@@ -48,7 +48,7 @@ class Login extends React.Component {
                 
                 console.log(res.data.idUsuario);
                 //console.log(res.data);
-                cookies.set('idUsuario', res.data.idUsuario, { path: '/' , domain: "http://35.243.241.52"});
+                cookies.set('idUsuario', res.data.idUsuario, { path: '/' });
                 cookies.set('nome', res.data.nome , {path: '/'});
                 console.log("Cookie");
                 
