@@ -8,8 +8,6 @@ import style from './login.module.css';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
 
-const cookies = new Cookies();
-
 
 class Login extends React.Component {
     constructor(props) {
@@ -44,11 +42,13 @@ class Login extends React.Component {
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
         axios.post('http://35.237.84.170/login/', login)
             .then(res =>  {
+                const cookies = new Cookies();
+
                 console.log("aqui");
                 
                 console.log(res.data.idUsuario);
                 //console.log(res.data);
-                cookies.set('idUsuario', res.data.idUsuario, { path: '/' , expires: 60});
+                cookies.set('idUsuario', res.data.idUsuario, { path: '/' , domain: "http://35.243.241.52"});
                 cookies.set('nome', res.data.nome , {path: '/'});
                 console.log("Cookie");
                 
