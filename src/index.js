@@ -17,7 +17,6 @@ import Pedido from './pages/finalizar-pedido/pedido/pedido';
 import Pagamento1 from './pages/finalizar-pedido/pagamento1/pagamento1';
 import Pagamento2 from './pages/finalizar-pedido/pagamento2/pagamento2';
 import ResumoPedido from './pages/finalizar-pedido/resumo-pedido/resumo-pedido';
-import ModalPage from './pages/finalizar-pedido/modal/modal';
 import MenuUser from './pages/usuario/menu-user/menu-user';
 import Account from './pages/usuario/minha-conta/account' ;
 import Password from './pages/usuario/alterar-senha/password' ;
@@ -30,13 +29,13 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox,faCheckCircle, 
 faCreditCard,faCheckDouble, faShieldAlt, faPhoneAlt,
-faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey } from '@fortawesome/free-solid-svg-icons';
+faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey, faFrown } from '@fortawesome/free-solid-svg-icons';
 
  
 library.add(faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox, faCheckCircle,
 faCheckDouble, faCreditCard, faShieldAlt, faPhoneAlt,
-faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey);
+faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey, faFrown);
 
 //Rotas
 
@@ -53,7 +52,6 @@ ReactDOM.render(
             <Route path="/pagamento2" exact component={Pagamento2} />
             <Route path="/contato" exact component={Contato} />
             <Route path="/resumo" exact component={ResumoPedido} />
-            <Route path="/modal" exact component={ModalPage} />
             <Route path="/menu-user" exact component={MenuUser} />
             <Route path="/account" exact component={Account} />
             <Route path="/password" exact component={Password} />

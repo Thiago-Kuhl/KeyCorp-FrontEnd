@@ -1,19 +1,16 @@
 import React from 'react';
-/*eslist-disable 
-import ReactDOM from 'react-dom'; */
-import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './pagamento1.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
-import ModalPage from '../modal/modal'
+// import Modal from '../popup/popup.js'
 import ResumoPedido from '../resumo-pedido/resumo-pedido.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
 class Pagamento1 extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             nome: '',
@@ -22,15 +19,15 @@ class Pagamento1 extends React.Component {
             codigo: ''
         }
     }
-    
+
     render() {
         return (<>
-
-            <Menu />
 
             <ResumoPedido />
 
             <div styleName="finalizar-pedido">
+                <Menu />
+
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="./">Home</a></li>
@@ -78,13 +75,15 @@ class Pagamento1 extends React.Component {
                             </span>
 
                         </div>
-               
+
                         <div styleName="botton">
                             <a href="./processamento">Finalizar &emsp;
                             <FontAwesomeIcon styleName="icon" icon="chevron-right" />
                             </a>
                         </div>
-                      
+
+                        
+
                     </form>
                 </div>
             </div>

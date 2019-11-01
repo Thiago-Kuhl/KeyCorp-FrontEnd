@@ -7,7 +7,7 @@ import GuestCart from '../carrinho/guest-cart/guest-cart'
 class Carrinho extends Component {
   render(){
 
-    const isLoggedIn = true;
+    const isLoggedIn = false;
 
     if(isLoggedIn){
       return < UserCart/> ;

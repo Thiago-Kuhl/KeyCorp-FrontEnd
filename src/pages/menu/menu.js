@@ -20,7 +20,7 @@ class Menu extends React.Component {
                     <div className="row">
 
                         <div className="col col-lg-1" styleName="logo">
-                            <a href="#" styleName="brand-logo">Logo</a>
+                            <a href="./" styleName="brand-logo">Logo</a>
                         </div>
 
                         <div className="col-md-7" styleName="navegacao">

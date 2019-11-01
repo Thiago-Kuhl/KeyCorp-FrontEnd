@@ -12,7 +12,7 @@ import 'react-bootstrap';
 
 class Pagamento2 extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             instituicao: '',
@@ -25,11 +25,12 @@ class Pagamento2 extends React.Component {
     render() {
         return (<>
 
-            <Menu />
-
             <ResumoPedido />
 
             <div styleName="finalizar-pedido">
+                
+                <Menu />
+
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="./">Home</a></li>
@@ -87,7 +88,7 @@ class Pagamento2 extends React.Component {
                             <FontAwesomeIcon styleName="icon" icon="chevron-right" />
                             </a>
                         </div>
-                      
+
 
                     </form>
                 </div>

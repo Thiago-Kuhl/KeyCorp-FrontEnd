@@ -1,7 +1,6 @@
 import React from 'react';
 /*eslist-disable 
 import ReactDOM from 'react-dom'; */
-import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './pedido.module.css';
 import Menu from '../../menu/menu'
@@ -14,14 +13,11 @@ class Pedido extends React.Component {
     render() {
         return (<>
 
-            <Menu />
-
-            
             <ResumoPedido />
-
 
             <div styleName="finalizar-pedido">
 
+            <Menu />
 
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">

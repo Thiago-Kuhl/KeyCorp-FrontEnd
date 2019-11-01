@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './guest-cart.module.css';
 import Menu from '../../menu/menu.js'
 import Footer from '../../footer/footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class GuestCart extends React.Component {
     constructor(props) {
@@ -29,11 +31,28 @@ class GuestCart extends React.Component {
                         </ol>
                     </div>
 
-                <div styleName="page">
-              
-                </div>
+                    <div styleName="page">
 
-                
+                        <div styleName="info">
+                            <FontAwesomeIcon styleName="icon1 " icon="frown" /> <br />
+
+                            <h3>Se carrinho está vazio
+                            <FontAwesomeIcon styleName="icon2 " icon="shopping-cart" />
+                            </h3>
+
+                            <br />
+
+                            <Link to="./">
+                                <button styleName="btn">
+                                    Voltar as compras
+                                </button>
+                            </Link>
+
+                        </div>
+
+                    </div>
+
+
                 </div>
 
                 <Footer />
