@@ -10,16 +10,14 @@ import Cookies from 'universal-cookie';
 
 const cookies = new Cookies();
 
+
 class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             email: '',
             password: '',
-            idUsuario: cookies.get('idUsuario')
         }
-
-        console.log(cookies.get('idUsuario'));
     }
 
 
@@ -45,10 +43,17 @@ class Login extends React.Component {
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
         axios.post('http://35.237.84.170/login/', login)
-            .then(res => {
-                console.log(res);
+            .then(res =>  {
+                console.log("aqui");
+                
                 console.log(res.data.idUsuario);
-                console.log(Cookies.get('idUsuario'));
+                //console.log(res.data);
+                cookies.set('idUsuario', res.data.idUsuario, { path: '/' , expires: 60});
+                cookies.set('nome', res.data.nome , {path: '/'});
+                console.log("Cookie");
+                
+                console.log(cookies.get('idUsuario'));
+                
             })
             .catch(error => {
                 return error;
