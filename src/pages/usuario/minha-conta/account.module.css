@@ -1,14 +1,16 @@
-.signup {
+.account {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.315);
+    height: 600px;
 }
 
-.signup-form {
+.update-form {
     width: 35%;
     height: 504px;
-    top: 300px;
-    left: 75%;
+    top: 350px;
+    left: 40%;
     position: relative;
     padding: 30px 45px 30px 45px;
     border-radius: 5px;
@@ -19,7 +21,7 @@
     transform: translate(-50%, -50%);
 }
 
-.signup-form input {
+.update-form input {
     width: 100%;
     margin-bottom: 20px;
     border: none;
@@ -30,7 +32,7 @@
     color: white;
 }
 
-.btnSignup {
+.btnUpdate {
     position: relative;
     /* background: #949494; */
     border-radius: 3px;
@@ -40,37 +42,4 @@
     width: 150px;
     height: 30px;
     top: 90%;
-}
-
-.signup-form a:hover {
-    color: #FF9900;
-}
-
-h1 {
-    position: absolute;
-    width: 500px;
-    height: 113px;
-    left: 98px;
-    top: 20%;
-    font-style: bold;
-    font-weight: bold;
-    font-size: 3em;
-    line-height: 49px;
-    align-items: center;
-}
-
-h2 {
-    font-weight: 300;
-    font-size: 1.5em;
-    line-height: 2em;
-    letter-spacing: 0.05em;
-    position: absolute;
-    height: 27px;
-    left: 96px;
-    top: 45%;
-}
-
-h2 a {
-    padding-left: 3em;
-    color: #FFFFFF;
 }

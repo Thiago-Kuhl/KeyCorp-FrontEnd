@@ -1,6 +1,6 @@
 .finalizar-pedido {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.315);
-    height: 600px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.123);
+    height: 695px;
 }
 
 .breadcrumb {
@@ -64,12 +64,22 @@
     grid-template-columns: 150px 200px;
 }
 
+.wrapper3 input {
+    width: 150px;
+}
+
 .wrapper3 label {
     margin-bottom: 30px;
 }
 
 .wrapper3 .cdg {
-    width: 150px;
+    width: 130px;
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+.wrapper3 .lb {
+    margin-left: 20px;
 }
 
 .wr {
@@ -86,7 +96,7 @@
 
 .botton {
     float: left;
-    margin: 30px 0 30px 170px;
+    margin: 30px 0 30px 210px;
     display: inline;
 }
 
@@ -121,12 +131,4 @@
 .icone-voltar {
     margin: -30px 0 50px 110px;
     ;
-}
-
-.finalizar-pedido a:hover {
-    color: #FF9900;
-}
-
-.finalizar-pedido a {
-    color: white;
 }

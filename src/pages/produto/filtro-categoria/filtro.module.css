@@ -1,0 +1,36 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    height: 100%;
+    margin: 100px 0 0 50px;
+}
+
+.container ul {
+    list-style-type: none;
+}
+
+.nav-sidebar {
+    width: 200px;
+}
+
+.nav-sidebar h3 {
+    border-bottom: 1px solid white;
+    /* padding-bottom: 3px;
+    padding-left: 10px; */
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.nav-sidebar li {
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-weight: light;
+}
+
+.nav-sidebar li ul li {
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 15px;
+    font-weight: light;
+}

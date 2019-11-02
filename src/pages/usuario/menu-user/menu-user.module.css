@@ -1,0 +1,53 @@
+.dropdown {
+    color: white;
+}
+
+.menu {
+    height: 100%;
+    margin: 80px 0 0 100px;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.container ul {
+    list-style-type: none;
+}
+
+.nav-sidebar li {
+    width: 250px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+.nav-sidebar h3 {
+    width: 250px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.nav-sidebar a {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: light;
+}
+
+.icon1 {
+    margin-left: 140px;
+}
+
+.icon2 {
+    margin-left: 130px;
+}
+
+.icon3 {
+    margin-left: 63px;
+}
+
+.icon4 {
+    margin-left: 119px;
+}

@@ -3,22 +3,34 @@ import React from 'react';
 import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
-import style from './finalizar-pedido1.module.css';
+import style from './pagamento2.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 import ResumoPedido from '../resumo-pedido/resumo-pedido.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
-class Pedido1 extends React.Component {
+class Pagamento2 extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            instituicao: '',
+            nome: '',
+            email: '',
+            curso: ''
+        }
+    }
+
     render() {
         return (<>
 
-            <Menu />
-
-            <ResumoPedido/>
+            <ResumoPedido />
 
             <div styleName="finalizar-pedido">
+                
+                <Menu />
+
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="./">Home</a></li>
@@ -36,40 +48,49 @@ class Pedido1 extends React.Component {
 
                 <div styleName="container">
                     <form styleName="form">
+
+                        <h3><b>Solicitar licença estudantil</b></h3>
+
                         <div styleName="wrapper1 wr">
                             <span>
-                                <label>Nome</label> <br />
-                                <input type="text" placeholder=""></input>
+                                <label>Instituição</label> <br />
+                                <input id="instituicao" type="text"></input>
                             </span>
                         </div>
 
                         <div styleName="wrapper2 wr">
                             <span>
-                                <label>CPF</label> <br />
-                                <input type="text"></input>
+                                <label>Nome completo</label> <br />
+                                <input id="nome" type="text"></input>
                             </span>
                         </div>
 
-                        <div styleName="wrapper3">
+                        <div styleName="wrapper3 wr">
+
                             <span>
-                                <label><b>Como você prefere pagar?</b></label> <br />
-
-                                <p styleName="ipt">
-                                    <label><input type="radio" name="band-rock" value="credito" />&emsp; Cartão de crédito </label> <br />
-                                    <label><input type="radio" name="band-rock" value="credito" />&emsp; Boleto bancário</label> <br />
-                                    <label><input type="radio" name="band-rock" value="credito" />&emsp; Pedir licença do estudante </label>
-                                </p>
-
+                                <label>Email</label> <br />
+                                <input id="email" type="email"></input>
                             </span>
+
+                        </div>
+
+                        <div styleName="wrapper4 wr">
+
+                            <span>
+                                <label>Curso</label> <br />
+                                <input id="curso" type="text"></input>
+                            </span>
+
                         </div>
 
                         <div styleName="botton">
-                            <a href="./processamento">Proxima etapa &emsp;
+                            <a href="./processamento">Finalizar &emsp;
                             <FontAwesomeIcon styleName="icon" icon="chevron-right" />
                             </a>
                         </div>
-                    </form>
 
+
+                    </form>
                 </div>
             </div>
 
@@ -78,4 +99,4 @@ class Pedido1 extends React.Component {
     }
 }
 
-export default CSSModule(Pedido1, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
+export default CSSModule(Pagamento2, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
