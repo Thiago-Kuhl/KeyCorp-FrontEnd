@@ -10,10 +10,9 @@ class Usuario extends Component {
   render(){
     const cookies = new Cookies();
 
-    const isLoggedIn = false;
+    // const isLoggedIn = false;
 
     console.log("Aqui qui uuiau  " + cookies.get('idUsuario'));
-    
 
     if(cookies.get('idUsuario') != undefined){
         return <UserUsuario/>
