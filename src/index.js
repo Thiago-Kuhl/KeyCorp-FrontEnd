@@ -21,7 +21,6 @@ import MenuUser from './pages/usuario/menu-user/menu-user';
 import Account from './pages/usuario/minha-conta/account' ;
 import Password from './pages/usuario/alterar-senha/password' ;
 import SimpleMap from  './external-components/maps/maps';
-import Usuario from  './pages/menu/usuario/usuario';
 
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';

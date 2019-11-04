@@ -42,7 +42,7 @@ class Account extends React.Component {
         };
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.put('http://35.237.84.170/update/user', update)
+        axios.put('http://35.237.84.170/update/user/', update)
             .then(res => {
                 console.log(res)
                 console.log(res.data)
