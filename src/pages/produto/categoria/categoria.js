@@ -15,8 +15,14 @@ class Categoria extends React.Component {
         return (
             <>
                 <Menu />
-                <ProdutoGrid />
-                <Filtro />
+                <div styleName="container" className="row">
+                    <div className="col-12">
+                        <ProdutoGrid />
+                    </div>
+                    <div className="col-12">
+                        <Filtro />
+                    </div>
+                </div>
                 <Footer />
             </>
         )
