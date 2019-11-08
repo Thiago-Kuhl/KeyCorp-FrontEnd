@@ -34,7 +34,7 @@ class Home extends React.Component {
                 <Menu />
 
                 <div styleName="Home">
-                    <div styleName=" bg"></div>
+                    <div styleName=" bg">x</div>
 
                     <section styleName="container">
 
