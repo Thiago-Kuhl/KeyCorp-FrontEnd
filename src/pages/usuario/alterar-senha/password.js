@@ -6,6 +6,8 @@ import Menu from '../../menu/menu.js';
 import MenuUser from '../menu-user/menu-user.js';
 import Footer from '../../footer/footer.js';
 import axios from 'axios';
+import Cookies from 'universal-cookie';
+
 import { Redirect } from 'react-router';
 
 
@@ -29,24 +31,27 @@ class Password extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-
+        const cookies = new Cookies();
         const updatepw = {
-            current: this.state.current,
-            new: this.state.new,
-            new_repeat: this.state.new_repeat
+            idUsuario: cookies.get('idUsuario'),
+            basePassword: this.state.current,
+            newPassword: this.state.new,
         };
 
         if (updatepw.new === updatepw.new_repeat) {
             axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-            axios.post('http://35.237.84.170/*INSERTUPDATELINK*/', updatepw.new)
+            axios.put('http://35.237.84.170/update/user/password/', updatepw)
                 .then(res => {
                     console.log(res)
                     console.log(res.data)
                     return alert('Senha atualizada com sucesso!')
                 })
                 .catch(error => {
-                    if (error.response.status === 500 || error.response.status === 400) {
+                    if (error.response.status === 500 ) {
                         alert('Dados inválidos!')
+                    }
+                    else if (error.response.status === 404) {
+                        alert('Usuário não encontrado!')
                     }
                     return error;
                 })

@@ -20,6 +20,7 @@ import ResumoPedido from './pages/finalizar-pedido/resumo-pedido/resumo-pedido';
 import MenuUser from './pages/usuario/menu-user/menu-user';
 import Account from './pages/usuario/minha-conta/account' ;
 import Password from './pages/usuario/alterar-senha/password' ;
+import Favorites from './pages/usuario/favorites/favorites' ;
 import SimpleMap from  './external-components/maps/maps';
 
 //Para os icones
@@ -56,6 +57,7 @@ ReactDOM.render(
             <Route path="/menu-user" exact component={MenuUser} />
             <Route path="/account" exact component={Account} />
             <Route path="/password" exact component={Password} />
+            <Route path="/favorites" exact component={Favorites} />
             <Route path="/SimpleMap" exact component={SimpleMap} />
             <Route path="/categoria" exact component={Categoria} />
             <Route path="/produto" exact component={Produto} />
