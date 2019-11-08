@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './menu.module.css';
 import Usuario from '../menu/usuario/usuario'
+import Logo from '../../external-components/logo/logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Menu extends React.Component {
@@ -15,10 +16,7 @@ class Menu extends React.Component {
                 <div styleName="container">
                     <div className="row">
 
-                        <div className="col col-lg-1" styleName="logo">
-                            <a href="./" styleName="brand-logo">
-                                KC</a>
-                        </div>
+                    {/* <Logo/> */}
 
                         <div className="col-md-7" styleName="navegacao">
                             <div className="row" styleName="barra">

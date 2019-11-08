@@ -22,6 +22,7 @@ import Account from './pages/usuario/minha-conta/account' ;
 import Password from './pages/usuario/alterar-senha/password' ;
 import Favorites from './pages/usuario/favorites/favorites' ;
 import SimpleMap from  './external-components/maps/maps';
+import Logo from  './external-components/logo/logo';
 
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -61,6 +62,7 @@ ReactDOM.render(
             <Route path="/SimpleMap" exact component={SimpleMap} />
             <Route path="/categoria" exact component={Categoria} />
             <Route path="/produto" exact component={Produto} />
+            <Route path="/logo" exact component={Logo} />
 
         </Switch>
     </BrowserRouter>

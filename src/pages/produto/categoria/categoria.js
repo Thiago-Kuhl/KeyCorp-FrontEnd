@@ -17,7 +17,7 @@ class Categoria extends React.Component {
                 <Menu />
                 <div styleName="container" className="row">
                     <div className="col-12">
-                        <ProdutoGrid />
+                        {/* <ProdutoGrid /> */}
                     </div>
                     <div className="col-12">
                         <Filtro />
