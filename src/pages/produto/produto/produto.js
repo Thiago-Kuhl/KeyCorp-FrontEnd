@@ -5,23 +5,27 @@ import 'react-bootstrap';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios';
-import { Redirect } from 'react-router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 class Produto extends React.Component {
     render() {
         return (
-            <div className="col-3">
-                <div styleName="bloco">
-                    <div styleName="img img-prod1">
-                    </div>
-                    <span>
-                        <h3>Office 365</h3>
-                    </span>
-                    <div styleName="desc">
-                        <h3>Aplicativos para escritório</h3>
-                    </div>
-                </div>
+            <div>
+                <Card style={{ width: '15rem' }} styleName="produto">
+                    <Card.Img variant="top" styleName="img" src="https://image.freepik.com/free-vector/pack-colorful-square-emoticons_23-2147589525.jpg" />
+                    <Card.Body>
+                        <Card.Title styleName="text title">E-Book Marketing Digital</Card.Title>
+                        <div className="row">
+                            <div className="col-6 pt-2">
+                                <Card.Text styleName="text">R$123.90</Card.Text>
+                            </div>
+                            <div className="col-6">
+                                <Button styleName="btn text" href="#"><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                            </div>
+                        </div>
+                    </Card.Body>
+                </Card>
             </div>
         )
     }
