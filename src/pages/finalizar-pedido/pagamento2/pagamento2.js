@@ -6,7 +6,8 @@ import CSSModule from 'react-css-modules';
 import style from './pagamento2.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
-import ResumoPedido from '../resumo-pedido/resumo-pedido.js'
+import ResumoPedido1 from '../../../components/product-cart/produto1/resumo-pedido'
+import ResumoPedido2 from '../../../components/product-cart/produto2/resumo-pedido'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
@@ -25,7 +26,7 @@ class Pagamento2 extends React.Component {
     render() {
         return (<>
 
-            <ResumoPedido />
+            <ResumoPedido2 />
 
             <div styleName="finalizar-pedido">
                 

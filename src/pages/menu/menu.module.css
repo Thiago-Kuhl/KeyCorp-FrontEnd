@@ -10,13 +10,22 @@
     width: 100px;
 }
 
+.titulo {
+    color: #FFFFFF;
+    margin: 25px 0 0 0px;
+}
+
+.titulo p {
+    margin-left: 100px;
+}
+
 .container {
     width: 100%;
     margin: 0;
 }
 
 .navegacao {
-    margin: 0 25px 0 25px;
+    margin: 0 25px 0 0px;
 }
 
 .barra input {

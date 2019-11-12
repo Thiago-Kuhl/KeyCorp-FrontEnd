@@ -1,9 +1,7 @@
 import React from 'react';
-/*eslist-disable 
-import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
-import style from './resumo-pedido.module.css';
+import style from './produto1.module.css';
 import 'react-bootstrap';
 
 class ResumoPedido extends React.Component {

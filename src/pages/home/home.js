@@ -10,12 +10,14 @@ import Footer from '../footer/footer.js';
 import SiteInfo from '../site-info/site-info';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
+import $ from "jquery";
+import { func } from 'prop-types';
 
 const cookies = new Cookies();
 
-
 class Home extends React.Component {
 
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -28,6 +30,7 @@ class Home extends React.Component {
     render() {
         console.log(this.state);
 
+
         return (
             <>
                 <Menu />
@@ -39,9 +42,10 @@ class Home extends React.Component {
 
                         <div className="row">
                             <div className="col-3">
-                                <div onclick="click" styleName="bloco">
+                                <Link to="./detalhes">
+                                <div onclick="click" styleName="bloco" id="1">
                                     <a href="">
-                                        <span>
+                                        <span >
                                             <h3>Office 365</h3>
                                         </span>
 
@@ -54,38 +58,41 @@ class Home extends React.Component {
                                         </div>
                                     </a>
                                 </div>
+                                </Link>
                             </div>
                             <div className="col-3">
-                                <div styleName="bloco">
-                                    <a styleName="bl" href="">
-                                        <h3>VS Code</h3>
-                                        <div styleName="img img-prod2"></div>
-                                        <div styleName="desc">
-                                            <h3>Editor de código-fonte</h3>
-                                        </div>
-                                    </a>
-                                </div>
+                                <Link to="./detalhes">
+                                    <div styleName="bloco" id="2">
+                                        <a styleName="bl" href="">
+                                            <h3>VS Code</h3>
+                                            <div styleName="img img-prod2"></div>
+                                            <div styleName="desc">
+                                                <h3>Editor de código-fonte</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </Link>
                             </div>
                             <div className="col-3">
-                                <div styleName="bloco">
-                                    <a href="">
+                                <div styleName="bloco" id="3">
+                                <Link to="./detalhes">
                                         <h3>PhotoShop</h3>
                                         <div styleName="img img-prod3"></div>
                                         <div styleName="desc">
                                             <h3>Editor de imagens bidimensionais</h3>
                                         </div>
-                                    </a>
+                                </Link>
                                 </div>
                             </div>
                             <div className="col-3">
-                                <div styleName="bloco">
-                                    <a href="">
+                                <div styleName="bloco" id="4">
+                                    <Link to="./detalhes">
                                         <h3>Oracle Database</h3>
                                         <div styleName="img img-prod4"></div>
                                         <div styleName="desc">
                                             <h3>Oracle database 18c</h3>
                                         </div>
-                                    </a>
+                                     </Link>
                                 </div>
                             </div>
                         </div>
@@ -123,79 +130,79 @@ class Home extends React.Component {
                                 <div styleName="galeria1">
 
                                     <div styleName="g">
-                                        <a href="">
+                                        <Link to="./detalhes">
                                             <div styleName="image foto1"> </div>
                                             <div styleName="categ">
                                                 <h3>Escritório</h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
 
 
                                     <div styleName="g" >
-                                        <a href="">
+                                        <Link to="./detalhes">
                                             <div styleName="image foto2"></div>
                                             <div styleName="categ">
                                                 <h3>Designer</h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
 
                                     <div styleName="g">
-                                        <a href="">
+                                         <Link to="./detalhes">
                                             <div styleName="image foto3"></div>
                                             <div styleName="categ">
                                                 <h3>Modelagens</h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
 
                                     <div styleName="g">
-                                        <a href="">
+                                        <Link to="./detalhes">
                                             <div styleName="image foto4"></div>
                                             <div styleName="categ">
                                                 <h3>Fluxogramas</h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
 
                                 <div styleName="galeria2">
 
                                     <div styleName="g">
-                                        <a href="">
+                                         <Link to="./detalhes">
                                             <div styleName="image foto1"> </div>
                                             <div styleName="categ">
                                                 <h3>Editores</h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
 
                                     <div styleName="g" >
-                                        <a href="">
+                                        <Link to="./detalhes">
                                             <div styleName="image foto2"></div>
                                             <div styleName="categ">
                                                 <h3>IDEs</h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
 
                                     <div styleName="g">
-                                        <a href="">
+                                        <Link to="./detalhes">
                                             <div styleName="image foto3"></div>
                                             <div styleName="categ">
                                                 <h3>Banco de dados</h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
 
                                     <div styleName="g">
-                                        <a href="">
+                                          <Link to="./detalhes">
                                             <div styleName="image foto4"></div>
                                             <div styleName="categ">
                                                 <h3>Outros</h3>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

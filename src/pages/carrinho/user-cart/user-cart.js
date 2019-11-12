@@ -3,6 +3,10 @@ import CSSModule from 'react-css-modules';
 import style from './user-cart.module.css';
 import Menu from '../../menu/menu.js'
 import Footer from '../../footer/footer'
+import Produto1 from  '../../../components/product-cart/produto1/produto1'
+import ResumoPedido1 from   '../../../components/product-cart/produto1/resumo-produto'
+import Produto2 from  '../../../components/product-cart/produto2/produto2'
+import ResumoPedido2 from   '../../../components/product-cart/produto2/resumo-produto'
 
 class UserCart extends React.Component {
     constructor(props) {
@@ -12,7 +16,6 @@ class UserCart extends React.Component {
             qtd: ''
         }
     }
-
 
     render() {
         return (
@@ -38,20 +41,7 @@ class UserCart extends React.Component {
                                 </div>
 
                                 <div styleName="car">
-                                    <div styleName="prod">
-
-                                        <div styleName="img"></div>
-
-                                        <div styleName="info-car">
-                                            <a href="">
-                                                <h3>Ebook Marketing Digital</h3>
-                                            </a>
-                                            <p>Ações de comunicação que as empresas podem utilizar por meio da internet</p>
-                                        </div>
-
-                                        {/* <input id="qtd" styleName="inpt" placeholder="1" type="number" min="1" max=""></input> */}
-
-                                    </div>
+                                   <Produto2/>
                                 </div>
 
                             </div>
@@ -69,9 +59,7 @@ class UserCart extends React.Component {
                                     </div>
                                 </div>
 
-                                <div styleName="total">
-                                    <p><b>Total: </b> R$199,99</p>
-                                </div>
+                               <ResumoPedido2/>
 
                                 <div styleName="btnFinalizar">
                                     <a href="./pedido">

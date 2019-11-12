@@ -18,6 +18,13 @@ class Menu extends React.Component {
 
                     {/* <Logo/> */}
 
+
+                    <div styleName="titulo">
+                        <Link to="./">
+                        <p>KEY CORP</p>
+                        </Link>
+                    </div>
+
                         <div className="col-md-7" styleName="navegacao">
                             <div className="row" styleName="barra">
                                 <input placeholder="Pesquise aqui..." type="seach" />
