@@ -8,6 +8,7 @@ import ResumoPedido1 from   '../../../components/product-cart/produto1/resumo-pr
 import Produto2 from  '../../../components/product-cart/produto2/produto2'
 import ResumoPedido2 from   '../../../components/product-cart/produto2/resumo-produto'
 
+var produto = 0; //Aqui vai o id do produto da tela de produto
 class UserCart extends React.Component {
     constructor(props) {
         super(props);
@@ -18,6 +19,9 @@ class UserCart extends React.Component {
     }
 
     render() {
+
+        //Aqui vai ser feita a lógica de renderização conforme o produto escolhido, tentar com switch case
+
         return (
 
             <>
