@@ -5,7 +5,6 @@ import 'react-bootstrap';
 import Menu from '../../menu/menu.js';
 import MenuUser from '../menu-user/menu-user.js';
 import Footer from '../../footer/footer.js';
-<<<<<<< HEAD
 import Cookies from 'universal-cookie';
 import axios from 'axios';
 
@@ -61,20 +60,10 @@ class Account extends React.Component {
 
             )
     }
-=======
-
-
-class Account extends React.Component {
->>>>>>> master
     render() {
         return (
             <>
                 <Menu />
-<<<<<<< HEAD
-
-=======
-                
->>>>>>> master
                 <div styleName="account">
                     <MenuUser />
                     <div styleName="update-form">

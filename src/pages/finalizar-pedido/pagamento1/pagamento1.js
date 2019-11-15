@@ -5,6 +5,7 @@ import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 // import Modal from '../popup/popup.js'
 import Resumo from '../../finalizar-pedido/resumo/resumo-pedido'
+
 import ResumoPedido1 from '../../../components/product-cart/produto1/resumo-pedido'
 import ResumoPedido2 from '../../../components/product-cart/produto2/resumo-pedido'
 import ResumoPedido from '../resumo-pedido/resumo-pedido.js'
@@ -27,6 +28,7 @@ class Pagamento1 extends React.Component {
         return (<>
 
             <Resumo />
+
             <ResumoPedido2 />
 
             <ResumoPedido />

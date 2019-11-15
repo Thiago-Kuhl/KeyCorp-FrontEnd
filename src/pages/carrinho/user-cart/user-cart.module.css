@@ -61,15 +61,12 @@
     margin: 30px 0 0 0;
 }
 
-<<<<<<< HEAD
-=======
 .total {
     font-size: 20px;
     float: left;
     margin: 60px 0 0 0;
 }
 
->>>>>>> master
 .btnFinalizar {
     width: 100%;
     font-size: 20px;
@@ -86,8 +83,27 @@
     color: #231F20;
 }
 
-<<<<<<< HEAD
-=======
+.inpt {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 515px;
+    text-align: center;
+    border-radius: 2px;
+    border: none;
+    top: 10px;
+}
+
+.img {
+    position: absolute;
+    width: 125px;
+    height: 141px;
+    left: 5px;
+    top: 5px;
+    background: url(../imagens/intellij.svg.png) no-repeat;
+    background-size: 130px 140px;
+}
+
 .prod {
     top: 100px;
     position: absolute;
@@ -101,16 +117,6 @@
     color: black;
 }
 
-.img {
-    position: absolute;
-    width: 125px;
-    height: 141px;
-    left: 5px;
-    top: 5px;
-    background: url(../imagens/ebook-capa.png) no-repeat;
-    background-size: 130px 140px;
-}
-
 .info-car {
     position: absolute;
     width: 343px;
@@ -119,7 +125,6 @@
     top: 10px;
 }
 
->>>>>>> master
 .inpt {
     position: absolute;
     width: 50px;
