@@ -16,12 +16,23 @@ import Produto from './pages/produto/produto/produto';
 import Pedido from './pages/finalizar-pedido/pedido/pedido';
 import Pagamento1 from './pages/finalizar-pedido/pagamento1/pagamento1';
 import Pagamento2 from './pages/finalizar-pedido/pagamento2/pagamento2';
+<<<<<<< HEAD
+import ResumoPedido2 from './components/product-cart/produto1/resumo-pedido';
+import MenuUser from './pages/usuario/menu-user/menu-user';
+import Account from './pages/usuario/minha-conta/account' ;
+import Password from './pages/usuario/alterar-senha/password' ;
+import Favorites from './pages/usuario/favorites/favorites' ;
+import SimpleMap from  './external-components/maps/maps';
+import Logo from  './external-components/logo/logo';
+import UserCart from  './pages/carrinho/user-cart/user-cart';
+=======
 import ResumoPedido from './pages/finalizar-pedido/resumo-pedido/resumo-pedido';
 import MenuUser from './pages/usuario/menu-user/menu-user';
 import Account from './pages/usuario/minha-conta/account' ;
 import Password from './pages/usuario/alterar-senha/password' ;
 import SimpleMap from  './external-components/maps/maps';
 import Usuario from  './pages/menu/usuario/usuario';
+>>>>>>> master
 
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -29,13 +40,23 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox,faCheckCircle, 
 faCreditCard,faCheckDouble, faShieldAlt, faPhoneAlt,
+<<<<<<< HEAD
+faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey,
+faFrown, faRobot} from '@fortawesome/free-solid-svg-icons';
+=======
 faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey, faFrown } from '@fortawesome/free-solid-svg-icons';
+>>>>>>> master
 
  
 library.add(faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox, faCheckCircle,
 faCheckDouble, faCreditCard, faShieldAlt, faPhoneAlt,
+<<<<<<< HEAD
+faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey,
+faFrown, faRobot );
+=======
 faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey, faFrown);
+>>>>>>> master
 
 //Rotas
 
@@ -51,6 +72,18 @@ ReactDOM.render(
             <Route path="/pagamento1" exact component={Pagamento1} />
             <Route path="/pagamento2" exact component={Pagamento2} />
             <Route path="/contato" exact component={Contato} />
+<<<<<<< HEAD
+            <Route path="/resumo" exact component={ResumoPedido2} />
+            <Route path="/menu-user" exact component={MenuUser} />
+            <Route path="/account" exact component={Account} />
+            <Route path="/password" exact component={Password} />
+            <Route path="/favorites" exact component={Favorites} />
+            <Route path="/SimpleMap" exact component={SimpleMap} />
+            <Route path="/categoria" exact component={Categoria} />
+            <Route path="/produto" exact component={Produto} />
+            <Route path="/logo" exact component={Logo} />
+            <Route path="/cart" exact component={UserCart} />
+=======
             <Route path="/resumo" exact component={ResumoPedido} />
             <Route path="/menu-user" exact component={MenuUser} />
             <Route path="/account" exact component={Account} />
@@ -58,6 +91,7 @@ ReactDOM.render(
             <Route path="/SimpleMap" exact component={SimpleMap} />
             <Route path="/categoria" exact component={Categoria} />
             <Route path="/produto" exact component={Produto} />
+>>>>>>> master
 
         </Switch>
     </BrowserRouter>

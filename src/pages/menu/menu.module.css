@@ -5,29 +5,27 @@
     display: grid;
 }
 
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.titulo {
+    color: #FFFFFF;
+    margin: 25px 0 0 0px;
+}
+
+.titulo p {
+    margin-left: 100px;
+}
+
 .container {
     width: 100%;
     margin: 0;
 }
 
-.logo {
-    left: 80px;
-}
-
-.brand-logo {
-    /* position: relative; */
-    height: 40px;
-    padding: 5px 25px 5px 25px;
-    background: #FFFFFF;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    float: left;
-    margin-top: 15px;
-    left: 200px;
-}
-
 .navegacao {
-    margin: 0 25px 0 25px;
+    margin: 0 25px 0 0px;
 }
 
 .barra input {
@@ -100,7 +98,10 @@
 }
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 /* atalhos */
 
 .atalhos .icons span {

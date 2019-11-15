@@ -61,12 +61,15 @@
     margin: 30px 0 0 0;
 }
 
+<<<<<<< HEAD
+=======
 .total {
     font-size: 20px;
     float: left;
     margin: 60px 0 0 0;
 }
 
+>>>>>>> master
 .btnFinalizar {
     width: 100%;
     font-size: 20px;
@@ -83,6 +86,8 @@
     color: #231F20;
 }
 
+<<<<<<< HEAD
+=======
 .prod {
     top: 100px;
     position: absolute;
@@ -114,6 +119,7 @@
     top: 10px;
 }
 
+>>>>>>> master
 .inpt {
     position: absolute;
     width: 50px;

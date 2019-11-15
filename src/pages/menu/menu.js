@@ -6,11 +6,13 @@ import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './menu.module.css';
 import Usuario from '../menu/usuario/usuario'
+<<<<<<< HEAD
+import Logo from '../../external-components/logo/logo'
+=======
 
 
+>>>>>>> master
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
 
 class Menu extends React.Component {
     render() {
@@ -19,9 +21,20 @@ class Menu extends React.Component {
                 <div styleName="container">
                     <div className="row">
 
+<<<<<<< HEAD
+                    {/* <Logo/> */}
+
+
+                    <div styleName="titulo">
+                        <Link to="./">
+                        <p>KEY CORP</p>
+                        </Link>
+                    </div>
+=======
                         <div className="col col-lg-1" styleName="logo">
                             <a href="./" styleName="brand-logo">Logo</a>
                         </div>
+>>>>>>> master
 
                         <div className="col-md-7" styleName="navegacao">
                             <div className="row" styleName="barra">
@@ -60,25 +73,40 @@ class Menu extends React.Component {
                             </div>
                         </div>
 
+<<<<<<< HEAD
+                        <Usuario />
+=======
                         <Usuario/>
+>>>>>>> master
 
                         <div className="col col-lg-2" styleName="atalhos">
                             <div styleName="icons">
                                 <span>
-                                    <a href="">
-                                        <FontAwesomeIcon styleName="icon" icon="bell" />
-                                    </a>
+                                    <div>
+                                        <Link to="./historico">
+                                            <FontAwesomeIcon styleName="icon" icon="bell" />
+                                        </Link>
+                                    </div>
                                 </span>
 
                                 <span>
+<<<<<<< HEAD
+                                    <Link to="./carrinho">
+=======
                                     <a href="./carrinho">
+>>>>>>> master
                                         <FontAwesomeIcon styleName="icon" icon="shopping-cart" />
-                                    </a></span>
+                                    </Link>
+                                </span>
 
                                 <span>
+<<<<<<< HEAD
+                                    <Link to="/favoritos">
+=======
                                     <a href="/favoritos">
+>>>>>>> master
                                         <FontAwesomeIcon styleName="icon" icon="heart" />
-                                    </a>
+                                    </Link>
                                 </span>
                             </div>
                         </div>

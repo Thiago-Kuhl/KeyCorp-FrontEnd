@@ -18,7 +18,11 @@ class UserUsuario extends React.Component{
                 <li>
                     <p>{cookies.get('nome')}</p>
                     <ul>
+<<<<<<< HEAD
+                        <li><a href="./account">Minha conta</a></li>
+=======
                         <li><a href="">Minha conta</a></li>
+>>>>>>> master
                         <li><a href="./login">Sair</a></li>
                     </ul>
                 </li>

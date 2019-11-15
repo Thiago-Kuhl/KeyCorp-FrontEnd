@@ -5,14 +5,76 @@ import 'react-bootstrap';
 import Menu from '../../menu/menu.js';
 import MenuUser from '../menu-user/menu-user.js';
 import Footer from '../../footer/footer.js';
+<<<<<<< HEAD
+import Cookies from 'universal-cookie';
+import axios from 'axios';
 
 
 class Account extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            idUsuario: '',
+            nome: '',
+            dtNasc: '',
+            cpf: '',
+            email: ''
+        }
+    }
+
+
+    handleChange = (event) => {
+        console.log("id", event.target.name)
+        const state = Object.assign({}, this.state);
+        let field = event.target.name;
+        state[field] = event.target.value
+        this.setState(state)
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        const cookies = new Cookies();
+        const update = {
+            idUsuario: cookies.get("idUsuario"),
+            nome: this.state.nome,
+            dataNascimento: this.state.dtNasc,
+            cpf: this.state.cpf,
+            email: this.state.email
+        };
+
+        axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+        axios.put('http://35.237.84.170/update/user/', update)
+            .then(res => {
+                console.log(res)
+                console.log(res.data)
+                return alert('Dados atualizados com sucesso!')
+            })
+            .catch(error => {
+                if (error.response.status === 409) {
+                    alert('E-mail já cadastrado!');
+                }
+                if (error.response.status === 500 || error.response.status === 400) {
+                    alert('Dados inválidos!');
+                }
+                return error;
+            }
+
+            )
+    }
+=======
+
+
+class Account extends React.Component {
+>>>>>>> master
     render() {
         return (
             <>
                 <Menu />
+<<<<<<< HEAD
+
+=======
                 
+>>>>>>> master
                 <div styleName="account">
                     <MenuUser />
                     <div styleName="update-form">
