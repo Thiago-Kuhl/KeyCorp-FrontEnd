@@ -7,7 +7,6 @@ import MenuUser from '../menu-user/menu-user.js';
 import ProdutoGrid from '../../produto/produto-grid/produto-grid.js';
 import Footer from '../../footer/footer.js';
 import axios from 'axios';
-import { Redirect } from 'react-router';
 
 
 class Favorites extends React.Component {
@@ -17,10 +16,10 @@ class Favorites extends React.Component {
                 <Menu />
                 <div styleName="container" className="row">
                     <div className="col-12">
-                        {/* <ProdutoGrid /> */}
+                        <MenuUser />
                     </div>
                     <div className="col-12">
-                        <MenuUser />
+                        <ProdutoGrid />
                     </div>
                 </div>
                 <Footer />
