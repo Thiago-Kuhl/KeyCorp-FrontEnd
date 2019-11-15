@@ -26,8 +26,6 @@ class Pagamento2 extends React.Component {
         return (<>
 
             <Resumo />
-            <ResumoPedido2 />
-            <ResumoPedido />
 
             <div styleName="finalizar-pedido">
                 

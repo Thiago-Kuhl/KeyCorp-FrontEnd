@@ -16,11 +16,7 @@ class GuestUsuario extends React.Component{
                     <p>Fulano da Silva</p>
                     <ul>
                         <li><a href="./login">Login</a></li>
-<<<<<<< HEAD
                         <li><a href="./cadastro">Cadastre-se</a></li>
-=======
-                        <li><a href="">Cadastre-se</a></li>
->>>>>>> master
                     </ul>
                 </li>
             </ul>
