@@ -7,6 +7,8 @@ import style from './pagamento2.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 import Resumo from '../../finalizar-pedido/resumo/resumo-pedido'
+import ResumoPedido2 from '../../finalizar-pedido/resumo/resumo-pedido'
+import ResumoPedido from '../../finalizar-pedido/resumo/resumo-pedido'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 

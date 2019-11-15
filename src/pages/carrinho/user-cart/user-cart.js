@@ -26,7 +26,6 @@ class UserCart extends React.Component {
 
         //Aqui vai ser feita a lógica de renderização conforme o produto escolhido, tentar com switch case
 
-    render() {
         return (
 
             <>

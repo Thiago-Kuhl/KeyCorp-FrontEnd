@@ -27,9 +27,6 @@ import Logo from  './external-components/logo/logo';
 import UserCart from  './pages/carrinho/user-cart/user-cart';
 
 import ResumoPedido from './pages/finalizar-pedido/resumo-pedido/resumo-pedido';
-import MenuUser from './pages/usuario/menu-user/menu-user';
-import Account from './pages/usuario/minha-conta/account' ;
-import Password from './pages/usuario/alterar-senha/password' ;
 import SimpleMap from  './external-components/maps/maps';
 import Usuario from  './pages/menu/usuario/usuario';
 import NotFoundSearch from './components/search/search'
@@ -41,16 +38,13 @@ import { faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox,faCheckCircle, 
 faCreditCard,faCheckDouble, faShieldAlt, faPhoneAlt,
 faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey,
-faFrown, faRobot} from '@fortawesome/free-solid-svg-icons';
+faFrown, faRobot } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faChevronDown, faUserCircle,  faBell,
     faHeart, faShoppingCart, faInbox, faCheckCircle,
     faCheckDouble, faCreditCard, faShieldAlt, faPhoneAlt,
     faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey,
-    faFrown, faRobot );
-
-faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey,
-faFrown, faRobot} from '@fortawesome/free-solid-svg-icons';
+    faFrown, faRobot )
 //Rotas
 
 ReactDOM.render(
