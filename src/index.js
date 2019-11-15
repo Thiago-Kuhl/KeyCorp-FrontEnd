@@ -16,7 +16,6 @@ import Produto from './pages/produto/produto/produto';
 import Pedido from './pages/finalizar-pedido/pedido/pedido';
 import Pagamento1 from './pages/finalizar-pedido/pagamento1/pagamento1';
 import Pagamento2 from './pages/finalizar-pedido/pagamento2/pagamento2';
-import ResumoPedido2 from './components/product-cart/produto1/resumo-pedido';
 import MenuUser from './pages/usuario/menu-user/menu-user';
 import Account from './pages/usuario/minha-conta/account' ;
 import Password from './pages/usuario/alterar-senha/password' ;
@@ -55,7 +54,6 @@ ReactDOM.render(
             <Route path="/pagamento1" exact component={Pagamento1} />
             <Route path="/pagamento2" exact component={Pagamento2} />
             <Route path="/contato" exact component={Contato} />
-            <Route path="/resumo" exact component={ResumoPedido2} />
             <Route path="/menu-user" exact component={MenuUser} />
             <Route path="/account" exact component={Account} />
             <Route path="/password" exact component={Password} />

@@ -4,8 +4,7 @@ import style from './pagamento1.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 // import Modal from '../popup/popup.js'
-import ResumoPedido1 from '../../../components/product-cart/produto1/resumo-pedido'
-import ResumoPedido2 from '../../../components/product-cart/produto2/resumo-pedido'
+import Resumo from '../../finalizar-pedido/resumo/resumo-pedido'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
@@ -24,7 +23,7 @@ class Pagamento1 extends React.Component {
     render() {
         return (<>
 
-            <ResumoPedido2 />
+            <Resumo />
 
             <div styleName="finalizar-pedido">
                 <Menu />
@@ -82,9 +81,6 @@ class Pagamento1 extends React.Component {
                             <FontAwesomeIcon styleName="icon" icon="chevron-right" />
                             </a>
                         </div>
-
-                        
-
                     </form>
                 </div>
             </div>
