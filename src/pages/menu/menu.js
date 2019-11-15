@@ -66,23 +66,24 @@ class Menu extends React.Component {
 
                         <div className="col col-lg-2" styleName="atalhos">
                             <div styleName="icons">
-                                <span>
+                                {/* <span>
                                     <div>
                                         <Link to="./historico">
                                             <FontAwesomeIcon styleName="icon" icon="bell" />
                                         </Link>
                                     </div>
-                                </span>
+                                </span> */}
 
-                                <span>
+                                {/* <span>
                                     <Link to="./carrinho">
                                         <FontAwesomeIcon styleName="icon" icon="shopping-cart" />
                                     </Link>
-                                </span>
+                                </span> */}
 
-                                <span>
+                                <span styleName="text" >
                                     <Link to="/favoritos">
-                                        <FontAwesomeIcon styleName="icon" icon="heart" />
+                                        <FontAwesomeIcon styleName="icon" icon="heart" /> 
+                                        Favoritos
                                     </Link>
                                 </span>
                             </div>

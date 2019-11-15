@@ -66,8 +66,6 @@
     display: block;
 }
 
-
-
 .produto .prod-options li ul {
     position: absolute;
     top: 30px;
@@ -98,20 +96,18 @@
 }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 /* atalhos */
 
 .atalhos .icons span {
     float: left;
-    margin: 25px;
+    margin: 25px 0 0 0;
 }
 
 .atalhos .icons .icon {
     float: left;
-    font-size: 14px;
+    margin-top: 2px;
+    margin-left: 30px;
+    font-size: 20px;
     color: #FF9900;
-    padding: 0 0px 0 0;
+    padding: 0 1px 0 0;
 }
