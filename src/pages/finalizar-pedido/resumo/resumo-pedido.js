@@ -1,12 +1,10 @@
 import React from 'react';
-/*eslist-disable 
-import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
-import style from './resumo-pedido.module.css';
+import style from './resumo.module.css';
 import 'react-bootstrap';
 
-class ResumoPedido extends React.Component {
+class Resumo extends React.Component {
     render() {
         return (
             <div styleName="resumo-pedido">
@@ -17,8 +15,8 @@ class ResumoPedido extends React.Component {
 
                     <div styleName="info">
                         <span styleName="titulo">
-                            <h3>Ebook</h3>
-                            <h3>Marketing Digital</h3>
+                            <h3>IntelliJ IDEA</h3>
+                            <h3>Ambiente de desenvolvimento</h3>
                         </span>
                         <span styleName="subTitulo">
                             <h3>Quantidade 1 </h3>
@@ -35,7 +33,7 @@ class ResumoPedido extends React.Component {
                         </span>
 
                         <span styleName="span">
-                            <h3>R$199,99</h3>
+                            <h3>R$400,99</h3>
                             <h3>0,00%</h3>
                         </span>
                     </div>
@@ -46,7 +44,7 @@ class ResumoPedido extends React.Component {
                         </span>
 
                         <span>
-                            <h3 styleName="h3">R$199,99</h3>
+                            <h3 styleName="h3">R$400,99</h3>
                         </span>
                     </div>
                 </div>
@@ -56,4 +54,4 @@ class ResumoPedido extends React.Component {
 }
 
 
-export default CSSModule(ResumoPedido, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
+export default CSSModule(Resumo, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })

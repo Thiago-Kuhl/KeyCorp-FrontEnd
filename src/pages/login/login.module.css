@@ -3,10 +3,17 @@
         background-size: cover;
         background: linear-gradient(229deg, #ff9900, #211230);
         background-size: 400% 400%;
+<<<<<<< HEAD
         -webkit-animation: AnimationName 17s ease infinite;
         -moz-animation: AnimationName 17s ease infinite;
         -o-animation: AnimationName 17s ease infinite;
         animation: AnimationName 17s ease infinite;
+=======
+        -webkit-animation: AnimationName 0s ease infinite;
+        -moz-animation: AnimationName 0s ease infinite;
+        -o-animation: AnimationName 0s ease infinite;
+        animation: AnimationName 0s ease infinite;
+>>>>>>> master
         @-webkit-keyframes AnimationName {
             0% {
                 background-position: 81% 0%

@@ -7,10 +7,18 @@ import Cookies from 'universal-cookie';
 
 class Carrinho extends Component {
   render(){
+<<<<<<< HEAD
     const cookies = new Cookies();
 
     if(cookies.get('idUsuario') != undefined){
       return <UserCart/> ;
+=======
+
+    const isLoggedIn = false;
+
+    if(isLoggedIn){
+      return < UserCart/> ;
+>>>>>>> master
     }
 
     return <GuestCart />;

@@ -2,6 +2,7 @@
   "name": "keycorp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/build",  
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
@@ -14,6 +15,7 @@
     "fa-icons": "^0.1.7",
     "google-map-react": "^1.1.5",
     "google-maps-react": "^2.0.2",
+    "jquery": "^3.4.1",
     "mdbreact": "^4.21.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",

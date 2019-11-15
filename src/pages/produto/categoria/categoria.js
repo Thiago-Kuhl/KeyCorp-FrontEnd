@@ -5,7 +5,10 @@ import 'react-bootstrap';
 import Menu from '../../menu/menu.js';
 import Footer from '../../footer/footer.js';
 import Filtro from '../filtro-categoria/filtro.js';
-import ProdutoGrid from '../produto-grid/produto-grid.js';
+<<<<<<< HEAD
+// import ProdutoGrid from '../produto-grid/produto-grid.js';
+=======
+>>>>>>> master
 import axios from 'axios';
 import { Redirect } from 'react-router';
 
@@ -15,6 +18,7 @@ class Categoria extends React.Component {
         return (
             <>
                 <Menu />
+<<<<<<< HEAD
                 <div styleName="container" className="row">
                     <div className="col-12">
                         <Filtro />
@@ -23,6 +27,9 @@ class Categoria extends React.Component {
                         <ProdutoGrid />
                     </div>
                 </div>
+=======
+                <Filtro />
+>>>>>>> master
                 <Footer />
             </>
         )
