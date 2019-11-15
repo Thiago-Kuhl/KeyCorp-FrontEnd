@@ -27,6 +27,9 @@ class Pagamento2 extends React.Component {
 
             <Resumo />
 
+            <ResumoPedido2 />
+            <ResumoPedido />
+
             <div styleName="finalizar-pedido">
                 
                 <Menu />
