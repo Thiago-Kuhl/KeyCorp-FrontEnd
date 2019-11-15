@@ -26,7 +26,11 @@ class Pagamento2 extends React.Component {
     render() {
         return (<>
 
+<<<<<<< HEAD:src/pages/finalizar-pedido/pagamento2/pagamento2.js
             <ResumoPedido2 />
+=======
+            <ResumoPedido />
+>>>>>>> master:src/pages/finalizar-pedido/finalizar-pedido3/finalizar-pedido3.js
 
             <div styleName="finalizar-pedido">
                 

@@ -66,6 +66,8 @@
     display: block;
 }
 
+
+
 .produto .prod-options li ul {
     position: absolute;
     top: 30px;
@@ -96,6 +98,10 @@
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 /* atalhos */
 
 .atalhos .icons span {

@@ -1,5 +1,6 @@
 .produto {
     width: '18rem';
+<<<<<<< HEAD
     background: black; 
 }
 .text {
@@ -28,4 +29,7 @@
 
 .btn:hover {
     background: rgba(255, 153, 0);
+=======
+    background-color: 'black';
+>>>>>>> master
 }

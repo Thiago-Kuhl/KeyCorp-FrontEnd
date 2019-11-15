@@ -3,12 +3,16 @@ import CSSModule from 'react-css-modules';
 import style from './user-cart.module.css';
 import Menu from '../../menu/menu.js'
 import Footer from '../../footer/footer'
+<<<<<<< HEAD
 import Produto1 from  '../../../components/product-cart/produto1/produto1'
 import ResumoPedido1 from   '../../../components/product-cart/produto1/resumo-produto'
 import Produto2 from  '../../../components/product-cart/produto2/produto2'
 import ResumoPedido2 from   '../../../components/product-cart/produto2/resumo-produto'
 
 var produto = 0; //Aqui vai o id do produto da tela de produto
+=======
+
+>>>>>>> master
 class UserCart extends React.Component {
     constructor(props) {
         super(props);
@@ -18,10 +22,15 @@ class UserCart extends React.Component {
         }
     }
 
+<<<<<<< HEAD
     render() {
 
         //Aqui vai ser feita a lógica de renderização conforme o produto escolhido, tentar com switch case
 
+=======
+
+    render() {
+>>>>>>> master
         return (
 
             <>
@@ -45,7 +54,24 @@ class UserCart extends React.Component {
                                 </div>
 
                                 <div styleName="car">
+<<<<<<< HEAD
                                    <Produto2/>
+=======
+                                    <div styleName="prod">
+
+                                        <div styleName="img"></div>
+
+                                        <div styleName="info-car">
+                                            <a href="">
+                                                <h3>Ebook Marketing Digital</h3>
+                                            </a>
+                                            <p>Ações de comunicação que as empresas podem utilizar por meio da internet</p>
+                                        </div>
+
+                                        {/* <input id="qtd" styleName="inpt" placeholder="1" type="number" min="1" max=""></input> */}
+
+                                    </div>
+>>>>>>> master
                                 </div>
 
                             </div>
@@ -63,7 +89,13 @@ class UserCart extends React.Component {
                                     </div>
                                 </div>
 
+<<<<<<< HEAD
                                <ResumoPedido2/>
+=======
+                                <div styleName="total">
+                                    <p><b>Total: </b> R$199,99</p>
+                                </div>
+>>>>>>> master
 
                                 <div styleName="btnFinalizar">
                                     <a href="./pedido">

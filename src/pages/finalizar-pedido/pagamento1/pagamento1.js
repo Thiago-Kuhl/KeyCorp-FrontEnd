@@ -4,8 +4,12 @@ import style from './pagamento1.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 // import Modal from '../popup/popup.js'
+<<<<<<< HEAD:src/pages/finalizar-pedido/pagamento1/pagamento1.js
 import ResumoPedido1 from '../../../components/product-cart/produto1/resumo-pedido'
 import ResumoPedido2 from '../../../components/product-cart/produto2/resumo-pedido'
+=======
+import ResumoPedido from '../resumo-pedido/resumo-pedido.js'
+>>>>>>> master:src/pages/finalizar-pedido/finalizar-pedido2/finalizar-pedido2.js
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
@@ -24,7 +28,11 @@ class Pagamento1 extends React.Component {
     render() {
         return (<>
 
+<<<<<<< HEAD:src/pages/finalizar-pedido/pagamento1/pagamento1.js
             <ResumoPedido2 />
+=======
+            <ResumoPedido />
+>>>>>>> master:src/pages/finalizar-pedido/finalizar-pedido2/finalizar-pedido2.js
 
             <div styleName="finalizar-pedido">
                 <Menu />

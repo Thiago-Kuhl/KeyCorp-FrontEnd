@@ -61,6 +61,15 @@
     margin: 30px 0 0 0;
 }
 
+<<<<<<< HEAD
+=======
+.total {
+    font-size: 20px;
+    float: left;
+    margin: 60px 0 0 0;
+}
+
+>>>>>>> master
 .btnFinalizar {
     width: 100%;
     font-size: 20px;
@@ -77,6 +86,40 @@
     color: #231F20;
 }
 
+<<<<<<< HEAD
+=======
+.prod {
+    top: 100px;
+    position: absolute;
+    width: 590px;
+    height: 151px;
+    left: 50px;
+}
+
+.prod:hover {
+    background: #FF9900;
+    color: black;
+}
+
+.img {
+    position: absolute;
+    width: 125px;
+    height: 141px;
+    left: 5px;
+    top: 5px;
+    background: url(../imagens/ebook-capa.png) no-repeat;
+    background-size: 130px 140px;
+}
+
+.info-car {
+    position: absolute;
+    width: 343px;
+    height: 130px;
+    left: 150px;
+    top: 10px;
+}
+
+>>>>>>> master
 .inpt {
     position: absolute;
     width: 50px;

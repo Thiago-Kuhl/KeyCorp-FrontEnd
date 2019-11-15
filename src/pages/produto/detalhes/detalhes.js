@@ -18,6 +18,9 @@ class Detalhes extends React.Component {
     )}
 }
 
+<<<<<<< HEAD
 // make whole pg and render product
 
+=======
+>>>>>>> master
 export default CSSModule(Detalhes, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
