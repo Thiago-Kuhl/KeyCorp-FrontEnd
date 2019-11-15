@@ -13,7 +13,11 @@ class Pedido extends React.Component {
     render() {
         return (<>
 
+<<<<<<< HEAD:src/pages/finalizar-pedido/pedido/pedido.js
             <ResumoPedido2 />
+=======
+            <ResumoPedido />
+>>>>>>> master:src/pages/finalizar-pedido/finalizar-pedido1/finalizar-pedido1.js
 
             <div styleName="finalizar-pedido">
 

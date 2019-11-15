@@ -6,7 +6,12 @@ import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './menu.module.css';
 import Usuario from '../menu/usuario/usuario'
+<<<<<<< HEAD
 import Logo from '../../external-components/logo/logo'
+=======
+
+
+>>>>>>> master
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Menu extends React.Component {
@@ -16,6 +21,7 @@ class Menu extends React.Component {
                 <div styleName="container">
                     <div className="row">
 
+<<<<<<< HEAD
                     {/* <Logo/> */}
 
 
@@ -24,6 +30,11 @@ class Menu extends React.Component {
                         <p>KEY CORP</p>
                         </Link>
                     </div>
+=======
+                        <div className="col col-lg-1" styleName="logo">
+                            <a href="./" styleName="brand-logo">Logo</a>
+                        </div>
+>>>>>>> master
 
                         <div className="col-md-7" styleName="navegacao">
                             <div className="row" styleName="barra">
@@ -62,7 +73,11 @@ class Menu extends React.Component {
                             </div>
                         </div>
 
+<<<<<<< HEAD
                         <Usuario />
+=======
+                        <Usuario/>
+>>>>>>> master
 
                         <div className="col col-lg-2" styleName="atalhos">
                             <div styleName="icons">
@@ -75,13 +90,21 @@ class Menu extends React.Component {
                                 </span>
 
                                 <span>
+<<<<<<< HEAD
                                     <Link to="./carrinho">
+=======
+                                    <a href="./carrinho">
+>>>>>>> master
                                         <FontAwesomeIcon styleName="icon" icon="shopping-cart" />
                                     </Link>
                                 </span>
 
                                 <span>
+<<<<<<< HEAD
                                     <Link to="/favoritos">
+=======
+                                    <a href="/favoritos">
+>>>>>>> master
                                         <FontAwesomeIcon styleName="icon" icon="heart" />
                                     </Link>
                                 </span>

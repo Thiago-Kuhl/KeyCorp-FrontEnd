@@ -1,6 +1,10 @@
 import React from 'react';
 import CSSModule from 'react-css-modules';
+<<<<<<< HEAD
 import style from './historico.module.css';
+=======
+import style from './favorites.module.css';
+>>>>>>> master
 import 'react-bootstrap';
 import Menu from '../../menu/menu.js';
 import MenuUser from '../menu-user/menu-user.js';
@@ -10,6 +14,7 @@ import axios from 'axios';
 
 class Historico extends React.Component {
     render() {
+<<<<<<< HEAD
         return (
             <>
                 <Menu />
@@ -34,3 +39,13 @@ class Resumo extends React.Component {
 }
 
 export default CSSModule(Historico, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
+=======
+    return (
+        <>
+        <Menu />
+        <MenuUser />
+        <Footer />
+        </>
+    )}
+}
+>>>>>>> master

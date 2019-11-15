@@ -15,9 +15,15 @@ import { func } from 'prop-types';
 
 const cookies = new Cookies();
 
+const cookies = new Cookies();
+
+
 class Home extends React.Component {
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> master
     constructor(props) {
         super(props);
         this.state = {
@@ -30,7 +36,10 @@ class Home extends React.Component {
     render() {
         console.log(this.state);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
         return (
             <>
                 <Menu />
@@ -42,10 +51,16 @@ class Home extends React.Component {
 
                         <div className="row">
                             <div className="col-3">
+<<<<<<< HEAD
                                 <Link to="./detalhes">
                                 <div onclick="click" styleName="bloco" id="1">
                                     <a href="">
                                         <span >
+=======
+                                <div onclick="click" styleName="bloco">
+                                    <a href="">
+                                        <span>
+>>>>>>> master
                                             <h3>Office 365</h3>
                                         </span>
 
@@ -61,6 +76,7 @@ class Home extends React.Component {
                                 </Link>
                             </div>
                             <div className="col-3">
+<<<<<<< HEAD
                                 <Link to="./detalhes">
                                     <div styleName="bloco" id="2">
                                         <a styleName="bl" href="">
@@ -76,23 +92,51 @@ class Home extends React.Component {
                             <div className="col-3">
                                 <div styleName="bloco" id="3">
                                 <Link to="./detalhes">
+=======
+                                <div styleName="bloco">
+                                    <a styleName="bl" href="">
+                                        <h3>VS Code</h3>
+                                        <div styleName="img img-prod2"></div>
+                                        <div styleName="desc">
+                                            <h3>Editor de código-fonte</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="col-3">
+                                <div styleName="bloco">
+                                    <a href="">
+>>>>>>> master
                                         <h3>PhotoShop</h3>
                                         <div styleName="img img-prod3"></div>
                                         <div styleName="desc">
                                             <h3>Editor de imagens bidimensionais</h3>
                                         </div>
+<<<<<<< HEAD
                                 </Link>
                                 </div>
                             </div>
                             <div className="col-3">
                                 <div styleName="bloco" id="4">
                                     <Link to="./detalhes">
+=======
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="col-3">
+                                <div styleName="bloco">
+                                    <a href="">
+>>>>>>> master
                                         <h3>Oracle Database</h3>
                                         <div styleName="img img-prod4"></div>
                                         <div styleName="desc">
                                             <h3>Oracle database 18c</h3>
                                         </div>
+<<<<<<< HEAD
                                      </Link>
+=======
+                                    </a>
+>>>>>>> master
                                 </div>
                             </div>
                         </div>
@@ -130,79 +174,143 @@ class Home extends React.Component {
                                 <div styleName="galeria1">
 
                                     <div styleName="g">
+<<<<<<< HEAD
                                         <Link to="./detalhes">
+=======
+                                        <a href="">
+>>>>>>> master
                                             <div styleName="image foto1"> </div>
                                             <div styleName="categ">
                                                 <h3>Escritório</h3>
                                             </div>
+<<<<<<< HEAD
                                         </Link>
+=======
+                                        </a>
+>>>>>>> master
                                     </div>
 
 
                                     <div styleName="g" >
+<<<<<<< HEAD
                                         <Link to="./detalhes">
+=======
+                                        <a href="">
+>>>>>>> master
                                             <div styleName="image foto2"></div>
                                             <div styleName="categ">
                                                 <h3>Designer</h3>
                                             </div>
+<<<<<<< HEAD
                                         </Link>
                                     </div>
 
                                     <div styleName="g">
                                          <Link to="./detalhes">
+=======
+                                        </a>
+                                    </div>
+
+                                    <div styleName="g">
+                                        <a href="">
+>>>>>>> master
                                             <div styleName="image foto3"></div>
                                             <div styleName="categ">
                                                 <h3>Modelagens</h3>
                                             </div>
+<<<<<<< HEAD
                                         </Link>
                                     </div>
 
                                     <div styleName="g">
                                         <Link to="./detalhes">
+=======
+                                        </a>
+                                    </div>
+
+                                    <div styleName="g">
+                                        <a href="">
+>>>>>>> master
                                             <div styleName="image foto4"></div>
                                             <div styleName="categ">
                                                 <h3>Fluxogramas</h3>
                                             </div>
+<<<<<<< HEAD
                                         </Link>
+=======
+                                        </a>
+>>>>>>> master
                                     </div>
                                 </div>
 
                                 <div styleName="galeria2">
 
                                     <div styleName="g">
+<<<<<<< HEAD
                                          <Link to="./detalhes">
+=======
+                                        <a href="">
+>>>>>>> master
                                             <div styleName="image foto1"> </div>
                                             <div styleName="categ">
                                                 <h3>Editores</h3>
                                             </div>
+<<<<<<< HEAD
                                         </Link>
                                     </div>
 
                                     <div styleName="g" >
                                         <Link to="./detalhes">
+=======
+                                        </a>
+                                    </div>
+
+                                    <div styleName="g" >
+                                        <a href="">
+>>>>>>> master
                                             <div styleName="image foto2"></div>
                                             <div styleName="categ">
                                                 <h3>IDEs</h3>
                                             </div>
+<<<<<<< HEAD
                                         </Link>
                                     </div>
 
                                     <div styleName="g">
                                         <Link to="./detalhes">
+=======
+                                        </a>
+                                    </div>
+
+                                    <div styleName="g">
+                                        <a href="">
+>>>>>>> master
                                             <div styleName="image foto3"></div>
                                             <div styleName="categ">
                                                 <h3>Banco de dados</h3>
                                             </div>
+<<<<<<< HEAD
                                         </Link>
                                     </div>
 
                                     <div styleName="g">
                                           <Link to="./detalhes">
+=======
+                                        </a>
+                                    </div>
+
+                                    <div styleName="g">
+                                        <a href="">
+>>>>>>> master
                                             <div styleName="image foto4"></div>
                                             <div styleName="categ">
                                                 <h3>Outros</h3>
                                             </div>
+<<<<<<< HEAD
                                         </Link>
+=======
+                                        </a>
+>>>>>>> master
                                     </div>
                                 </div>
                             </div>
