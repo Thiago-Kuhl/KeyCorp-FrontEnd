@@ -23,6 +23,7 @@ import Favorites from './pages/usuario/favorites/favorites' ;
 import SimpleMap from  './external-components/maps/maps';
 import Logo from  './external-components/logo/logo';
 import UserCart from  './pages/carrinho/user-cart/user-cart';
+import NotFoundSearch from './components/search/search'
 
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -63,6 +64,7 @@ ReactDOM.render(
             <Route path="/produto" exact component={Produto} />
             <Route path="/logo" exact component={Logo} />
             <Route path="/cart" exact component={UserCart} />
+            <Route path="/search" exact component={NotFoundSearch} />
 
         </Switch>
     </BrowserRouter>
