@@ -6,8 +6,7 @@ import CSSModule from 'react-css-modules';
 import style from './pagamento2.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
-import ResumoPedido1 from '../../../components/product-cart/produto1/resumo-pedido'
-import ResumoPedido2 from '../../../components/product-cart/produto2/resumo-pedido'
+import Resumo from '../../finalizar-pedido/resumo/resumo-pedido'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
@@ -26,11 +25,9 @@ class Pagamento2 extends React.Component {
     render() {
         return (<>
 
-<<<<<<< HEAD:src/pages/finalizar-pedido/pagamento2/pagamento2.js
+            <Resumo />
             <ResumoPedido2 />
-=======
             <ResumoPedido />
->>>>>>> master:src/pages/finalizar-pedido/finalizar-pedido3/finalizar-pedido3.js
 
             <div styleName="finalizar-pedido">
                 
