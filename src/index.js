@@ -17,16 +17,13 @@ import Pedido from './pages/finalizar-pedido/pedido/pedido';
 import Pagamento1 from './pages/finalizar-pedido/pagamento1/pagamento1';
 import Pagamento2 from './pages/finalizar-pedido/pagamento2/pagamento2';
 
-
-import ResumoPedido2 from './components/product-cart/produto1/resumo-pedido';
 import MenuUser from './pages/usuario/menu-user/menu-user';
 import Account from './pages/usuario/minha-conta/account' ;
 import Password from './pages/usuario/alterar-senha/password' ;
 import Favorites from './pages/usuario/favorites/favorites' ;
 import Logo from  './external-components/logo/logo';
 import UserCart from  './pages/carrinho/user-cart/user-cart';
-
-import ResumoPedido from './pages/finalizar-pedido/resumo-pedido/resumo-pedido';
+import Resumo from '../src/pages/finalizar-pedido/resumo/resumo-pedido'
 import SimpleMap from  './external-components/maps/maps';
 import Usuario from  './pages/menu/usuario/usuario';
 import NotFoundSearch from './components/search/search'
@@ -69,7 +66,7 @@ ReactDOM.render(
             <Route path="/logo" exact component={Logo} />
             <Route path="/cart" exact component={UserCart} />
             <Route path="/search" exact component={NotFoundSearch} />
-            <Route path="/resumo" exact component={ResumoPedido} />
+            <Route path="/resumo" exact component={Resumo} />
             <Route path="/menu-user" exact component={MenuUser} />
             <Route path="/account" exact component={Account} />
             <Route path="/password" exact component={Password} />

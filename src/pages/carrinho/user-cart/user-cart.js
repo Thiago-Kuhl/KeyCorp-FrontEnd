@@ -5,10 +5,6 @@ import Menu from '../../menu/menu.js'
 import Footer from '../../footer/footer'
 
 
-import Produto1 from  '../../../components/product-cart/produto1/produto1'
-import ResumoPedido1 from   '../../../components/product-cart/produto1/resumo-produto'
-import Produto2 from  '../../../components/product-cart/produto2/produto2'
-import ResumoPedido2 from   '../../../components/product-cart/produto2/resumo-produto'
 
 
 var produto = 0; //Aqui vai o id do produto da tela de produto
@@ -66,8 +62,7 @@ class UserCart extends React.Component {
 
                                 </div>
 
-                                   {/* <Produto2/> */}
-                                   <Produto2/>
+                               
                                     <div styleName="prod">
 
                                         <div styleName="img"></div>
@@ -103,8 +98,6 @@ class UserCart extends React.Component {
                                   <p><b>Total: </b> R$199,99</p>
                                 </div>
 
-                               {/* <ResumoPedido2/> */}
-                               <ResumoPedido2/>
                                 <div styleName="total">
                                     <p><b>Total: </b> R$199,99</p>
                                 </div>
