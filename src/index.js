@@ -62,7 +62,6 @@ ReactDOM.render(
             <Route path="/favorites" exact component={Favorites} />
             <Route path="/SimpleMap" exact component={SimpleMap} />
             <Route path="/categoria" exact component={Categoria} />
-            <Route path="/produto" exact component={Produto} />
             <Route path="/logo" exact component={Logo} />
             <Route path="/cart" exact component={UserCart} />
             <Route path="/search" exact component={NotFoundSearch} />
