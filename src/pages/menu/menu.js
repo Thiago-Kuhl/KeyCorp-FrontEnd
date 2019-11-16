@@ -169,8 +169,8 @@ class Menu extends React.Component {
 
                                 <span styleName="text" >
                                     <Link to="/favoritos">
-                                        <FontAwesomeIcon styleName="icon" icon="heart" /> 
-                                        Favoritos
+                                        <FontAwesomeIcon styleName="icon" icon="heart" /> &emsp;
+                                       <label>Favoritos</label> 
                                     </Link>
                                 </span>
                             </div>
