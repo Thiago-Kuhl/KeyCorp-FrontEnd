@@ -53,7 +53,7 @@ class Menu extends React.Component {
             .then(res =>  {
                 // const cookies = new Cookies();
                 console.log(res.status);
-
+                console.log(res.data[0])
                 if(res.status === '204'){
                     console.log("Renderiza página de NOT FOUND");
                     return <NotFoundProduct/>
@@ -63,7 +63,8 @@ class Menu extends React.Component {
 
                     const resposta = res.data;
 
-                    localStorage.setItem('itens', resposta);
+                    localStorage.setItem('titulo', resposta[0].nomeProduto);
+                    localStorage.setItem('valor', resposta[0].valorBase);
                     console.log(Produto.state);
                     return window.location.href="http://localhost:3000/produto";
 

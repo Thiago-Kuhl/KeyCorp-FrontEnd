@@ -9,6 +9,8 @@ import Footer from '../footer/footer.js';
 import SiteInfo from '../site-info/site-info.js';
 import axios from 'axios';
 import { Redirect } from 'react-router';
+import Cookies from 'universal-cookie';
+
 
 class Cadastro extends React.Component {
     constructor(props) {
@@ -52,9 +54,12 @@ class Cadastro extends React.Component {
                 console.log(res)
                 console.log(res.data)
                 axios.post('http://35.237.84.170/login/', { "email": signup.email, "senha": signup.senha }).then(res => {
+                    const cookies = new Cookies();    
                     console.log(res)
                     console.log(res.data);
-                    return <Redirect to="login/" />
+                    cookies.set('idUsuario', res.data.idUsuario, { path: '/' });
+                    cookies.set('nome', res.data.nome , {path: '/'});
+                    return window.location.href="http://localhost:3000/";
                 })
             })
             .catch(error => {
