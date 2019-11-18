@@ -21,6 +21,11 @@ class ProdutoGrid extends React.Component {
                         <Produto />
                         <Produto />
                     </div>
+                    <div className="row">
+                        <Produto />
+                        <Produto />
+                        <Produto />
+                    </div>
                 </div>
             </>
         )
