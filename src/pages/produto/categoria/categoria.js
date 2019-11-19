@@ -19,7 +19,7 @@ class Categoria extends React.Component {
                         <div className="col-12">
                             <Filtro />
                         </div>
-                        <div className="col-12">
+                        <div className="col-12" styleName="grid-fix">
                             <ProdutoGrid />
                         </div>
                     </div>
