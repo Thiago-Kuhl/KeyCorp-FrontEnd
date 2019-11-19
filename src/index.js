@@ -21,6 +21,7 @@ import MenuUser from './pages/usuario/menu-user/menu-user';
 import Account from './pages/usuario/minha-conta/account' ;
 import Password from './pages/usuario/alterar-senha/password' ;
 import Favoritos from './pages/usuario/favoritos/favoritos' ;
+import Historico from './pages/usuario/historico/historico' ;
 import Logo from  './external-components/logo/logo';
 import UserCart from  './pages/carrinho/user-cart/user-cart';
 import Resumo from '../src/pages/finalizar-pedido/resumo/resumo-pedido'
@@ -52,6 +53,7 @@ ReactDOM.render(
             <Route path="/cadastro" exact component={Cadastro} />
             <Route path="/menu" exact component={Menu} />
             <Route path="/carrinho" exact component={Carrinho} />
+            <Route path="/historico" exact component={Historico} />
             <Route path="/pedido" exact component={Pedido} />
             <Route path="/pagamento1" exact component={Pagamento1} />
             <Route path="/pagamento2" exact component={Pagamento2} />
