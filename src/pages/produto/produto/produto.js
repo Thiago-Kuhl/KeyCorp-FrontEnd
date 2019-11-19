@@ -7,28 +7,27 @@ import Button from 'react-bootstrap/Button'
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Menu from '../../menu/menu' 
+import Menu from '../../menu/menu'
 
 
 const teste = 'lellelele'
 function testeProdutos(itens) {
 
     return itens
-     
+
 }
 
 class Produto extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-           titulo : 'dsbhaalkmç'
+            titulo: 'dsbhaalkmç'
         }
     }
 
 
     render() {
-        return <> 
-        <Menu/>
+        return <>
             <div>
                 <Card style={{ width: '15rem' }} styleName="produto">
                     <Card.Img variant="top" styleName="img" src="https://image.freepik.com/free-vector/pack-colorful-square-emoticons_23-2147589525.jpg" />

@@ -1,6 +1,7 @@
 .produto {
     width: '18rem';
     background: black;
+    margin: 8px;
 }
 
 .text {
