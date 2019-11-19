@@ -54,7 +54,7 @@ class Menu extends React.Component {
                 // const cookies = new Cookies();
                 console.log(res.status);
                 console.log(res.data[0])
-                if(res.status == 204){
+                if(res.status === 204){
                     console.log("Renderiza página de NOT FOUND");
                     return window.location.href="./search";
                 }
@@ -72,10 +72,10 @@ class Menu extends React.Component {
                         
                     // }
 
-                    localStorage.setItem('titulo', resposta[0].nomeProduto);
-                    localStorage.setItem('valor', resposta[0].valorBase);
+                    sessionStorage.setItem('titulo', resposta[0].nomeProduto);
+                    sessionStorage.setItem('valor', resposta[0].valorBase);
                     console.log(Produto.state);
-                    //return window.location.href="./produto";
+                    return window.location.href="./produto";
 
                 }
                 else {
