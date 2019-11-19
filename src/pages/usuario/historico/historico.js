@@ -37,10 +37,10 @@ class Historico extends React.Component {
 // foreach still to be tested, it needs to be inside a div in the exact screen place.
 
 class Resumo extends React.Component {
+    
     createRow = () => {
         let table = []
         let children = []
-
         // Outer loop to create parent (this case, children)
         for (let i = 0; i < 3; i++) {
             children.push(<td>{`Column ${i + 1}`}</td>)
