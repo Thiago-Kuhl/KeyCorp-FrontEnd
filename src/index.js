@@ -29,6 +29,7 @@ import SimpleMap from  './external-components/maps/maps';
 import Usuario from  './pages/menu/usuario/usuario';
 import NotFoundSearch from './components/search/search'
 import ProdutoGrid from    './pages/produto/produto-grid/produto-grid'
+import Detalhes from './pages/produto/detalhes/detalhes'
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -75,6 +76,8 @@ ReactDOM.render(
             <Route path="/categoria" exact component={Categoria} />
             <Route path="/produto" exact component={Produto} />
             <Route path="/grid" exact component={ProdutoGrid} />
+            <Route path="/detalhes" exact component={Detalhes} />
+            
 
 
         </Switch>

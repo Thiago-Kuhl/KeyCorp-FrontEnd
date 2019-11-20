@@ -7,6 +7,7 @@ import Footer from '../../footer/footer.js';
 import Produto from '../../produto/produto/produto.js';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 class Detalhes extends React.Component {
