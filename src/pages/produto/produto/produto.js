@@ -2,6 +2,7 @@ import React from 'react';
 import CSSModule from 'react-css-modules';
 import style from './produto.module.css';
 import 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios';
@@ -38,7 +39,9 @@ class Produto extends React.Component {
                                 <Card.Text styleName="text">R${sessionStorage.getItem('valor')}</Card.Text>
                             </div>
                             <div className="col-6">
-                                <Button styleName="btn text" href="#"><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                <Link to="./pedido">
+                                <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                </Link>
                             </div>
                         </div>
                     </Card.Body>

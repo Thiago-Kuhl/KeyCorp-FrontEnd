@@ -1,19 +1,50 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 /*eslist-disable 
 import ReactDOM from 'react-dom'; */
 import CSSModule from 'react-css-modules';
 import style from './pedido.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
-import ResumoPedido2 from '../resumo/resumo-pedido';
+import Resumo from '../resumo/resumo-pedido';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
+var option;
 class Pedido extends React.Component {
+
+    clearStorage = (event) =>{
+        window.sessionStorage.clear();
+        window.localStorage.clear();
+    }
+
+    choose = (event) =>{
+        option = event.target.value;
+
+        console.log(option);
+    }
+
+    option = (event) =>{
+    
+            switch(option){
+                case "0":
+                    window.location.href="./pagamento1";
+                break;
+    
+                case "1":
+                    window.location.href="";
+                break;
+    
+                case "2":
+                   window.location.href="./pagamento2";
+                break;
+            }
+    }
+    
     render() {
         return (<>
 
-            <ResumoPedido2 />
+            <Resumo />
 
             <div styleName="finalizar-pedido">
 
@@ -21,14 +52,13 @@ class Pedido extends React.Component {
 
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><a href="./">Home</a></li>
-                        <li className="breadcrumb-item"><a href="./carrinho">Carrinho</a></li>
+                        <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
                         <li className="breadcrumb-item" aria-current="page">Finalizar pedido</li>
                     </ol>
                 </div>
 
                 <div styleName="icone-voltar">
-                    <a href="./carrinho">
+                    <a href="./categoria">
                         <FontAwesomeIcon styleName="icon " icon="chevron-left" /> &emsp;
                     </a>
 
@@ -50,23 +80,24 @@ class Pedido extends React.Component {
                             </span>
                         </div>
 
-                        <div styleName="wrapper3">
+                        <div styleName="wrapper3" onChange={this.choose.bind(this)}>
                             <span>
                                 <label><b>Como você prefere pagar?</b></label> <br />
 
-                                <p styleName="ipt">
-                                    <label><input type="radio" name="band-rock" value="credito" />&emsp; Cartão de crédito </label> <br />
-                                    <label><input type="radio" name="band-rock" value="credito" />&emsp; Boleto bancário</label> <br />
-                                    <label><input type="radio" name="band-rock" value="credito" />&emsp; Pedir licença do estudante </label>
-                                </p>
+                                <select styleName="select">
+                                    <option>Escolha a forma de pagamento</option> <br />
+                                    <option className="band-rock" value="0" id="option">Cartão de crédito </option> <br />
+                                    <option className="band-rock" value="1" id="option">Boleto bancário</option> <br />
+                                    <option className="band-rock" value="2" id="option">Pedir licença do estudante </option>
+                                </select>
 
                             </span>
                         </div>
 
-                        <div styleName="botton">
-                            <a href="">Proxima etapa &emsp;
+                        <div styleName="botton" onClick={(event) => this.option(event)}>
+                            <Link >Proxima etapa &emsp;
                             <FontAwesomeIcon styleName="icon pxm" icon="chevron-right" />
-                            </a>
+                            </Link>
                         </div>
                     </form>
 

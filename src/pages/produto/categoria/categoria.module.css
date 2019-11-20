@@ -1,3 +1,12 @@
 .grid-fix {
     margin-top: -337px;
 }
+
+.breadcrumb {
+    margin: 50px 25px 0px 100px;
+}
+
+.breadcrumb ol {
+    background: #231F20;
+    color: white;
+}

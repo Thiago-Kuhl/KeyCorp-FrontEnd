@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './categoria.module.css';
 import 'react-bootstrap';
@@ -9,11 +10,27 @@ import ProdutoGrid from '../produto-grid/produto-grid.js';
 import axios from 'axios';
 
 
+
 class Categoria extends React.Component {
+
+    clearStorage = (event) =>{
+        window.sessionStorage.clear();
+        window.localStorage.clear();
+    }
+    
     render() {
+
         return (
             <>
                 <Menu />
+
+                <div aria-label="breadcrumb" styleName="breadcrumb">
+                        <ol className="breadcrumb">
+                            <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
+                            <li className="breadcrumb-item" aria-current="page">Produtos</li>
+                        </ol>
+                    </div>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

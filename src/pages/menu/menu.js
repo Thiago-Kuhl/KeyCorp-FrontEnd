@@ -12,8 +12,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Produto from '../produto/produto/produto'
 import NotFoundProduct from '../../components/search/search'
 
-
 class Menu extends React.Component {
+
     
     constructor(props) {
         
@@ -72,10 +72,12 @@ class Menu extends React.Component {
                         
                     // }
 
+                
                     sessionStorage.setItem('titulo', resposta[0].nomeProduto);
                     sessionStorage.setItem('valor', resposta[0].valorBase);
+                    sessionStorage.setItem('descricao', resposta[0].descProduto);
                     console.log(Produto.state);
-                    return window.location.href="./produto";
+                    return window.location.href="./categoria";
 
                 }
                 else {
