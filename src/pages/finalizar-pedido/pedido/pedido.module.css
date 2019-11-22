@@ -59,6 +59,7 @@
 }
 
 .wrapper3 label {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -90,19 +91,6 @@
     border-radius: 3px;
 }
 
-.ipt label {
-    border-radius: 3px;
-    width: 300px;
-    text-align: left;
-    font-weight: 250;
-    font-size: 15px;
-    line-height: 23px;
-}
-
-.ipt input {
-    margin-left: 10px;
-}
-
 .icon {
     color: #FF9900;
 }
@@ -110,4 +98,14 @@
 .icone-voltar {
     margin: -30px 0 50px 110px;
     ;
+}
+
+.select {
+    background: black;
+    border-color: rgba(255, 153, 0, 0.685);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 50px;
+    color: white;
 }

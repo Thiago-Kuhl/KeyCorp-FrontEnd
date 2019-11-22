@@ -53,6 +53,8 @@ class Login extends React.Component {
                 console.log("Cookie");
                 
                 console.log(cookies.get('idUsuario'));
+
+                return window.location.href="http://localhost:3000/";
                 
             })
             .catch(error => {

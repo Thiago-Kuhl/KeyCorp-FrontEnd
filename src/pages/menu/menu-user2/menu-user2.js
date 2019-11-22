@@ -13,7 +13,7 @@ class GuestUsuario extends React.Component{
             <FontAwesomeIcon styleName="user" icon="user-circle" />
             <ul>
                 <li>
-                    <p>Fulano da Silva</p>
+                    <p>Conecte-se</p>
                     <ul>
                         <li><a href="./login">Login</a></li>
                         <li><a href="./cadastro">Cadastre-se</a></li>

@@ -7,6 +7,8 @@ import style from './pagamento2.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 import Resumo from '../../finalizar-pedido/resumo/resumo-pedido'
+import ResumoPedido2 from '../../finalizar-pedido/resumo/resumo-pedido'
+import ResumoPedido from '../../finalizar-pedido/resumo/resumo-pedido'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
@@ -22,13 +24,15 @@ class Pagamento2 extends React.Component {
         }
     }
 
+    clearStorage = (event) =>{
+        window.sessionStorage.clear();
+        window.localStorage.clear();
+    }
+    
     render() {
         return (<>
 
             <Resumo />
-
-            <ResumoPedido2 />
-            <ResumoPedido />
 
             <div styleName="finalizar-pedido">
                 
@@ -36,14 +40,13 @@ class Pagamento2 extends React.Component {
 
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><a href="./">Home</a></li>
-                        <li className="breadcrumb-item"><a href="./carrinho">Carrinho</a></li>
+                        <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
                         <li className="breadcrumb-item" aria-current="page">Finalizar pedido</li>
                     </ol>
                 </div>
 
                 <div styleName="icone-voltar">
-                    <a href="./carrinho">
+                    <a href="./categoria">
                         <FontAwesomeIcon styleName="icon " icon="chevron-left" /> &emsp;
                     </a>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './categoria.module.css';
 import 'react-bootstrap';
@@ -7,20 +8,37 @@ import Footer from '../../footer/footer.js';
 import Filtro from '../filtro-categoria/filtro.js';
 import ProdutoGrid from '../produto-grid/produto-grid.js';
 import axios from 'axios';
-import { Redirect } from 'react-router';
+
 
 
 class Categoria extends React.Component {
+
+    clearStorage = (event) =>{
+        window.sessionStorage.clear();
+        window.localStorage.clear();
+    }
+    
     render() {
+
         return (
             <>
                 <Menu />
-                <div styleName="container" className="row">
-                    <div className="col-12">
-                        <Filtro />
+
+                <div aria-label="breadcrumb" styleName="breadcrumb">
+                        <ol className="breadcrumb">
+                            <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
+                            <li className="breadcrumb-item" aria-current="page">Produtos</li>
+                        </ol>
                     </div>
-                    <div className="col-12">
-                        <ProdutoGrid />
+
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <Filtro />
+                        </div>
+                        <div className="col-12" styleName="grid-fix">
+                            <ProdutoGrid />
+                        </div>
                     </div>
                 </div>
                 <Footer />

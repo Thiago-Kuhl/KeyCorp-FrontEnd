@@ -16,19 +16,17 @@
     color: #FFFFFF;
 }
 
-.usuario .user-options li a, li p {
+.usuario .user-options li a,
+li p {
     color: white;
     text-decoration: none;
     padding: 0px 10px;
     display: block;
-
 }
 
 .usuario .user-options a {
     border-bottom: solid 1px rgba(255, 255, 255, 0.192);
 }
-
-
 
 .usuario .user-options li ul {
     position: absolute;
