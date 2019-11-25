@@ -31,7 +31,7 @@ class Pedido extends React.Component {
                 break;
     
                 case "1":
-                    window.location.href="";
+                    window.location.href  = "";
                 break;
     
                 case "2":

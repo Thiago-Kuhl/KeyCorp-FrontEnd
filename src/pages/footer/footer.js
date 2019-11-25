@@ -25,7 +25,7 @@ class Footer extends React.Component {
                     <div styleName="links">
                         <div styleName="uteis main">
                             <ul>
-                                <p><b>Links uteis</b></p>
+                                <p><b>Links úteis</b></p>
                                 <li><a href="">FAQ</a>  </li>
                                 <li><a href="">Pessoa Jurídica</a></li>
                                 <li><a href="">Política e privacidade</a></li>
