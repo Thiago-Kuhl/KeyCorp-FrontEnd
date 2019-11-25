@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-/*eslist-disable 
-import ReactDOM from 'react-dom'; */
 import CSSModule from 'react-css-modules';
 import style from './pedido.module.css';
 import Menu from '../../menu/menu'
@@ -17,6 +15,7 @@ class Pedido extends React.Component {
         window.sessionStorage.clear();
         window.localStorage.clear();
     }
+
 
     choose = (event) =>{
         option = event.target.value;
@@ -39,7 +38,42 @@ class Pedido extends React.Component {
                    window.location.href="./pagamento2";
                 break;
             }
-    }
+
+  
+            var cpf = document.getElementById("cpf").value;
+            var numeros, digitos, soma, i, resultado, digitos_iguais;
+
+            digitos_iguais = 1;
+            if (cpf.length < 11)
+                return alert("CPF inválido");
+            for (i = 0; i < cpf.length - 1; i++)
+                if (cpf.charAt(i) != cpf.charAt(i + 1))
+                        {
+                        digitos_iguais = 0;
+                        break;
+                        }
+            if (!digitos_iguais)
+                {
+                numeros = cpf.substring(0,9);
+                digitos = cpf.substring(9);
+                soma = 0;
+                for (i = 10; i > 1; i--)
+                        soma += numeros.charAt(10 - i) * i;
+                resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+                if (resultado != digitos.charAt(0))
+                        return alert("CPF inválido");
+                numeros = cpf.substring(0,10);
+                soma = 0;
+                for (i = 11; i > 1; i--)
+                        soma += numeros.charAt(11 - i) * i;
+                resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+                if (resultado != digitos.charAt(1))
+                        return alert("CPF inválido")
+                return true;
+                }
+            else
+                return alert("CPF inválido");
+            }
     
     render() {
         return (<>
@@ -76,7 +110,7 @@ class Pedido extends React.Component {
                         <div styleName="wrapper2 wr">
                             <span>
                                 <label>CPF</label> <br />
-                                <input type="text"></input>
+                                <input id="cpf"type="text"></input>
                             </span>
                         </div>
 

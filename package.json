@@ -12,6 +12,7 @@
     "connect-ensure-login": "^0.1.1",
     "express": "^4.17.1",
     "fa-icons": "^0.1.7",
+    "gerador-validador-cpf": "^4.0.1",
     "google-map-react": "^1.1.5",
     "google-maps-react": "^2.0.2",
     "jquery": "^3.4.1",
@@ -28,7 +29,8 @@
     "semantic-ui-react": "^0.88.1",
     "sweetalert": "^2.1.2",
     "sweetalert2": "^9.4.0",
-    "universal-cookie": "^4.0.2"
+    "universal-cookie": "^4.0.2",
+    "validar-cpf": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

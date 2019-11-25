@@ -5,10 +5,7 @@ import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 import Resumo from '../resumo/resumo-pedido';
 import { Link } from 'react-router-dom';
-
 import swal from 'sweetalert';
-import Swal from 'sweetalert2'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
