@@ -13,6 +13,7 @@ import axios from 'axios';
 
 const cookies = new Cookies();
 var id;
+
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -37,6 +38,7 @@ class Home extends React.Component {
                 sessionStorage.setItem('titulo', resposta[id].nomeProduto);
                 sessionStorage.setItem('valor', resposta[id].valorBase);
                 sessionStorage.setItem('descricao', resposta[id].descProduto);
+                sessionStorage.setItem('id', id);
 
                 console.log(resposta[id].nomeProduto);
 
@@ -88,10 +90,10 @@ class Home extends React.Component {
                             <div className="col-3" onClick={() => id = 0}>
                                     <div styleName="bloco" onClick={this.handleSubmit} id="2">
                                         <Link styleName="bl">
-                                            <h3>VS Code</h3>
+                                            <h3>Postman</h3>
                                             <div styleName="img img-prod2"></div>
                                             <div styleName="desc">
-                                                <h3>Editor de código-fonte</h3>
+                                                <h3>Testes de API Web</h3>
                                             </div>
                                         </Link>
                                     </div>

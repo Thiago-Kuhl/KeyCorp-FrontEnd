@@ -4,16 +4,46 @@ import CSSModule from 'react-css-modules';
 import style from './resumo.module.css';
 import 'react-bootstrap';
 
+import imagem from '../../produto/detalhes/detalhes'
+import escritorio from '../../../image/escritorio.png'
+import postman from '../../../image/postman.png'
+
+var img;
 export var desconto = 0.10; //Exemplo
 var valor = sessionStorage.getItem('valor');
 var valorFinal =  valor -= valor * desconto;
 class Resumo extends React.Component {
+    
     render() {
+        var produto = sessionStorage.getItem("id");
+
+        switch(produto){
+            case "0":
+                img = postman;
+                break;
+            case "1":
+                img = escritorio;
+                break;
+            case "2":
+                img = "";
+                break;
+            case "4":
+                img = "";
+                break;
+            case "5":
+                img ="";
+                break;
+        }
+
         return (
             <div styleName="resumo-pedido">
                 <div styleName="produto">
                     <div styleName="imagem">
-                        <div styleName="foto"></div>
+                       <div styleName="foto">
+                       <img src={img} alt="some text"  width="100" height="100"/>
+                       </div>
+                 
+                        
                     </div>
 
                     <div styleName="info">
