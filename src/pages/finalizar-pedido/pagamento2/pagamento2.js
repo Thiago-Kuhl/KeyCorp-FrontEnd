@@ -1,14 +1,12 @@
 import React from 'react';
-/*eslist-disable 
-import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './pagamento2.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 import Resumo from '../../finalizar-pedido/resumo/resumo-pedido'
-import ResumoPedido2 from '../../finalizar-pedido/resumo/resumo-pedido'
-import ResumoPedido from '../../finalizar-pedido/resumo/resumo-pedido'
+
+import swal from 'sweetalert';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 
@@ -22,6 +20,22 @@ class Pagamento2 extends React.Component {
             email: '',
             curso: ''
         }
+    }
+
+    processOrder = (event) => {
+
+        if(document.getElementById("instituicao").value == "" 
+            || document.getElementById("nome").value == ""
+            || document.getElementById("email").value == "" 
+            || document.getElementById("curso").value == ""){
+            alert("Verifique os campos, todos devem ser preenchidos corretamente");
+        } else {
+            swal("Pedido concluído!", "Verifique sua caixa de email!", "success");
+        }
+
+        setInterval(() => {
+            window.location.href="./";
+        }, 3000);
     }
 
     clearStorage = (event) =>{
@@ -89,10 +103,10 @@ class Pagamento2 extends React.Component {
 
                         </div>
 
-                        <div styleName="botton">
-                            <a href="./processamento">Finalizar &emsp;
+                        <div styleName="botton"  onClick={(event) => this.processOrder(event)}>
+                            <Link>Finalizar &emsp;
                             <FontAwesomeIcon styleName="icon" icon="chevron-right" />
-                            </a>
+                            </Link>
                         </div>
 
 

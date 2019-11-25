@@ -4,7 +4,10 @@ import style from './pagamento1.module.css';
 import Menu from '../../menu/menu'
 import Footer from '../../footer/footer.js';
 import Resumo from '../resumo/resumo-pedido';
+import { Link } from 'react-router-dom';
 
+import swal from 'sweetalert';
+import Swal from 'sweetalert2'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
@@ -20,6 +23,26 @@ class Pagamento1 extends React.Component {
             codigo: ''
         }
     }
+
+        processOrder = (event) => {
+            
+
+            if(document.getElementById("nome").value == "" 
+                || document.getElementById("cartao").value == ""
+                || document.getElementById("vencimento").value == "" 
+                || document.getElementById("codigo").value == ""){
+                alert("Verifique os campos, todos devem ser preenchidos corretamente");
+            } else {
+                swal( `Pedido  ${sessionStorage.getItem('titulo') } concluído!`, "Verifique sua caixa de email!", "success");
+            } 
+
+            setInterval(() => {
+                window.location.href="./";
+            }, 3000);
+
+        }
+
+       
 
     clearStorage = (event) =>{
         window.sessionStorage.clear();
@@ -57,14 +80,14 @@ class Pagamento1 extends React.Component {
                         <div styleName="wrapper1 wr">
                             <span>
                                 <label>Nome completo</label> <br />
-                                <input id="nome" type="text" placeholder=""></input>
+                                <input id="nome" type="text" placeholder="" ></input>
                             </span>
                         </div>
 
                         <div styleName="wrapper2 wr">
                             <span>
                                 <label>Número do cartão</label> <br />
-                                <input id="cartao" type="text"></input>
+                                <input maxLength="16" minLength="14" id="cartao" type="text"></input>
                             </span>
                         </div>
 
@@ -72,20 +95,20 @@ class Pagamento1 extends React.Component {
 
                             <span>
                                 <label>Vencimento</label> <br />
-                                <input id="vencimento" type="date" placeholder=""></input>
+                                <input  id="vencimento" type="date" placeholder=""></input>
                             </span>
 
                             <span>
                                 <label styleName="lb">Código</label> <br />
-                                <input id="codigo" styleName="cdg" type="phone"></input>
+                                <input maxLength="3" minLength="3" id="codigo" styleName="cdg" type="phone"></input>
                             </span>
 
                         </div>
 
-                        <div styleName="botton">
-                            <a href="./processamento">Finalizar &emsp;
+                        <div styleName="botton"  onClick={(event) => this.processOrder(event)}>
+                            <Link>Finalizar &emsp;
                             <FontAwesomeIcon styleName="icon" icon="chevron-right" />
-                            </a>
+                            </Link>
                         </div>
                     </form>
                 </div>
