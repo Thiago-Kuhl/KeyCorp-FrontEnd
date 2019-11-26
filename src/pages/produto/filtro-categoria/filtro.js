@@ -15,54 +15,39 @@ class Filtro extends React.Component {
                             <h3>Filtrar por:</h3>
                             <ul styleName="nav tabs">
                                 <li>
-                                    <u>Tecnologia</u>
+                                    <u>Tipo de Licença</u>
                                     <ul>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
-                                            </li>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
+                                        <li><input type="checkbox"></input> Estudante
                                         </li>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
+                                        <li><input type="checkbox"></input> Enterprise
                                         </li>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
+                                        <li><input type="checkbox"></input> Standard
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li>
-                                    <u>Autor</u>
+                                    <u>Categoria</u>
                                     <ul>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
-                                            </li>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
+                                        <li><input type="checkbox"></input> IDEs</li>
+                                        <li><input type="checkbox"></input> Modelagem de Dados
                                         </li>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
+                                        <li><input type="checkbox"></input> Servidores
                                         </li>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
+                                        <li><input type="checkbox"></input> Edição de Imagens
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
                                     <u>Faixa de Preço</u>
                                     <ul>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
-                                            </li>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
+                                        <li><input type="checkbox"></input> R$0,00 - R$50,00
                                         </li>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
+                                        <li><input type="checkbox"></input> R$50,01 - R$300,00
                                         </li>
-                                        <li><FontAwesomeIcon icon="fa-square" />
-                                            teste teste teste teste teste
+                                        <li><input type="checkbox"></input> R$300,01 - R$650,00
+                                        </li>
+                                        <li><input type="checkbox"></input> R$650,01 - R$1.000,00
                                         </li>
                                     </ul>
                                 </li>

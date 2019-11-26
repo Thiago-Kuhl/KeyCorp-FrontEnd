@@ -1,5 +1,5 @@
-.grid-fix {
-    margin-top: -337px;
+.page {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.123);
 }
 
 .breadcrumb {
@@ -9,4 +9,14 @@
 .breadcrumb ol {
     background: #231F20;
     color: white;
+}
+
+.produtos {
+    position: relative;
+    width: 800px;
+    height: 592px;
+    left: 400px;
+    margin-top: -500px;
+    margin-left: -10px;
+    margin-bottom: 400px;
 }

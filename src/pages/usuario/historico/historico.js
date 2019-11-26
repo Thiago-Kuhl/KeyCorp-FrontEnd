@@ -105,28 +105,28 @@ class Historico extends React.Component {
 
 // foreach still to be tested, it needs to be inside a div in the exact screen place.
 
-class Resumo extends React.Component {
+// class Resumo extends React.Component {
 
-    createRow = () => {
-        let table = []
-        let children = []
-        // Outer loop to create parent (this case, children)
-        for (let i = 0; i < 3; i++) {
-            children.push(<td>{`Column ${i + 1}`}</td>)
-            children.push(<td>{`${this.produtos}`}</td>)
-            children.push(<td>{`${this.vlr}`}</td>)
-            children.push(<td>{`${this.nro}`}</td>)
-            //Create the parent and add the children
-            table.push({ children })
-        }
-        return table
-    }
+//     createRow = () => {
+//         let table = []
+//         let children = []
+//         // Outer loop to create parent (this case, children)
+//         for (let i = 0; i < 3; i++) {
+//             children.push(<td>{`Column ${i + 1}`}</td>)
+//             children.push(<td>{`${this.produtos}`}</td>)
+//             children.push(<td>{`${this.vlr}`}</td>)
+//             children.push(<td>{`${this.nro}`}</td>)
+//             //Create the parent and add the children
+//             table.push({ children })
+//         }
+//         return table
+//     }
 
-    render() {
-        return (
-            <tr>{this.createRow()}</tr>
-        )
-    }
-}
+//     render() {
+//         return (
+//             <tr>{this.createRow()}</tr>
+//         )
+//     }
+// }
 
 export default CSSModule(Historico, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })

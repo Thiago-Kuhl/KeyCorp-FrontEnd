@@ -37,13 +37,13 @@ import { faChevronDown, faUserCircle,  faBell,
 faHeart, faShoppingCart, faInbox,faCheckCircle, 
 faCreditCard,faCheckDouble, faShieldAlt, faPhoneAlt,
 faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey,
-faFrown, faRobot } from '@fortawesome/free-solid-svg-icons';
+faFrown, faRobot, faSquare } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faChevronDown, faUserCircle,  faBell,
     faHeart, faShoppingCart, faInbox, faCheckCircle,
     faCheckDouble, faCreditCard, faShieldAlt, faPhoneAlt,
     faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey,
-    faFrown, faRobot )
+    faFrown, faRobot, faSquare )
 //Rotas
 
 ReactDOM.render(
