@@ -35,7 +35,7 @@ class Pagamento1 extends React.Component {
 
             setInterval(() => {
                 window.location.href="./";
-            }, 3000);
+            }, 5000);
 
         }
 

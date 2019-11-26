@@ -35,7 +35,7 @@ class Pagamento2 extends React.Component {
 
         setInterval(() => {
             window.location.href="./";
-        }, 3000);
+        }, 5000);
     }
 
     clearStorage = (event) =>{

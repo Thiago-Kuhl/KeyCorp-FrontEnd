@@ -1,6 +1,6 @@
 .detalhes {
     border-bottom: 1px solid rgba(255, 255, 255, 0.123);
-    height: 650px;
+    height: 700px;
 }
 
 .breadcrumb {
@@ -34,7 +34,7 @@
     position: absolute;
     width: 372px;
     height: 42px;
-    left: 665px;
+    left: 675px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -54,26 +54,21 @@
 }
 
 .valor-original {
+    position: absolute;
+    width: 220px;
+    height: 30.04px;
+    left: 925px;
+    top: 315px;
+    margin-right: -80px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 35px;
     display: flex;
-    align-items: center;
-    text-align: center;
+    text-align: right;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    text-align: right;
-    top: 300px;
-}
-
-.valor-original {
-    position: absolute;
-    width: 220px;
-    height: 30.04px;
-    left: 929px;
-    top: 290px;
 }
 
 .desc-title {

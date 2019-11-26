@@ -12,6 +12,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import escritorio from '../../../image/escritorio.png'
 import postman from '../../../image/postman.png'
+import oracle from '../../../image/oracle.jpg'
+import photoshopEnterprise from '../../../image/photoshop.png'
+import photoshopEducation from '../../../image/photoshop.png'
+import vscode from '../../../image/vscode.png'
+
 
 var img;
 
@@ -24,19 +29,19 @@ class Detalhes extends React.Component {
 
         switch(produto){
             case "0":
-                img = postman;
+                img = oracle;
                 break;
             case "1":
-                img = escritorio;
+                img = vscode;
                 break;
             case "2":
-                img = "";
+                img = photoshopEnterprise;
+                break;
+            case "3":
+                img = photoshopEducation;
                 break;
             case "4":
-                img = "";
-                break;
-            case "5":
-                img ="";
+                img = escritorio;
                 break;
         }
         
@@ -48,7 +53,7 @@ class Detalhes extends React.Component {
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
-                        <li className="breadcrumb-item" aria-current="page">Detalhes</li>
+                        <li className="breadcrumb-item" aria-current="page">Meus favoritos</li>
                         <li className="breadcrumb-item" aria-current="page">{sessionStorage.getItem("titulo")}</li>
                     </ol>
                 </div>

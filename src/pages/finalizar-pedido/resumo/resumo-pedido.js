@@ -5,8 +5,12 @@ import style from './resumo.module.css';
 import 'react-bootstrap';
 
 import imagem from '../../produto/detalhes/detalhes'
-import escritorio from '../../../image/escritorio.png'
 import postman from '../../../image/postman.png'
+import escritorio from '../../../image/escritorio.png'
+import oracle from '../../../image/oracle.jpg'
+import photoshopEnterprise from '../../../image/photoshop.png'
+import photoshopEducation from '../../../image/photoshop.png'
+import vscode from '../../../image/vscode.png'
 
 var img;
 export var desconto = 0.10; //Exemplo
@@ -19,19 +23,19 @@ class Resumo extends React.Component {
 
         switch(produto){
             case "0":
-                img = postman;
+                img = oracle;
                 break;
             case "1":
-                img = escritorio;
+                img = vscode;
                 break;
             case "2":
-                img = "";
+                img = photoshopEnterprise;
+                break;
+            case "3":
+                img = photoshopEducation;
                 break;
             case "4":
-                img = "";
-                break;
-            case "5":
-                img ="";
+                img = escritorio;
                 break;
         }
 
@@ -49,7 +53,7 @@ class Resumo extends React.Component {
                     <div styleName="info">
                         <span styleName="titulo">
                             <h3>{sessionStorage.getItem('titulo')}</h3>
-                            <h3>{sessionStorage.getItem('descricao')}</h3>
+                            <h3 styleName="info-desc">{sessionStorage.getItem('descricao')}</h3>
                         </span>
                         <span styleName="subTitulo">
                             {/* <h3>Quantidade 1 </h3> */}

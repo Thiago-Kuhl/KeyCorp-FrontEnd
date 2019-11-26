@@ -13,10 +13,7 @@ class Footer extends React.Component {
             <div styleName="footer">
                 <div styleName="rodape main">
                     <div styleName="info main">
-                        <div styleName="logo">
-                            <a href></a>
-                        </div>
-                        <span>
+                        <span styleName="span">
                             <p>A <b>KEY CORP</b> é um e-commerce especializado em atender os estudantes,
                             fornecendo as melhores novidades do mercado tecnológico.</p>
                         </span>

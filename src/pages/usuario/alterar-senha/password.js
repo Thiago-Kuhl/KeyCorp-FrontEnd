@@ -64,8 +64,21 @@ class Password extends React.Component {
         return (
             <>
                 <Menu />
+                
                 <div styleName="password">
+
+                <div aria-label="breadcrumb" styleName="breadcrumb">
+                        <ol className="breadcrumb">
+                            <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
+                            <li className="breadcrumb-item" aria-current="page">Alterar senha</li>
+                        </ol>
+                </div>
+                <div styleName="menu-user">
                     <MenuUser />
+                </div>
+
+            
+
                     <div styleName="update-form">
                         <form onSubmit={this.handleSubmit}>
                             <div className="row">
