@@ -14,35 +14,56 @@ import Button from 'react-bootstrap/Button'
 import Cookies from 'universal-cookie';
 import axios from 'axios';
 
-var produto;
-
 class Favoritos extends React.Component {
+    show = () => {
+        axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+        axios.get('http://35.237.84.170/login/') //Arrumar a API, essa é so exemplo
+            .then(res =>  {
+                const cookies = new Cookies();
 
-    salvarFavorito = (event) => {
+                var view = "\n";
+                //Lógica para percorrer produtos
+                var resposta;
+                
+                if(resposta.idUsuario == cookies.get('idUsuario')){ //Arrumar a validação do usuário
 
-        produto =  <div>
-                <Card style={{ width: '15rem' }} styleName="produto">
-                    <Card.Img variant="top" styleName="img" src="https://image.freepik.com/free-vector/pack-colorful-square-emoticons_23-2147589525.jpg" />
-                    <Card.Body>
-                        <Card.Title id="titulo" name="titulo" styleName="text title">{sessionStorage.getItem('titulo')}</Card.Title>
-                        <div className="row">
-                            <div className="col-6 pt-2">
-                                <Card.Text styleName="text">R${sessionStorage.getItem('valor')}</Card.Text>
-                            </div>
-                            <div className="col-6">
-                                <Link to="./pedido">
-                                <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
-                                </Link>
-                            </div>
-                        </div>
-                    </Card.Body>
-                </Card>
-            </div>
-         ;
+                    for(let i = 0; i < res.data.length; i++){
+                         resposta[i] = res.data[i] 
+                        view += <div>
+                        <Card style={{ width: '15rem' }} styleName="produto">
+                            <Card.Img variant="top" styleName="img" src="https://image.freepik.com/free-vector/pack-colorful-square-emoticons_23-2147589525.jpg" />
+                            <Card.Body>
+                                <Card.Title id="titulo" name="titulo" styleName="text title">{resposta[i].nomeProduto}</Card.Title>
+                                <div className="row">
+                                    <div className="col-6 pt-2">
+                                        <Card.Text styleName="text">{resposta[i].valorBase}</Card.Text>
+                                    </div>
+                                    <div className="col-6">
+                                        <Link to="./pedido">
+                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Card.Body>
+                        </Card>
+                    </div>;
+                       
+                    console.log(resposta[i]);
+                        
+                    } 
 
-
+                    view += "\n";
+                }else {
+                    return <div>
+                        <p>Você ainda não tem favoritos salvos</p>
+                    </div>
+                }
+            })
+            .catch(error => {
+                return error;
+            }
+            )
     }
-
 
     render() {
 
@@ -70,7 +91,10 @@ class Favoritos extends React.Component {
                 </div>
 
                 <div styleName= "produto">
-                     {produto}
+                    <div>
+                       {this.show()}
+                    </div>
+                    
                 </div>
             
                     

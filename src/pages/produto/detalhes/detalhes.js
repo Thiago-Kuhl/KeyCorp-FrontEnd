@@ -9,6 +9,7 @@ import axios from 'axios';
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Cookies from 'universal-cookie';
 
 import escritorio from '../../../image/escritorio.png'
 import postman from '../../../image/postman.png'
@@ -20,8 +21,48 @@ import vscode from '../../../image/vscode.png'
 
 var img;
 
-class Detalhes extends React.Component {
 
+class Detalhes extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            idUsuario: '',
+            idProduto: '',
+        }
+    }
+    
+    salvarFavorito = (event) => {
+
+        const cookies = new Cookies();
+
+        const favorito = {
+            idUsuario: cookies.get('idUsuario'),
+            idProduto: sessionStorage.getItem("id")
+        };
+    
+        //Arrumar as APIS 
+
+        // axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+        // axios.post('http://35.237.84.170/signup/', favorito)
+        //     .then(res => {
+        //         console.log(res)
+        //         console.log(res.data)
+        //         axios.post('http://35.237.84.170/login/', { "idUsuario" : favorito.Usuario, "idProduto": favorito.idProduto }).then(res => {
+                  
+        //         })
+        //     })
+        //     .catch(error => {
+        //         if (error.response.status === 409) {
+        //             alert('Favorito já cadastrado!');
+        //         }
+        //         if (error.response.status === 500 || error.response.status === 400) {
+        //             alert('Dados inválidos!');
+        //         }
+        //         return error;
+        //     }
+
+        // )
+    }
 
     render() {
 
@@ -73,7 +114,7 @@ class Detalhes extends React.Component {
                         </div>
 
                         <div styleName="buttom">
-                               <Button styleName="btn1 text"><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar aos Favoritos</Button> &nbsp;
+                               <Button onClick={this.salvarFavorito} styleName="btn1 text"><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar aos Favoritos</Button> &nbsp;
 
                             <Link  to="./pedido">
                                 <Button styleName="btn2 text"><FontAwesomeIcon icon="fa-shopping-cart" /> Comprar</Button>
