@@ -72,7 +72,7 @@ class Cadastro extends React.Component {
                 return error;
             }
 
-            )
+        )
     }
 
     render() {
