@@ -38,6 +38,7 @@ class Categoria extends React.Component {
                         </div>
                         <div className="col-12" styleName="grid-fix">
                             <div styleName="produtos">
+                                <h3 styleName="heading">Produtos</h3>
                                 <div className="row">
                                     <Produto />
                                     <Produto />
