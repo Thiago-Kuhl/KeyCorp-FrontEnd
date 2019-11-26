@@ -20,9 +20,13 @@
 }
 
 .historico td {
-    padding-right: 70px;
+    padding-right: 55px;
     padding-top: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+.historico td:nth-child(2) {
+    padding-right: 200px;
 }
 
 .historico h4 {
