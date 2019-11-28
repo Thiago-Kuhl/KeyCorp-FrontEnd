@@ -16,6 +16,7 @@ import Produto from './pages/produto/produto/produto';
 import Pedido from './pages/finalizar-pedido/pedido/pedido';
 import Pagamento1 from './pages/finalizar-pedido/pagamento1/pagamento1';
 import Pagamento2 from './pages/finalizar-pedido/pagamento2/pagamento2';
+import Sobre from './pages/institucional/sobre/sobre'
 
 import MenuUser from './pages/usuario/menu-user/menu-user';
 import Account from './pages/usuario/minha-conta/account' ;
@@ -77,6 +78,7 @@ ReactDOM.render(
             <Route path="/produto" exact component={Produto} />
             <Route path="/grid" exact component={ProdutoGrid} />
             <Route path="/detalhes" exact component={Detalhes} />
+            <Route path="/sobre" exact component={Sobre} />
             
 
 

@@ -44,8 +44,7 @@ class Home extends React.Component {
 
                 return window.location.href="./detalhes";
 
-                }
-                 
+                }   
             )
             .catch(error => {
                 return error;

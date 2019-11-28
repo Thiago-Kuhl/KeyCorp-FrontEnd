@@ -23,6 +23,11 @@ class Menu extends React.Component {
         }
     }
 
+    clearStorage = (event) => {
+        window.sessionStorage.clear();
+        window.localStorage.clear();
+    }
+
     handleChange = (event) => {
         console.log("id", event.target.name)
 
@@ -113,7 +118,7 @@ class Menu extends React.Component {
 
 
 
-                    <div styleName="titulo">
+                    <div styleName="titulo"  onClick={(event) => this.clearStorage(event)}>
                         <Link to="./">
                         <p>KEY CORP</p>
                         </Link>
@@ -153,7 +158,7 @@ class Menu extends React.Component {
                                             </ul> */}
                                         </li>
 
-                                        <li><a href="">Saiba mais</a></li>
+                                        <li><Link to="./sobre" >Saiba mais</Link></li>
 
                                         <li><a href="./contato">Contato</a></li>
                                     </ul>
