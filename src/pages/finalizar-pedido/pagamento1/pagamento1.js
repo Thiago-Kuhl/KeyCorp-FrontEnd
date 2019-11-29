@@ -23,7 +23,6 @@ class Pagamento1 extends React.Component {
 
         processOrder = (event) => {
             
-
             if(document.getElementById("nome").value == "" 
                 || document.getElementById("cartao").value == ""
                 || document.getElementById("vencimento").value == "" 
@@ -92,7 +91,7 @@ class Pagamento1 extends React.Component {
 
                             <span>
                                 <label>Vencimento</label> <br />
-                                <input  id="vencimento" type="date" placeholder=""></input>
+                                <input  id="vencimento" type="month" placeholder=""></input>
                             </span>
 
                             <span>

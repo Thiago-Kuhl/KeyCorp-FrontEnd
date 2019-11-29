@@ -65,7 +65,7 @@
 }
 
 .wrapper3 input {
-    width: 150px;
+    width: 200px;
 }
 
 .wrapper3 label {
@@ -73,13 +73,13 @@
 }
 
 .wrapper3 .cdg {
-    width: 130px;
-    margin-left: 20px;
-    margin-top: 1px;
+    width: 80px;
+    margin-left: 70px;
+    margin-top: 2px;
 }
 
 .wrapper3 .lb {
-    margin-left: 20px;
+    margin-left: 75px;
 }
 
 .wr {
