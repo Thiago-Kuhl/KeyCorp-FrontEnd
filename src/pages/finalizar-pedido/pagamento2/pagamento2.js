@@ -9,6 +9,10 @@ import Resumo from '../../finalizar-pedido/resumo/resumo-pedido'
 import swal from 'sweetalert';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
+import axios from 'axios';
+import Cookies from 'universal-cookie';
+
+
 
 class Pagamento2 extends React.Component {
 
@@ -30,8 +34,23 @@ class Pagamento2 extends React.Component {
             || document.getElementById("curso").value == ""){
             alert("Verifique os campos, todos devem ser preenchidos corretamente");
         } else {
-            swal("Pedido concluído!", "Verifique sua caixa de email!", "success");
-        }
+            const pedido = {
+                valorTotal: sessionStorage.getItem('valor'),
+                tipoPagamento: 3,
+                idProduto :  sessionStorage.getItem('id'),
+            };
+
+            const cookies = new Cookies();
+
+    
+            axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+            axios.post('http://35.237.84.170/insert/order/' + cookies.get('idUsuario'), pedido)
+                .then(res => {
+                    swal( `Pedido  ${sessionStorage.getItem('titulo') } concluído!`, "Verifique sua caixa de email!", "success");
+                })
+                .catch(error => {
+                    swal( `Erro no processamento do pedido  ${sessionStorage.getItem('titulo') }!`, "Por favor, tente novamente mais tarde!", "error");
+                })        }
 
         setInterval(() => {
             window.location.href="./";

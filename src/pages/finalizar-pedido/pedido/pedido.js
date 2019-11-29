@@ -8,6 +8,9 @@ import Resumo from '../resumo/resumo-pedido';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
 import swal from 'sweetalert';
+import axios from 'axios';
+import Cookies from 'universal-cookie';
+
 
 var option;
 class Pedido extends React.Component {
@@ -32,7 +35,23 @@ class Pedido extends React.Component {
                 break;
     
                 case "1":
-                    swal( `Pedido  ${sessionStorage.getItem('titulo') } concluído!`, "Verifique sua caixa de email!", "success");
+                    const pedido = {
+                        valorTotal: sessionStorage.getItem('valor'),
+                        tipoPagamento: 3,
+                        idProduto :  sessionStorage.getItem('id'),
+                    };
+
+                    const cookies = new Cookies();
+
+                    axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+                    axios.post('http://35.237.84.170/insert/order/' + cookies.get('idUsuario'), pedido)
+                        .then(res => {
+                            swal( `Pedido  ${sessionStorage.getItem('titulo') } concluído!`, "Verifique sua caixa de email!", "success");
+                        })
+                        .catch(error => {
+                            swal( `Erro no processamento do pedido  ${sessionStorage.getItem('titulo') }!`, "Por favor, tente novamente mais tarde!", "error");
+                        })
+
                     setInterval(() => {
                         window.location.href="./";
                     }, 5000);
@@ -41,6 +60,8 @@ class Pedido extends React.Component {
                 case "2":
                    window.location.href="./pagamento2";
                 break;
+
+                default:
             }
 
   
