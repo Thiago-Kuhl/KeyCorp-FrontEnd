@@ -77,11 +77,12 @@ class Menu extends React.Component {
                         
                     // }
 
-                
+                    sessionStorage.setItem('id', resposta[0].idProduto);
                     sessionStorage.setItem('titulo', resposta[0].nomeProduto);
                     sessionStorage.setItem('valor', resposta[0].valorBase);
                     sessionStorage.setItem('descricao', resposta[0].descProduto);
                     console.log(Produto.state);
+
                     return window.location.href="./categoria";
 
                 }

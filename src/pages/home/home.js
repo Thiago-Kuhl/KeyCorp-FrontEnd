@@ -152,7 +152,7 @@ class Home extends React.Component {
                             <div styleName="galeria">
                                 <div styleName="galeria1">
 
-                                    <div styleName="g" onClick={() => id = 1}>
+                                    <div styleName="g" onClick={() => id = 4}>
                                         <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto1"> </div>
                                             <div styleName="categ">
@@ -162,7 +162,7 @@ class Home extends React.Component {
                                     </div>
 
 
-                                    <div styleName="g" onClick={() => id = 1}>
+                                    <div styleName="g" onClick={() => id = 2}>
                                         <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto2"></div>
                                             <div styleName="categ">

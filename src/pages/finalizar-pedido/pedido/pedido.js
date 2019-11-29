@@ -7,6 +7,7 @@ import Footer from '../../footer/footer.js';
 import Resumo from '../resumo/resumo-pedido';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-bootstrap';
+import swal from 'sweetalert';
 
 var option;
 class Pedido extends React.Component {
@@ -31,7 +32,10 @@ class Pedido extends React.Component {
                 break;
     
                 case "1":
-                    window.location.href  = "";
+                    swal( `Pedido  ${sessionStorage.getItem('titulo') } concluído!`, "Verifique sua caixa de email!", "success");
+                    setInterval(() => {
+                        window.location.href="./";
+                    }, 5000);
                 break;
     
                 case "2":

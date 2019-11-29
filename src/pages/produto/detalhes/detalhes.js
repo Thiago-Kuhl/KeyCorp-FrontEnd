@@ -17,6 +17,7 @@ import oracle from '../../../image/oracle.jpg'
 import photoshopEnterprise from '../../../image/photoshop.png'
 import photoshopEducation from '../../../image/photoshop.png'
 import vscode from '../../../image/vscode.png'
+import vscode2 from '../../../image/vscode2.png'
 
 
 var img;
@@ -66,22 +67,22 @@ class Detalhes extends React.Component {
 
     render() {
 
-        var produto = sessionStorage.getItem("id");
+        var produto = sessionStorage.getItem("titulo");
 
         switch(produto){
-            case "0":
+            case "Oracle Database 18c - Enterprise Edition":
                 img = oracle;
                 break;
-            case "1":
-                img = vscode;
+            case "Visual Studio Code":
+                img = vscode2;
                 break;
-            case "2":
+            case "Photoshop - Enterprise Edition":
                 img = photoshopEnterprise;
                 break;
-            case "3":
+            case "Photoshop - Education Edition":
                 img = photoshopEducation;
                 break;
-            case "4":
+            case "Office 365 - Home Edition":
                 img = escritorio;
                 break;
         }

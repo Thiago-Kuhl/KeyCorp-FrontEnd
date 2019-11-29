@@ -19,22 +19,22 @@ var valorFinal =  valor -= valor * desconto;
 class Resumo extends React.Component {
     
     render() {
-        var produto = sessionStorage.getItem("id");
+        var produto = sessionStorage.getItem("titulo");
 
         switch(produto){
-            case "0":
+            case "Oracle Database 18c - Enterprise Edition":
                 img = oracle;
                 break;
-            case "1":
+            case "Visual Studio Code":
                 img = vscode;
                 break;
-            case "2":
+            case "Photoshop - Enterprise Edition":
                 img = photoshopEnterprise;
                 break;
-            case "3":
+            case "Photoshop - Education Edition":
                 img = photoshopEducation;
                 break;
-            case "4":
+            case "Office 365 - Home Edition":
                 img = escritorio;
                 break;
         }
