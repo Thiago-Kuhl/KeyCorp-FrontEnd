@@ -37,32 +37,34 @@ class Detalhes extends React.Component {
         const cookies = new Cookies();
 
         const favorito = {
-            idUsuario: cookies.get('idUsuario'),
-            idProduto: sessionStorage.getItem("id")
+            idProduto: sessionStorage.getItem("id"),
+            nomeProduto: "",
+            descProduto: "",
+            valorBase: ""
         };
+
+        var idUser = cookies.get('idUsuario');
     
-        //Arrumar as APIS 
 
-        // axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        // axios.post('http://35.237.84.170/signup/', favorito)
-        //     .then(res => {
-        //         console.log(res)
-        //         console.log(res.data)
-        //         axios.post('http://35.237.84.170/login/', { "idUsuario" : favorito.Usuario, "idProduto": favorito.idProduto }).then(res => {
-                  
-        //         })
-        //     })
-        //     .catch(error => {
-        //         if (error.response.status === 409) {
-        //             alert('Favorito já cadastrado!');
-        //         }
-        //         if (error.response.status === 500 || error.response.status === 400) {
-        //             alert('Dados inválidos!');
-        //         }
-        //         return error;
-        //     }
+        axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
+        axios.post('http://35.237.84.170/save/favorite/' + idUser, favorito)
+                .then(res => {
+                  console.log(res);
+                  console.log(res.data);
 
-        // )
+                })
+         
+            .catch(error => {
+                if (error.response.status === 409) {
+                    alert('Favorito já cadastrado!');
+                }
+                if (error.response.status === 500 || error.response.status === 400) {
+                    alert('Dados inválidos!');
+                }
+                return error;
+            }
+
+        )
     }
 
     render() {

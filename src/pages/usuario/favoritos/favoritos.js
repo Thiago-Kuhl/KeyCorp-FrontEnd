@@ -13,23 +13,26 @@ import Button from 'react-bootstrap/Button'
 
 import Cookies from 'universal-cookie';
 import axios from 'axios';
-
+const cookies = new Cookies();
 class Favoritos extends React.Component {
+
     show = () => {
+        var idUser = cookies.get('idUsuario');
+        console.log(idUser);
+
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.get('http://35.237.84.170/login/') //Arrumar a API, essa é so exemplo
-            .then(res =>  {
-                const cookies = new Cookies();
+        axios.get('http://35.237.84.170/get/favorites/' + idUser) //Arrumar a API, essa é so exemplo
+            .then(res => {
 
                 var view = "\n";
                 //Lógica para percorrer produtos
-                var resposta;
-                
-                if(resposta.idUsuario == cookies.get('idUsuario')){ //Arrumar a validação do usuário
+                var resposta = res.data;
 
-                    for(let i = 0; i < res.data.length; i++){
-                         resposta[i] = res.data[i] 
-                        view += <div>
+
+                 for (var i in resposta) {
+                    resposta[i] = res.data[i]
+
+                  view += <div>
                         <Card style={{ width: '15rem' }} styleName="produto">
                             <Card.Img variant="top" styleName="img" src="https://image.freepik.com/free-vector/pack-colorful-square-emoticons_23-2147589525.jpg" />
                             <Card.Body>
@@ -40,24 +43,23 @@ class Favoritos extends React.Component {
                                     </div>
                                     <div className="col-6">
                                         <Link to="./pedido">
-                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                            <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
                                         </Link>
                                     </div>
                                 </div>
                             </Card.Body>
                         </Card>
                     </div>;
-                       
-                    console.log(resposta[i]);
-                        
-                    } 
 
-                    view += "\n";
-                }else {
-                    return <div>
-                        <p>Você ainda não tem favoritos salvos</p>
-                    </div>
                 }
+                view += "\n";
+
+                console.log(view);
+
+                document.getElementById('show').innerHTML = view;
+
+               return <div>{view}</div>
+
             })
             .catch(error => {
                 return error;
@@ -67,49 +69,46 @@ class Favoritos extends React.Component {
 
     render() {
 
-        const cookies = new Cookies();
-
-        if(cookies.get('idUsuario') != undefined){
+        if (cookies.get('idUsuario') != undefined) {
 
             return <>
 
-            <Menu />
+                <Menu />
 
-            <div styleName="page">
+                <div styleName="page" onLoad={this.show()}>
 
-                <div aria-label="breadcrumb" styleName="breadcrumb">
+                    <div aria-label="breadcrumb" styleName="breadcrumb">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
                             <li className="breadcrumb-item" aria-current="page">Meus Favoritos</li>
                         </ol>
-                </div>
-
-                <div styleName="row">
-         
-                <div styleName="menu-user">
-                    <MenuUser />
-                </div>
-
-                <div styleName= "produto">
-                    <div>
-                       {this.show()}
                     </div>
-                    
-                </div>
-            
-              
-                    
-                </div>
-              
-            </div>
 
-            <Footer />
-            
-         
-        </>
+                    <div styleName="row">
+
+                        <div styleName="menu-user">
+                            <MenuUser />
+                        </div>
+
+                        <div styleName="produto">
+                            <div id="show" className="show">
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <Footer />
+
+
+            </>
         }
 
-        return <FavoritosFalse/>
+        return <FavoritosFalse />
     }
 }
 
