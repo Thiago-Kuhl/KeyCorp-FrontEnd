@@ -41,21 +41,21 @@ class Login extends React.Component {
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
         axios.post('http://35.237.84.170/login/', login)
-            .then(res =>  {
+            .then(res => {
                 const cookies = new Cookies();
 
                 console.log("aqui");
-                
+
                 console.log(res.data.idUsuario);
                 //console.log(res.data);
                 cookies.set('idUsuario', res.data.idUsuario, { path: '/' });
-                cookies.set('nome', res.data.nome , {path: '/'});
+                cookies.set('nome', res.data.nome, { path: '/' });
                 console.log("Cookie");
-                
+
                 console.log(cookies.get('idUsuario'));
 
-                return window.location.href="http://localhost:3000/";
-                
+                return window.location.href = "http://localhost:3000/";
+
             })
             .catch(error => {
                 return error;
