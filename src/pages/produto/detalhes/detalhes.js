@@ -19,9 +19,7 @@ import photoshopEducation from '../../../image/photoshop.png'
 import vscode from '../../../image/vscode.png'
 import vscode2 from '../../../image/vscode2.png'
 
-
 var img;
-
 
 class Detalhes extends React.Component {
     constructor(props) {
@@ -37,11 +35,13 @@ class Detalhes extends React.Component {
         const cookies = new Cookies();
 
         const favorito = {
-            idProduto: sessionStorage.getItem("id"),
+            idProduto: sessionStorage.getItem("idProduto"),
             nomeProduto: "",
             descProduto: "",
             valorBase: ""
         };
+
+        console.log(favorito.idProduto);
 
         var idUser = cookies.get('idUsuario');
     
@@ -49,18 +49,25 @@ class Detalhes extends React.Component {
         axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
         axios.post('http://35.237.84.170/save/favorite/' + idUser, favorito)
                 .then(res => {
-                  console.log(res);
+                  console.log(res + 1);
                   console.log(res.data);
 
+                  if (res.status === 200){
+                    alert('Favorito salvo com sucesso :)');
+                    window.location.href ='./favoritos';
+                }
+                
                 })
          
             .catch(error => {
+               
                 if (error.response.status === 409) {
                     alert('Favorito já cadastrado!');
                 }
-                if (error.response.status === 500 || error.response.status === 400) {
+                 if (error.response.status === 500 || error.response.status === 400) {
                     alert('Dados inválidos!');
                 }
+            
                 return error;
             }
 

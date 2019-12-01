@@ -35,6 +35,9 @@ class Home extends React.Component {
     
                 var resposta = res.data;
 
+                console.log(resposta);
+
+                sessionStorage.setItem("idProduto", resposta[id].idProduto)
                 sessionStorage.setItem('titulo', resposta[id].nomeProduto);
                 sessionStorage.setItem('valor', resposta[id].valorBase);
                 sessionStorage.setItem('descricao', resposta[id].descProduto);

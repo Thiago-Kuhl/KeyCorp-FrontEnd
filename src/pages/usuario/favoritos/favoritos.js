@@ -14,52 +14,46 @@ import Button from 'react-bootstrap/Button'
 import Cookies from 'universal-cookie';
 import axios from 'axios';
 const cookies = new Cookies();
+
+var idUser = cookies.get('idUsuario');
+
+const deleteFavorite = () => {          
+    axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+    axios.get('http://35.237.84.170/remove/favorite/' + idUser) 
+    .then(res => {
+
+    })  
+    .catch(error => {
+        return error;
+    }
+    )   
+}
+
+     
 class Favoritos extends React.Component {
 
+   
     show = () => {
-        var idUser = cookies.get('idUsuario');
-        console.log(idUser);
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.get('http://35.237.84.170/get/favorites/' + idUser) //Arrumar a API, essa é so exemplo
+        axios.get('http://35.237.84.170/get/favorites/' + idUser) 
             .then(res => {
 
                 var view = "\n";
                 //Lógica para percorrer produtos
                 var resposta = res.data;
 
-
                  for (var i in resposta) {
-                    resposta[i] = res.data[i]
 
-                  view += <div>
-                        <Card style={{ width: '15rem' }} styleName="produto">
-                            <Card.Img variant="top" styleName="img" src="https://image.freepik.com/free-vector/pack-colorful-square-emoticons_23-2147589525.jpg" />
-                            <Card.Body>
-                                <Card.Title id="titulo" name="titulo" styleName="text title">{resposta[i].nomeProduto}</Card.Title>
-                                <div className="row">
-                                    <div className="col-6 pt-2">
-                                        <Card.Text styleName="text">{resposta[i].valorBase}</Card.Text>
-                                    </div>
-                                    <div className="col-6">
-                                        <Link to="./pedido">
-                                            <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </Card.Body>
-                        </Card>
-                    </div>;
+                    resposta[i] = res.data[i];  
 
+                    console.log(resposta[i].idProduto);
+
+                     view +=  ' <div id="favorito"><div id="prod-favorite"><p> Aqui vai o titulo ' + resposta[i].idProduto + '</p><a><Button id="btn-favorite" value='+ resposta[i].idProduto +' styleName="btn text" onClick={'+deleteFavorite()+'}>Remover</Button><a><span><h3>Descrição</h3><h3>Valor: R$</h3></span></div></div>';    
                 }
                 view += "\n";
 
-                console.log(view);
-
-                document.getElementById('show').innerHTML = view;
-
-               return <div>{view}</div>
-
+                document.getElementById('show').innerHTML = view;         
             })
             .catch(error => {
                 return error;
@@ -84,20 +78,14 @@ class Favoritos extends React.Component {
                         </ol>
                     </div>
 
-                    <div styleName="row">
-
-                        <div styleName="menu-user">
+                    <div styleName="menu-user">
                             <MenuUser />
+                    </div>
+
+                    <div styleName="produto">
+
+                        <div id="show" className="show">
                         </div>
-
-                        <div styleName="produto">
-                            <div id="show" className="show">
-                            </div>
-
-                        </div>
-
-
-
                     </div>
 
                 </div>
