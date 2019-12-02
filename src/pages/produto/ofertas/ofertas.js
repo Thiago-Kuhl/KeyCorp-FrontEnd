@@ -53,14 +53,14 @@ class Ofertas extends React.Component {
                     <div styleName="combos">
                         <h3 styleName="heading">Confira nossos combos especiais:</h3>
                         <div className="row">
-                            <img src={img1} styleName="images" alt="combos" width="480" height="216" />
-                            <img src={img2} styleName="images" alt="combos" width="480" height="216" />
+                            <img src={"https://via.placeholder.com/600x200"} styleName="images" alt="combos" /*width="480" height="216" href="#"*/ />
+                            <img src={"https://via.placeholder.com/600x200"} styleName="images" alt="combos" /*width="480" height="216" href="#"*/ />
                         </div>
                     </div>
                     {/* outras ofertas */}
                     <div styleName="outros">
                         <h3 styleName="heading">Outras ofertas:</h3>
-                        <div className="row">
+                        <div className="row" styleName="produto">
                             <Produto />
                             <Produto />
                             <Produto />

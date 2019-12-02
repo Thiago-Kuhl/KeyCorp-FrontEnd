@@ -17,16 +17,30 @@
     margin: 15px;
     margin-left: -6px;
     width: 750px;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-top: 60px;
+}
+
+.combos {
+    width: 120%;
+    margin-left: -50px;
 }
 
 .combos .heading {
-    margin: 15px 100px;
+    margin-left: 230px;
+    margin-right: 230px;
     text-align: center;
+    font-size: 2rem;
 }
 
-.outros {
+.outros .heading {
+    margin-left: -50px;
+}
+
+.outros .produto {
     margin-bottom: 100px;
+    width: 120%;
+    margin-left: -90px;
 }
 
 .images {
