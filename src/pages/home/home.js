@@ -27,7 +27,7 @@ class Home extends React.Component {
         event.preventDefault();
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.get('http://35.237.84.170/search/products')
+        axios.get('http://35.237.149.227/search/products')
             .then(res =>  {
 
                 console.log(res.status);

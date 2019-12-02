@@ -40,7 +40,7 @@ class Password extends React.Component {
 
         if (updatepw.new === updatepw.new_repeat) {
             axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-            axios.put('http://35.237.84.170/update/user/password/', updatepw)
+            axios.put('http://35.237.149.227/update/user/password/', updatepw)
                 .then(res => {
                     console.log(res)
                     console.log(res.data)

@@ -49,11 +49,11 @@ class Cadastro extends React.Component {
         };
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.post('http://35.237.84.170/signup/', signup)
+        axios.post('http://35.237.149.227/signup/', signup)
             .then(res => {
                 console.log(res)
                 console.log(res.data)
-                axios.post('http://35.237.84.170/login/', { "email": signup.email, "senha": signup.senha }).then(res => {
+                axios.post('http://35.237.149.227/login/', { "email": signup.email, "senha": signup.senha }).then(res => {
                     const cookies = new Cookies();    
                     console.log(res)
                     console.log(res.data);

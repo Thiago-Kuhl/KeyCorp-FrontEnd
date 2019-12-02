@@ -43,7 +43,7 @@ class Pagamento1 extends React.Component {
 
 
             axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-            axios.post('http://35.237.84.170/insert/order/' + cookies.get('idUsuario'), pedido)
+            axios.post('http://35.237.149.227/insert/order/' + cookies.get('idUsuario'), pedido)
                 .then(res => {
                     swal(`Pedido  ${sessionStorage.getItem('titulo')} concluído!`, "Verifique sua caixa de email!", "success");
                 })
