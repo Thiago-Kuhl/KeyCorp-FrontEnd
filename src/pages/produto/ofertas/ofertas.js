@@ -1,13 +1,15 @@
 import React from 'react';
 import 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
 import style from './ofertas.module.css';
 import Menu from '../../menu/menu.js';
 import Footer from '../../footer/footer.js';
 import Produto from '../produto/produto.js';
+import Combo2 from '../../../image/combo2.png'
 
 
+var img1 = Combo2;
+var img2 = Combo2;
 
 class Ofertas extends React.Component {
 
@@ -28,26 +30,42 @@ class Ofertas extends React.Component {
                 </div>
 
                 <div className="container" styleName="page">
-                    <div className="row">
-                        <div className="col-12" styleName="grid-fix">
-                            <div styleName="produtos">
-                                <h3 styleName="heading">Produtos</h3>
+                    {/* destaques abaixo */}
+                    <div styleName="destaques">
+                        <h3 styleName="heading">Destaques do dia</h3>
+                        <div className="row">
+                            <div className="col">
+                                <img src={"https://via.placeholder.com/580x550"} alt="images" />
+                            </div>
+                            <div className="col">
                                 <div className="row">
-                                    <Produto />
-                                    <Produto />
-                                    <Produto />
+                                    <img src={"https://via.placeholder.com/266"} styleName="dImages" alt="destaques" />
+                                    <img src={"https://via.placeholder.com/266"} styleName="dImages" alt="destaques" />
                                 </div>
                                 <div className="row">
-                                    <Produto />
-                                    <Produto />
-                                    <Produto />
-                                </div>
-                                <div className="row">
-                                    <Produto />
-                                    <Produto />
-                                    <Produto />
+                                    <img src={"https://via.placeholder.com/266"} styleName="dImages" alt="destaques" />
+                                    <img src={"https://via.placeholder.com/266"} styleName="dImages" alt="destaques" />
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    {/* combos abaixo */}
+                    <div styleName="combos">
+                        <h3 styleName="heading">Confira nossos combos especiais:</h3>
+                        <div className="row">
+                            <img src={img1} styleName="images" alt="combos" width="480" height="216" />
+                            <img src={img2} styleName="images" alt="combos" width="480" height="216" />
+                        </div>
+                    </div>
+                    {/* outras ofertas */}
+                    <div styleName="outros">
+                        <h3 styleName="heading">Outras ofertas:</h3>
+                        <div className="row">
+                            <Produto />
+                            <Produto />
+                            <Produto />
+                            <Produto />
+                            <Produto />
                         </div>
                     </div>
                 </div>

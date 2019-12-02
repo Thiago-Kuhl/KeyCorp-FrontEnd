@@ -1,5 +1,7 @@
 .page {
     border-bottom: 1px solid rgba(255, 255, 255, 0.123);
+    width: 100%;
+    margin-top: 2%;
 }
 
 .breadcrumb {
@@ -12,19 +14,27 @@
 }
 
 .heading {
+    margin: 15px;
     margin-left: -6px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid white;
     width: 750px;
     font-size: 2rem;
 }
 
-.produtos {
-    position: relative;
-    width: 800px;
-    height: 592px;
-    left: 400px;
-    margin-top: -500px;
-    margin-left: -10px;
-    margin-bottom: 450px;
+.combos .heading {
+    margin: 15px 100px;
+    text-align: center;
+}
+
+.outros {
+    margin-bottom: 100px;
+}
+
+.images {
+    margin: 10px;
+    align-content: center;
+}
+
+.dImages {
+    margin-bottom: 15px;
+    margin-right: 15px;
 }
