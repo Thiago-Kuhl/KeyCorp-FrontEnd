@@ -1,6 +1,5 @@
 .page {
     border-bottom: 1px solid rgba(255, 255, 255, 0.123);
-    width: 100%;
     margin-top: 2%;
 }
 
@@ -43,9 +42,13 @@
     margin-left: -90px;
 }
 
-.images {
+.destaques {
+    width: 110%;
+    margin-left: -2.5%;
+}
+
+.comboImages {
     margin: 10px;
-    align-content: center;
 }
 
 .dImages {

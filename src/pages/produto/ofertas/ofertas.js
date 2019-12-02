@@ -35,7 +35,7 @@ class Ofertas extends React.Component {
                         <h3 styleName="heading">Destaques do dia</h3>
                         <div className="row">
                             <div className="col">
-                                <img src={"https://via.placeholder.com/580x550"} alt="images" />
+                                <img src={"https://via.placeholder.com/580x550"} alt="destaques" />
                             </div>
                             <div className="col">
                                 <div className="row">
@@ -53,8 +53,8 @@ class Ofertas extends React.Component {
                     <div styleName="combos">
                         <h3 styleName="heading">Confira nossos combos especiais:</h3>
                         <div className="row">
-                            <img src={"https://via.placeholder.com/600x200"} styleName="images" alt="combos" /*width="480" height="216" href="#"*/ />
-                            <img src={"https://via.placeholder.com/600x200"} styleName="images" alt="combos" /*width="480" height="216" href="#"*/ />
+                            <img src={"https://via.placeholder.com/600x200"} styleName="comboImages" alt="combos" /*width="480" height="216" href="#"*/ />
+                            <img src={"https://via.placeholder.com/600x200"} styleName="comboImages" alt="combos" /*width="480" height="216" href="#"*/ />
                         </div>
                     </div>
                     {/* outras ofertas */}
