@@ -38,19 +38,16 @@ class Categoria extends React.Component {
                             <div styleName="produtos">
                                 <h3 styleName="heading">Produtos</h3>
                                 <div className="row">
-                                    <Produto />
-                                    <Produto />
-                                    <Produto />
+                                    <div id="show" className="show">
+                                    </div>
                                 </div>
                                 <div className="row">
-                                    <Produto />
-                                    <Produto />
-                                    <Produto />
+                                    <div id="show" className="show">
+                                    </div>
                                 </div>
                                 <div className="row">
-                                    <Produto />
-                                    <Produto />
-                                    <Produto />
+                                    <div id="show" className="show">
+                                    </div>
                                 </div>
                             </div>
                         </div>
