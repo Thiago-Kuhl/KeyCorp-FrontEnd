@@ -12,7 +12,7 @@ class Usuario extends Component {
 
     console.log("Aqui qui uuiau  " + cookies.get('idUsuario'));
 
-    if(cookies.get('idUsuario') != undefined){
+    if(cookies.get('idUsuario') !== undefined){
         return <UserUsuario/>
     } 
       return <GuestUsuario />;

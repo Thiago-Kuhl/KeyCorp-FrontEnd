@@ -29,7 +29,7 @@ class Detalhes extends React.Component {
             idProduto: '',
         }
     }
-    
+
     salvarFavorito = (event) => {
 
         const cookies = new Cookies();
@@ -44,41 +44,41 @@ class Detalhes extends React.Component {
         console.log(favorito.idProduto);
 
         var idUser = cookies.get('idUsuario');
-    
 
-        axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
+
+        axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
         axios.post('http://35.237.84.170/save/favorite/' + idUser, favorito)
-                .then(res => {
-                  console.log(res + 1);
-                  console.log(res.data);
+            .then(res => {
+                console.log(res + 1);
+                console.log(res.data);
 
-                  if (res.status === 200){
+                if (res.status === 200) {
                     alert('Favorito salvo com sucesso :)');
-                    window.location.href ='./favoritos';
+                    window.location.href = './favoritos';
                 }
-                
-                })
-         
+
+            })
+
             .catch(error => {
-               
+
                 if (error.response.status === 409) {
                     alert('Favorito já cadastrado!');
                 }
-                 if (error.response.status === 500 || error.response.status === 400) {
+                if (error.response.status === 500 || error.response.status === 400) {
                     alert('Dados inválidos!');
                 }
-            
+
                 return error;
             }
 
-        )
+            )
     }
 
     render() {
 
         var produto = sessionStorage.getItem("titulo");
 
-        switch(produto){
+        switch (produto) {
             case "Oracle Database 18c - Enterprise Edition":
                 img = oracle;
                 break;
@@ -95,7 +95,7 @@ class Detalhes extends React.Component {
                 img = escritorio;
                 break;
         }
-        
+
 
         return (
             <>
@@ -113,23 +113,23 @@ class Detalhes extends React.Component {
                     <div className="produto">
                         <div className="row">
                             <div styleName="imgProduct">
-                            <img src={img} alt="some text" width="420" height="350"/>
+                                <img src={img} alt="some text" width="420" height="350" />
                             </div>
                         </div>
 
                         <div styleName="info">
-                                <h1 styleName="title">{sessionStorage.getItem("titulo")}</h1>
-                                <div styleName="rating"></div>
-                                <h1 styleName="valor-original">Preço: R${sessionStorage.getItem("valor")}</h1>
+                            <h1 styleName="title">{sessionStorage.getItem("titulo")}</h1>
+                            <div styleName="rating"></div>
+                            <h1 styleName="valor-original">Preço: R${sessionStorage.getItem("valor")}</h1>
                         </div>
 
                         <div styleName="buttom">
-                               <Button onClick={this.salvarFavorito} styleName="btn1 text"><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar aos Favoritos</Button> &nbsp;
+                            <Button onClick={this.salvarFavorito} styleName="btn1 text"><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar aos Favoritos</Button> &nbsp;
 
-                            <Link  to="./pedido">
+                            <Link to="./pedido">
                                 <Button styleName="btn2 text"><FontAwesomeIcon icon="fa-shopping-cart" /> Comprar</Button>
                             </Link>
-                       </div>
+                        </div>
                     </div>
                     <div className="row">
                         <div styleName="descricao">

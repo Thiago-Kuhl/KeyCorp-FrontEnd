@@ -15,91 +15,89 @@ import Cookies from 'universal-cookie';
 var option;
 class Pedido extends React.Component {
 
-    clearStorage = (event) =>{
+    clearStorage = (event) => {
         window.sessionStorage.clear();
         window.localStorage.clear();
     }
 
 
-    choose = (event) =>{
+    choose = (event) => {
         option = event.target.value;
 
         console.log(option);
     }
 
-    option = (event) =>{
-    
-            switch(option){
-                case "0":
-                    window.location.href="./pagamento1";
-                break;
-    
-                case "1":
-                    const pedido = {
-                        valorTotal: sessionStorage.getItem('valor'),
-                        tipoPagamento: 3,
-                        idProduto :  sessionStorage.getItem('id'),
-                    };
+    option = (event) => {
 
-                    const cookies = new Cookies();
-
-                    axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-                    axios.post('http://35.237.84.170/insert/order/' + cookies.get('idUsuario'), pedido)
-                        .then(res => {
-                            swal( `Pedido  ${sessionStorage.getItem('titulo') } concluído!`, "Verifique sua caixa de email!", "success");
-                        })
-                        .catch(error => {
-                            swal( `Erro no processamento do pedido  ${sessionStorage.getItem('titulo') }!`, "Por favor, tente novamente mais tarde!", "error");
-                        })
-
-                    setInterval(() => {
-                        window.location.href="./";
-                    }, 5000);
-                break;
-    
-                case "2":
-                   window.location.href="./pagamento2";
+        switch (option) {
+            case "0":
+                window.location.href = "./pagamento1";
                 break;
 
-                default:
+            case "1":
+                const pedido = {
+                    valorTotal: sessionStorage.getItem('valor'),
+                    tipoPagamento: 3,
+                    idProduto: sessionStorage.getItem('id'),
+                };
+
+                const cookies = new Cookies();
+
+                axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+                axios.post('http://35.237.84.170/insert/order/' + cookies.get('idUsuario'), pedido)
+                    .then(res => {
+                        swal(`Pedido  ${sessionStorage.getItem('titulo')} concluído!`, "Verifique sua caixa de email!", "success");
+                    })
+                    .catch(error => {
+                        swal(`Erro no processamento do pedido  ${sessionStorage.getItem('titulo')}!`, "Por favor, tente novamente mais tarde!", "error");
+                    })
+
+                setInterval(() => {
+                    window.location.href = "./";
+                }, 5000);
+                break;
+
+            case "2":
+                window.location.href = "./pagamento2";
+                break;
+
+            default:
+        }
+
+
+        var cpf = document.getElementById("cpf").value;
+        var numeros, digitos, soma, i, resultado, digitos_iguais;
+
+        digitos_iguais = 1;
+        if (cpf.length < 11)
+            return alert("CPF inválido");
+        for (i = 0; i < cpf.length - 1; i++)
+            if (cpf.charAt(i) !== cpf.charAt(i + 1)) {
+                digitos_iguais = 0;
+                break;
             }
-
-  
-            var cpf = document.getElementById("cpf").value;
-            var numeros, digitos, soma, i, resultado, digitos_iguais;
-
-            digitos_iguais = 1;
-            if (cpf.length < 11)
+        if (!digitos_iguais) {
+            numeros = cpf.substring(0, 9);
+            digitos = cpf.substring(9);
+            soma = 0;
+            for (i = 10; i > 1; i--)
+                soma += numeros.charAt(10 - i) * i;
+            resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+            if (resultado !== digitos.charAt(0))
                 return alert("CPF inválido");
-            for (i = 0; i < cpf.length - 1; i++)
-                if (cpf.charAt(i) != cpf.charAt(i + 1))
-                        {
-                        digitos_iguais = 0;
-                        break;
-                        }
-            if (!digitos_iguais)
-                {
-                numeros = cpf.substring(0,9);
-                digitos = cpf.substring(9);
-                soma = 0;
-                for (i = 10; i > 1; i--)
-                        soma += numeros.charAt(10 - i) * i;
-                resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
-                if (resultado != digitos.charAt(0))
-                        return alert("CPF inválido");
-                numeros = cpf.substring(0,10);
-                soma = 0;
-                for (i = 11; i > 1; i--)
-                        soma += numeros.charAt(11 - i) * i;
-                resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
-                if (resultado != digitos.charAt(1))
-                        return alert("CPF inválido")
-                return true;
-                }
-            else
-                return alert("CPF inválido");
-            }
-    
+            numeros = cpf.substring(0, 10);
+            soma = 0;
+            for (i = 11; i > 1; i--)
+                soma += numeros.charAt(11 - i) * i;
+            resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+            if (resultado !== digitos.charAt(1))
+                return alert("CPF inválido")
+            return true;
+        }
+        else
+            return alert("CPF inválido");
+    }
+
     render() {
         return (<>
 
@@ -107,7 +105,7 @@ class Pedido extends React.Component {
 
             <div styleName="finalizar-pedido">
 
-            <Menu />
+                <Menu />
 
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">
@@ -135,7 +133,7 @@ class Pedido extends React.Component {
                         <div styleName="wrapper2 wr">
                             <span>
                                 <label>CPF</label> <br />
-                                <input id="cpf"type="text"></input>
+                                <input id="cpf" type="text"></input>
                             </span>
                         </div>
 

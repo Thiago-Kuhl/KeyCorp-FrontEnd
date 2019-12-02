@@ -9,7 +9,7 @@ class Carrinho extends Component {
   render(){
     const cookies = new Cookies();
 
-    if(cookies.get('idUsuario') != undefined){
+    if(cookies.get('idUsuario') !== undefined){
       return <UserCart/> ;
     }
 

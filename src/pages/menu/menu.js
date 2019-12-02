@@ -1,6 +1,6 @@
 
-import React from 'react'; 
-import ReactDOM from 'react-dom'; 
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { Redirect } from 'react-router'
 import { Link } from 'react-router-dom';
 import CSSModule from 'react-css-modules';
@@ -14,12 +14,12 @@ import NotFoundProduct from '../../components/search/search'
 
 class Menu extends React.Component {
 
-    
+
     constructor(props) {
-        
+
         super(props);
         this.state = {
-           search : ''
+            search: ''
         }
     }
 
@@ -45,36 +45,36 @@ class Menu extends React.Component {
 
     // }
 
-    
+
     handleSubmit = (event) => {
         event.preventDefault();
 
-        const produto = document.getElementById("search").value; 
-        
+        const produto = document.getElementById("search").value;
+
         console.log("haahahahah" + produto);
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
         axios.get('http://35.237.84.170/search/product/' + produto)
-            .then(res =>  {
+            .then(res => {
                 // const cookies = new Cookies();
                 console.log(res.status);
                 console.log(res.data[0])
-                if(res.status === 204){
+                if (res.status === 204) {
                     console.log("Renderiza página de NOT FOUND");
-                    return window.location.href="./search";
+                    return window.location.href = "./search";
                 }
-                else if(res.status === 200){
+                else if (res.status === 200) {
                     console.log("Renderiza página de produtos");
 
                     var resposta = res.data;
-                    
+
                     //Lógica para percorrer produtos
 
                     // for(let i = 0; i < res.data.length; i++){
                     //     resposta[i] = res.data[i]
-                        
+
                     //     console.log(resposta[i]);
-                        
+
                     // }
 
                     sessionStorage.setItem('id', resposta[0].idProduto);
@@ -83,32 +83,32 @@ class Menu extends React.Component {
                     sessionStorage.setItem('descricao', resposta[0].descProduto);
                     console.log(Produto.state);
 
-                    return window.location.href="./categoria";
+                    return window.location.href = "./categoria";
 
                 }
                 else {
                     console.log("Renderiza 404");
-                    
+
                 }
-                
+
                 // console.log("aqui");
-                
+
                 // //trás a resposta baseado na posição do indice   const resposta = res.data[];
                 // console.log(resposta[0].idProduto);
-                
+
                 // for(let i = 0; i < resposta.length; i++){
-                       
+
                 // }                
                 // Pega o que tiver no indice X --- console.log(resposta[0].idProduto);
 
-            
+
             })
             .catch(error => {
                 return error;
             }
             )
-            
-           
+
+
     }
 
     render() {
@@ -119,20 +119,20 @@ class Menu extends React.Component {
 
 
 
-                    <div styleName="titulo"  onClick={(event) => this.clearStorage(event)}>
-                        <Link to="./">
-                        <p>KEY CORP</p>
-                        </Link>
-                    </div>
+                        <div styleName="titulo" onClick={(event) => this.clearStorage(event)}>
+                            <Link to="./">
+                                <p>KEY CORP</p>
+                            </Link>
+                        </div>
 
                         <div className="col-md-7" styleName="navegacao">
                             <div className="row" styleName="barra">
-                            <form onSubmit={this.handleSubmit}>
-                                <input onChange={(event) => this.handleChange(event)} id="search" name="search" placeholder="Pesquise aqui..." type="t"/>
-                                {/* <button type="submit" styleName="searchButton"> */}
-                                  {/* <i></i> */}
-                                 {/* </button> */}
-                            </form>
+                                <form onSubmit={this.handleSubmit}>
+                                    <input onChange={(event) => this.handleChange(event)} id="search" name="search" placeholder="Pesquise aqui..." type="t" />
+                                    {/* <button type="submit" styleName="searchButton"> */}
+                                    {/* <i></i> */}
+                                    {/* </button> */}
+                                </form>
                             </div>
 
                             <div className="row" styleName="produto">
@@ -188,7 +188,7 @@ class Menu extends React.Component {
                                 <span styleName="text" >
                                     <Link to="/favoritos">
                                         <FontAwesomeIcon styleName="icon" icon="heart" /> &emsp;
-                                       <label>Favoritos</label> 
+                                       <label>Favoritos</label>
                                     </Link>
                                 </span>
                             </div>
@@ -196,7 +196,7 @@ class Menu extends React.Component {
                     </div>
                 </div>
             </div>
-        );  
+        );
     }
 
 }

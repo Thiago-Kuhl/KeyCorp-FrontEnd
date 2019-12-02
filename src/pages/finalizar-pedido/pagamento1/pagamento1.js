@@ -24,44 +24,44 @@ class Pagamento1 extends React.Component {
         }
     }
 
-        processOrder = (event) => {
-            
-            if(document.getElementById("nome").value == "" 
-                || document.getElementById("cartao").value == ""
-                || document.getElementById("vencimento").value == "" 
-                || document.getElementById("codigo").value == ""){
-                alert("Verifique os campos, todos devem ser preenchidos corretamente");
-            } else {
+    processOrder = (event) => {
 
-                const pedido = {
-                    valorTotal: sessionStorage.getItem('valor'),
-                    tipoPagamento: 1,
-                    idProduto :  sessionStorage.getItem('id'),
-                };
+        if (document.getElementById("nome").value === ""
+            || document.getElementById("cartao").value === ""
+            || document.getElementById("vencimento").value === ""
+            || document.getElementById("codigo").value === "") {
+            alert("Verifique os campos, todos devem ser preenchidos corretamente");
+        } else {
 
-                const cookies = new Cookies();
+            const pedido = {
+                valorTotal: sessionStorage.getItem('valor'),
+                tipoPagamento: 1,
+                idProduto: sessionStorage.getItem('id'),
+            };
 
-        
-                axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-                axios.post('http://35.237.84.170/insert/order/' + cookies.get('idUsuario'), pedido)
-                    .then(res => {
-                        swal( `Pedido  ${sessionStorage.getItem('titulo') } concluído!`, "Verifique sua caixa de email!", "success");
-                    })
-                    .catch(error => {
-                        swal( `Erro no processamento do pedido  ${sessionStorage.getItem('titulo') }!`, "Por favor, tente novamente mais tarde!", "error");
-                    })
-            } 
+            const cookies = new Cookies();
 
-            setInterval(() => {
-                window.location.href="./";
-            }, 5000);
+
+            axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+            axios.post('http://35.237.84.170/insert/order/' + cookies.get('idUsuario'), pedido)
+                .then(res => {
+                    swal(`Pedido  ${sessionStorage.getItem('titulo')} concluído!`, "Verifique sua caixa de email!", "success");
+                })
+                .catch(error => {
+                    swal(`Erro no processamento do pedido  ${sessionStorage.getItem('titulo')}!`, "Por favor, tente novamente mais tarde!", "error");
+                })
         }
 
-    clearStorage = (event) =>{
+        setInterval(() => {
+            window.location.href = "./";
+        }, 5000);
+    }
+
+    clearStorage = (event) => {
         window.sessionStorage.clear();
         window.localStorage.clear();
     }
-    
+
 
     render() {
         return (<>
@@ -108,7 +108,7 @@ class Pagamento1 extends React.Component {
 
                             <span>
                                 <label>Vencimento</label> <br />
-                                <input  id="vencimento" type="month" placeholder=""></input>
+                                <input id="vencimento" type="month" placeholder=""></input>
                             </span>
 
                             <span>
@@ -118,7 +118,7 @@ class Pagamento1 extends React.Component {
 
                         </div>
 
-                        <div styleName="botton"  onClick={(event) => this.processOrder(event)}>
+                        <div styleName="botton" onClick={(event) => this.processOrder(event)}>
                             <Link>Finalizar &emsp;
                             <FontAwesomeIcon styleName="icon" icon="chevron-right" />
                             </Link>

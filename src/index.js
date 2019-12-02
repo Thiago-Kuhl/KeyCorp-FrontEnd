@@ -19,32 +19,34 @@ import Pagamento2 from './pages/finalizar-pedido/pagamento2/pagamento2';
 import Sobre from './pages/institucional/sobre/sobre'
 
 import MenuUser from './pages/usuario/menu-user/menu-user';
-import Account from './pages/usuario/minha-conta/account' ;
-import Password from './pages/usuario/alterar-senha/password' ;
-import Favoritos from './pages/usuario/favoritos/favoritos' ;
-import Historico from './pages/usuario/historico/historico' ;
-import Logo from  './external-components/logo/logo';
-import UserCart from  './pages/carrinho/user-cart/user-cart';
+import Account from './pages/usuario/minha-conta/account';
+import Password from './pages/usuario/alterar-senha/password';
+import Favoritos from './pages/usuario/favoritos/favoritos';
+import Historico from './pages/usuario/historico/historico';
+import Logo from './external-components/logo/logo';
+import UserCart from './pages/carrinho/user-cart/user-cart';
 import Resumo from '../src/pages/finalizar-pedido/resumo/resumo-pedido'
-import SimpleMap from  './external-components/maps/maps';
-import Usuario from  './pages/menu/usuario/usuario';
+import SimpleMap from './external-components/maps/maps';
+import Usuario from './pages/menu/usuario/usuario';
 import NotFoundSearch from './components/search/search'
-import ProdutoGrid from    './pages/produto/produto-grid/produto-grid'
 import Detalhes from './pages/produto/detalhes/detalhes'
+import Ofertas from './pages/produto/ofertas/ofertas'
 //Para os icones
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-import { faChevronDown, faUserCircle,  faBell,
-faHeart, faShoppingCart, faInbox,faCheckCircle, 
-faCreditCard,faCheckDouble, faShieldAlt, faPhoneAlt,
-faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey,
-faFrown, faRobot, faSquare } from '@fortawesome/free-solid-svg-icons';
+import {
+    faChevronDown, faUserCircle, faBell,
+    faHeart, faShoppingCart, faInbox, faCheckCircle,
+    faCreditCard, faCheckDouble, faShieldAlt, faPhoneAlt,
+    faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey,
+    faFrown, faRobot, faSquare
+} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faChevronDown, faUserCircle,  faBell,
+library.add(faChevronDown, faUserCircle, faBell,
     faHeart, faShoppingCart, faInbox, faCheckCircle,
     faCheckDouble, faCreditCard, faShieldAlt, faPhoneAlt,
     faEnvelopeOpenText, faChevronRight, faChevronLeft, faKey,
-    faFrown, faRobot, faSquare )
+    faFrown, faRobot, faSquare)
 //Rotas
 
 ReactDOM.render(
@@ -76,10 +78,10 @@ ReactDOM.render(
             <Route path="/SimpleMap" exact component={SimpleMap} />
             <Route path="/categoria" exact component={Categoria} />
             <Route path="/produto" exact component={Produto} />
-            <Route path="/grid" exact component={ProdutoGrid} />
+            <Route path="/ofertas" exact component={Ofertas} />
             <Route path="/detalhes" exact component={Detalhes} />
             <Route path="/sobre" exact component={Sobre} />
-            
+
 
 
         </Switch>

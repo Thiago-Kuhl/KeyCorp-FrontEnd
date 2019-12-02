@@ -8,9 +8,6 @@ import Menu from '../../menu/menu.js';
 import MenuUser from '../menu-user/menu-user.js';
 import FavoritosFalse from './favoritosFalse';
 import Footer from '../../footer/footer.js';
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
-
 import Cookies from 'universal-cookie';
 import axios from 'axios';
 const cookies = new Cookies();
@@ -63,7 +60,7 @@ class Favoritos extends React.Component {
 
     render() {
 
-        if (cookies.get('idUsuario') != undefined) {
+        if (cookies.get('idUsuario') !== undefined) {
 
             return <>
 

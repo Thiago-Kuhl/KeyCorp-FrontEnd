@@ -28,47 +28,48 @@ class Pagamento2 extends React.Component {
 
     processOrder = (event) => {
 
-        if(document.getElementById("instituicao").value == "" 
-            || document.getElementById("nome").value == ""
-            || document.getElementById("email").value == "" 
-            || document.getElementById("curso").value == ""){
+        if (document.getElementById("instituicao").value === ""
+            || document.getElementById("nome").value === ""
+            || document.getElementById("email").value === ""
+            || document.getElementById("curso").value === "") {
             alert("Verifique os campos, todos devem ser preenchidos corretamente");
         } else {
             const pedido = {
                 valorTotal: sessionStorage.getItem('valor'),
                 tipoPagamento: 3,
-                idProduto :  sessionStorage.getItem('id'),
+                idProduto: sessionStorage.getItem('id'),
             };
 
             const cookies = new Cookies();
 
-    
+
             axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
             axios.post('http://35.237.84.170/insert/order/' + cookies.get('idUsuario'), pedido)
                 .then(res => {
-                    swal( `Pedido  ${sessionStorage.getItem('titulo') } concluído!`, "Verifique sua caixa de email!", "success");
+                    swal(`Pedido  ${sessionStorage.getItem('titulo')} concluído!`, "Verifique sua caixa de email!", "success");
                 })
                 .catch(error => {
-                    swal( `Erro no processamento do pedido  ${sessionStorage.getItem('titulo') }!`, "Por favor, tente novamente mais tarde!", "error");
-                })        }
+                    swal(`Erro no processamento do pedido  ${sessionStorage.getItem('titulo')}!`, "Por favor, tente novamente mais tarde!", "error");
+                })
+        }
 
         setInterval(() => {
-            window.location.href="./";
+            window.location.href = "./";
         }, 5000);
     }
 
-    clearStorage = (event) =>{
+    clearStorage = (event) => {
         window.sessionStorage.clear();
         window.localStorage.clear();
     }
-    
+
     render() {
         return (<>
 
             <Resumo />
 
             <div styleName="finalizar-pedido">
-                
+
                 <Menu />
 
                 <div aria-label="breadcrumb" styleName="breadcrumb">
@@ -122,7 +123,7 @@ class Pagamento2 extends React.Component {
 
                         </div>
 
-                        <div styleName="botton"  onClick={(event) => this.processOrder(event)}>
+                        <div styleName="botton" onClick={(event) => this.processOrder(event)}>
                             <Link>Finalizar &emsp;
                             <FontAwesomeIcon styleName="icon" icon="chevron-right" />
                             </Link>
