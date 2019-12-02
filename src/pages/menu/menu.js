@@ -141,7 +141,7 @@ class Menu extends React.Component {
                                     <ul>
                                         <li>
                                             <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
-                                            <a>Categorias</a>
+                                            <a href="categoria">Produtos</a>
                                             <ul styleName="ul">
                                                 <li><a href="">Exclusivos</a></li>
                                                 <li><a href="">Escola</a></li>
@@ -151,7 +151,7 @@ class Menu extends React.Component {
 
                                         <li>
                                             {/* <FontAwesomeIcon styleName="icon1" icon="chevron-down" /> */}
-                                            <a href="">Ofertas</a>
+                                            <a href="ofertas">Ofertas</a>
                                             {/* <ul>
                                                 <li><a href="">Office</a></li>
                                                 <li><a href="">IDEs</a></li>

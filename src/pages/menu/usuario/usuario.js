@@ -1,9 +1,7 @@
-
 import React, { Component } from 'react';
 import UserUsuario from '../menu-user1/menu-user1'
 import GuestUsuario from '../menu-user2/menu-user2'
 import Cookies from 'universal-cookie';
-
 
 class Usuario extends Component {
   
@@ -20,6 +18,5 @@ class Usuario extends Component {
       return <GuestUsuario />;
   }
 }
-
 
 export default Usuario;

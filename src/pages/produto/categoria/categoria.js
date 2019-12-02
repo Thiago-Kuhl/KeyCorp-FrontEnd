@@ -19,11 +19,9 @@ class Categoria extends React.Component {
     }
 
     render() {
-
         return (
             <>
                 <Menu />
-
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
