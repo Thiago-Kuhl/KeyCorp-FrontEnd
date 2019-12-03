@@ -47,7 +47,7 @@ class Detalhes extends React.Component {
 
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.post('http://35.237.84.170/save/favorite/' + idUser, favorito)
+        axios.post('http://35.237.149.227/save/favorite/' + idUser, favorito)
             .then(res => {
                 console.log(res + 1);
                 console.log(res.data);

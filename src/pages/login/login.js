@@ -40,7 +40,7 @@ class Login extends React.Component {
         };
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.post('http://35.237.84.170/login/', login)
+        axios.post('http://35.237.149.227/login/', login)
             .then(res => {
                 const cookies = new Cookies();
 

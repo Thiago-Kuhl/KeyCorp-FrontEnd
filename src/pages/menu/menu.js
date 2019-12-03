@@ -54,7 +54,7 @@ class Menu extends React.Component {
         console.log("haahahahah" + produto);
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.get('http://35.237.84.170/search/product/' + produto)
+        axios.get('http://35.237.149.227/search/product/' + produto)
             .then(res => {
                 // const cookies = new Cookies();
                 console.log(res.status);

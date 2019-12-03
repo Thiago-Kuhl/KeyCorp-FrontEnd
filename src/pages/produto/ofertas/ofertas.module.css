@@ -1,6 +1,5 @@
 .page {
     border-bottom: 1px solid rgba(255, 255, 255, 0.123);
-    width: 100%;
     margin-top: 2%;
 }
 
@@ -17,24 +16,43 @@
     margin: 15px;
     margin-left: -6px;
     width: 750px;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-top: 60px;
+}
+
+.combos {
+    width: 120%;
+    margin-left: -50px;
 }
 
 .combos .heading {
-    margin: 15px 100px;
+    margin-left: 230px;
+    margin-right: 230px;
     text-align: center;
+    font-size: 2rem;
 }
 
-.outros {
+.outros .heading {
+    margin-left: -50px;
+}
+
+.outros .produto {
     margin-bottom: 100px;
+    width: 120%;
+    margin-left: -90px;
 }
 
-.images {
+.destaques {
+    width: 110%;
+    margin-left: -2.5%;
+}
+
+.comboImages {
     margin: 10px;
-    align-content: center;
 }
 
 .dImages {
     margin-bottom: 15px;
     margin-right: 15px;
+    border-radius: 1%;
 }
