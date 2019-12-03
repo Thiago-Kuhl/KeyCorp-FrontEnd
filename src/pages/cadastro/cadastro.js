@@ -57,9 +57,9 @@ class Cadastro extends React.Component {
                     const cookies = new Cookies();    
                     console.log(res)
                     console.log(res.data);
-                    cookies.set('idUsuario', res.data.idUsuario, { path: '/' });
-                    cookies.set('nome', res.data.nome , {path: '/'});
-                    return window.location.href="http://localhost:3000/";
+                    cookies.set('idUsuario', res.data.idUsuario/*, { path: '/' }*/);
+                    cookies.set('nome', res.data.nome/*, { path: '/' }*/);
+                    return window.location.href="/";
                 })
             })
             .catch(error => {
