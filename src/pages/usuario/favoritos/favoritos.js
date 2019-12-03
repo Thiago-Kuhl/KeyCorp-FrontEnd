@@ -14,23 +14,15 @@ const cookies = new Cookies();
 
 var idUser = cookies.get('idUsuario');
 
-const deleteFavorite = () => {          
-    axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-    axios.get('http://35.237.84.170/remove/favorite/' + idUser) 
-    .then(res => {
 
-    })  
-    .catch(error => {
-        return error;
-    }
-    )   
-}
 
      
 class Favoritos extends React.Component {
 
    
     show = () => {
+
+      
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
         axios.get('http://35.237.84.170/get/favorites/' + idUser) 
@@ -46,7 +38,19 @@ class Favoritos extends React.Component {
 
                     console.log(resposta[i].idProduto);
 
-                     view +=  ' <div id="favorito"><div id="prod-favorite"><p> Aqui vai o titulo ' + resposta[i].idProduto + '</p><a><Button id="btn-favorite" value='+ resposta[i].idProduto +' styleName="btn text" onClick={'+deleteFavorite()+'}>Remover</Button><a><span><h3>Descrição</h3><h3>Valor: R$</h3></span></div></div>';    
+                    const deleteFavorite = () => {          
+                        axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+                        axios.get('http://35.237.84.170/remove/favorite/' + idUser) 
+                        .then(res => {
+                    
+                        })  
+                        .catch(error => {
+                            return error;
+                        }
+                        )   
+                    }
+
+                     view +=  ' <div id="favorito"><div id="prod-favorite"><p> Aqui vai o titulo ' + resposta[i].idProduto + '</p><a><button onClick={'+deleteFavorite()+'} id="btn-favorite" value='+ resposta[i].idProduto+'>Remover</button><a><span><h3>Descrição</h3><h3>Valor: R$</h3></span></div></div>';    
                 }
                 view += "\n";
 
@@ -88,7 +92,6 @@ class Favoritos extends React.Component {
                 </div>
 
                 <Footer />
-
 
             </>
         }
