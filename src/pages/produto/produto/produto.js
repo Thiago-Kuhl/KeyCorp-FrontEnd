@@ -28,11 +28,12 @@ class Produto extends React.Component {
 
 
     render() {
+        var img;
         return (
             <>
                 <div>
                     <Card style={{ width: '15rem' }} styleName="produto">
-                        <Card.Img variant="top" styleName="img" src="https://image.freepik.com/free-vector/pack-colorful-square-emoticons_23-2147589525.jpg" />
+                        <Card.Img variant="top" id="img" styleName="img" src={img} />
                         <Card.Body>
                             <Card.Title id="titulo" name="titulo" styleName="text title">{sessionStorage.getItem('titulo')}</Card.Title>
                             <div className="row">

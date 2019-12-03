@@ -113,7 +113,7 @@ class Detalhes extends React.Component {
                     <div className="produto">
                         <div className="row">
                             <div styleName="imgProduct">
-                                <img src={img} alt="some text" width="420" height="350" />
+                                <img styleName="imgProduct" src={img} alt="some text" width="420" height="350" />
                             </div>
                         </div>
 
@@ -145,18 +145,18 @@ class Detalhes extends React.Component {
     }
 }
 
-class Similares extends React.Component {
-    render() {
-        return (
-            <>
-                <div styleName="produtos">
-                    <div className="row">
-                        <Produto />
-                    </div>
-                </div>
-            </>
-        )
-    }
-}
+// class Similares extends React.Component {
+//     render() {
+//         return (
+//             <>
+//                 <div styleName="produtos">
+//                     <div className="row">
+//                         <Produto />
+//                     </div>
+//                 </div>
+//             </>
+//         )
+//     }
+// }
 
 export default CSSModule(Detalhes, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
