@@ -145,18 +145,18 @@ class Detalhes extends React.Component {
     }
 }
 
-class Similares extends React.Component {
-    render() {
-        return (
-            <>
-                <div styleName="produtos">
-                    <div className="row">
-                        <Produto />
-                    </div>
-                </div>
-            </>
-        )
-    }
-}
+// class Similares extends React.Component {
+//     render() {
+//         return (
+//             <>
+//                 <div styleName="produtos">
+//                     <div className="row">
+//                         <Produto />
+//                     </div>
+//                 </div>
+//             </>
+//         )
+//     }
+// }
 
 export default CSSModule(Detalhes, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })

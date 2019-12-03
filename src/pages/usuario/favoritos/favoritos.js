@@ -17,11 +17,7 @@ var idUser = cookies.get('idUsuario');
 
      
 class Favoritos extends React.Component {
-
-   
     show = () => {
-
-      
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
         axios.get('http://35.237.149.227/get/favorites/' + idUser) 
@@ -40,9 +36,7 @@ class Favoritos extends React.Component {
                     const deleteFavorite = () => {          
                         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
                         axios.get('http://35.237.84.170/remove/favorite/' + idUser) 
-                        .then(res => {
-                    
-                        })  
+                        .then(res => {})  
                         .catch(error => {
                             return error;
                         }
@@ -53,7 +47,7 @@ class Favoritos extends React.Component {
                 }
                 view += "\n";
 
-                document.getElementById('show').innerHTML = view;         
+                document.getElementById('show').innerHTML = view;
             })
             .catch(error => {
                 return error;
