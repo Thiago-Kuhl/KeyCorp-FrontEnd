@@ -14,21 +14,6 @@ const cookies = new Cookies();
 
 var idUser = cookies.get('idUsuario');
 
-<<<<<<< HEAD
-
-=======
-const deleteFavorite = () => {          
-    axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-    axios.get('http://35.237.149.227/remove/favorite/' + idUser) 
-    .then(res => {
-
-    })  
-    .catch(error => {
-        return error;
-    }
-    )   
-}
->>>>>>> e7758041ddc64cee17db0e6dcc01a92497b65692
 
      
 class Favoritos extends React.Component {
@@ -50,7 +35,7 @@ class Favoritos extends React.Component {
 
                     resposta[i] = res.data[i];  
 
-                    console.log(resposta[i].idProduto);
+                    console.log(resposta[i]);
 
                     const deleteFavorite = () => {          
                         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
@@ -64,7 +49,7 @@ class Favoritos extends React.Component {
                         )   
                     }
 
-                     view +=  ' <div id="favorito"><div id="prod-favorite"><p> Aqui vai o titulo ' + resposta[i].idProduto + '</p><a><button onClick={'+deleteFavorite()+'} id="btn-favorite" value='+ resposta[i].idProduto+'>Remover</button><a><span><h3>Descrição</h3><h3>Valor: R$</h3></span></div></div>';    
+                     view +=  ' <div id="favorito"><div id="prod-favorite"><p>' + resposta[i].nomeProduto + '</p><a><button onClick={'+deleteFavorite()+'} id="btn-favorite" value='+ resposta[i].idProduto+'>Remover</button><a><span><h3>Valor: R$ '+ resposta[i].valorBase+'</h3></span></div></div>';    
                 }
                 view += "\n";
 
@@ -102,6 +87,7 @@ class Favoritos extends React.Component {
                         <div id="show" className="show">
                         </div>
                     </div>
+
 
                 </div>
 

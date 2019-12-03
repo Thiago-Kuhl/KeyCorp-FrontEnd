@@ -7,8 +7,8 @@ import Footer from '../../footer/footer.js';
 import Produto from '../produto/produto.js';
 import Combo2 from '../../../image/combo2.png'
 import Postman from '../../../image/postman.png'
-import Sublime from '../../../image/sublime.png'
-import VisualStudio from '../../../image/vs.png'
+import Sublime from '../../../image/vscode2.png'
+import VisualStudio from '../../../image/vscode2.png'
 
 
 var img1 = Combo2;

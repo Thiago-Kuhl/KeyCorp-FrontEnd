@@ -28,19 +28,20 @@ button {
     background: #FF9900;
 }
 
-
-#favorito{
+#favorito {
     color: white;
 }
+
 #prod-favorite {
     border-bottom: 0.5px solid white;
 }
 
-#btn-favorite{
+#btn-favorite {
     background: black;
     border-color: rgba(255, 153, 0);
     border-radius: 3px;
     width: 15%;
-    float: right ;
+    float: right;
     color: white;
+    margin-top: -20px;
 }
