@@ -6,16 +6,21 @@ import Menu from '../../menu/menu.js';
 import Footer from '../../footer/footer.js';
 import Produto from '../produto/produto.js';
 import Combo2 from '../../../image/combo2.png'
+import Combo from '../../../image/combo.png'
 import Postman from '../../../image/postman.png'
-import Sublime from '../../../image/vscode2.png'
 import VisualStudio from '../../../image/vscode2.png'
+import VisualStudio2 from '../../../image/studio.png'
+import Sublime from '../../../image/sublime.png'
+import pbi from '../../../image/pbi.jpg'
 
 
 var img1 = Combo2;
-var img2 = Combo2;
+var img2 = Combo;
 var postman = Postman;
 var sublime = Sublime;
-var vs = VisualStudio;
+var vsc = VisualStudio;
+var vs = VisualStudio2;
+var powerbi = pbi;
 
 class Ofertas extends React.Component {
     // handleSubmit = (event) => {
@@ -104,16 +109,16 @@ class Ofertas extends React.Component {
                         <h3 styleName="heading">Destaques do dia</h3>
                         <div className="row">
                             <div className="col">
-                                <img src={"https://via.placeholder.com/580x550"} styleName="dImages" alt="destaques" />
+                                <a href="#"><img src={vs} styleName="dImages" alt="destaques" width="580" height="550" /></a>
                             </div>
                             <div className="col">
                                 <div className="row">
-                                    <img src={vs} styleName="dImages" alt="destaques" width="268" height="268" href="#" />
-                                    <img src={postman} styleName="dImages" alt="destaques" width="268" height="268" href="#" />
+                                    <a href="#"><img src={powerbi} styleName="dImages" alt="destaques" width="268" height="268" href="#" /></a>
+                                    <a href="#"><img src={sublime} styleName="dImages" alt="destaques" width="268" height="268" href="#" /></a>
                                 </div>
                                 <div className="row">
-                                    <img src={sublime} styleName="dImages" alt="destaques" width="268" height="268" href="#" />
-                                    <img src={postman} styleName="dImages" alt="destaques" width="268" height="268" href="#" />
+                                    <a href="#"><img src={vsc} styleName="dImages" alt="destaques" width="268" height="268" href="#" /></a>
+                                    <a href="#"><img src={postman} styleName="dImages" alt="destaques" width="268" height="268" href="#" /></a>
                                 </div>
                             </div>
                         </div>
@@ -122,8 +127,8 @@ class Ofertas extends React.Component {
                     <div styleName="combos">
                         <h3 styleName="heading">Confira nossos combos especiais:</h3>
                         <div className="row">
-                            <img src={"https://via.placeholder.com/600x200"} styleName="comboImages" alt="combos" /*width="480" height="216" href="#"*/ />
-                            <img src={"https://via.placeholder.com/600x200"} styleName="comboImages" alt="combos" /*width="480" height="216" href="#"*/ />
+                            <a href="#"><img src={img1} styleName="comboImages" alt="combos" width="600" height="265" /></a>
+                            <a href="#"><img src={img2} styleName="comboImages" alt="combos" width="600" height="265" /></a>
                         </div>
                     </div>
                     {/* outras ofertas */}
@@ -140,6 +145,5 @@ class Ofertas extends React.Component {
         )
     }
 }
-
 
 export default CSSModule(Ofertas, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
