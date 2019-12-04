@@ -90,7 +90,7 @@ class Home extends React.Component {
                             
                             </div>
                             <div className="col-3" onClick={() => id = 0}>
-                                    <div styleName="bloco" onClick={this.handleSubmit} id="2">
+                                    <div styleName="bloco" onClick={this.handleSubmit} id="1">
                                         <Link styleName="bl">
                                             <h3>Postman</h3>
                                             <div styleName="img img-prod2"></div>
@@ -174,7 +174,7 @@ class Home extends React.Component {
                                         </Link>
                                     </div>
 
-                                    <div styleName="g" onClick={() => id = 1}>
+                                    <div styleName="g" onClick={() => id = 5}>
                                          <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto3"></div>
                                             <div styleName="categ">
@@ -183,7 +183,7 @@ class Home extends React.Component {
                                         </Link>
                                     </div>
 
-                                    <div styleName="g" onClick={() => id = 1}>
+                                    <div styleName="g" onClick={() => id = 6}>
                                         <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto4"></div>
                                             <div styleName="categ">
@@ -195,7 +195,7 @@ class Home extends React.Component {
 
                                 <div styleName="galeria2">
 
-                                    <div styleName="g" onClick={() => id = 1}>
+                                    <div styleName="g" onClick={() => id = 7}>
                                          <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto1"> </div>
                                             <div styleName="categ">
@@ -204,7 +204,7 @@ class Home extends React.Component {
                                         </Link>
                                     </div>
 
-                                    <div styleName="g" onClick={() => id = 1}>
+                                    <div styleName="g" onClick={() => id = 8}>
                                         <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto2"></div>
                                             <div styleName="categ">
@@ -213,7 +213,7 @@ class Home extends React.Component {
                                         </Link>
                                     </div>
 
-                                    <div styleName="g" onClick={() => id = 1}>
+                                    <div styleName="g" onClick={() => id = 9}>
                                         <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto3"></div>
                                             <div styleName="categ">
@@ -222,7 +222,7 @@ class Home extends React.Component {
                                         </Link>
                                     </div>
 
-                                    <div styleName="g" onClick={() => id = 1}>
+                                    <div styleName="g" onClick={() => id = 10}>
                                           <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto4"></div>
                                             <div styleName="categ">
