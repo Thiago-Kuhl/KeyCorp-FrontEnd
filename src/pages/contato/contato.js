@@ -9,6 +9,10 @@ import Footer from '../footer/footer.js';
 import style from './contato.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SimpleMap from '../../external-components/maps/maps.js'
+import axios from 'axios';
+import swal from 'sweetalert';
+
+
 
 import 'react-bootstrap';
 
@@ -17,10 +21,41 @@ class Contato extends React.Component {
         super(props);
         this.state = {
             nome: '',
-            phone: '',
+            assunto: '',
             email: '',
             mensagem: ''
         }
+    }
+
+    handleChange = (event) => {
+
+        const state = Object.assign({}, this.state);
+
+        let field = event.target.id;
+
+        state[field] = event.target.value
+
+        this.setState(state)
+    }
+
+    sendEmail = (event) => {
+        event.preventDefault();
+
+        const msg = {
+            nome: this.state.nome,
+            assunto: this.state.assunto,
+            email: this.state.email,
+            mensagem: this.state.mensagem
+        };
+
+        axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+            axios.post('http://35.237.149.227/faleconosco/send-email/', msg)
+                .then(res => {
+                    swal("Email enviado com sucesso!",  `Em breve enviaremos uma resposta no email ${msg.email}`, "success");
+                })
+                .catch(error => {
+                    swal("Tivemos um problema para enviar o email"," Por gentileza, tente novamente mais tarde", "error")
+                })
     }
 
     render() {
@@ -37,19 +72,19 @@ class Contato extends React.Component {
                 </div>
 
                 <div styleName="container">
-                    <form styleName="form">
+                    <form styleName="form" onSubmit={this.sendEmail}>
                         <p>Entre em contato conosco</p>
 
                         <div styleName="wrapper1 wr">
 
                             <span>
                                 <label>Nome</label> <br />
-                                <input id="nome" type="text" placeholder=""></input>
+                                <input onChange={(event) => this.handleChange(event)} id="nome" type="text" placeholder="" required></input>
                             </span>
 
                             <span>
-                                <label>Telefone</label> <br />
-                                <input id="phone" type="text"></input>
+                                <label>Assunto</label> <br />
+                                <input onChange={(event) => this.handleChange(event)} id="assunto" type="text"required></input>
                             </span>
 
                         </div>
@@ -58,7 +93,7 @@ class Contato extends React.Component {
 
                             <span>
                                 <label>Email</label> <br />
-                                <input id="email" type="text"></input>
+                                <input onChange={(event) => this.handleChange(event)} id="email" type="text"required></input>
                             </span>
 
                         </div>
@@ -66,14 +101,13 @@ class Contato extends React.Component {
                         <div styleName="wrapper3 wr">
                             <span>
                                 <label>Mensagem</label> <br />
-                                <textarea  id="mensagem" styleName="textArea" type="text" placeholder="Insira sua mensagem aqui"></textarea>
+                                <textarea onChange={(event) => this.handleChange(event)} id="mensagem" styleName="textArea" type="text" placeholder="Insira sua mensagem aqui"required></textarea>
                             </span>
                         </div>
 
 
                         <div styleName="botton">
-                            <a href="#">Cancelar</a>
-                            <button type="submit">Enviar</button>
+                            <button type="submit" >Enviar</button>
                         </div>
 
                     </form>
@@ -86,11 +120,11 @@ class Contato extends React.Component {
                             <FontAwesomeIcon styleName="icon" icon="phone-alt" /> &emsp;
                                 <label>+55 11 8473-9944</label>
                         </span>
-
+{/* 
                         <span>
                             <FontAwesomeIcon styleName="icon" icon="envelope-open-text" /> &emsp;
                                 <label>suporte@keycorp.com</label>
-                        </span>
+                        </span> */}
 
                     </div>
                 </section>
