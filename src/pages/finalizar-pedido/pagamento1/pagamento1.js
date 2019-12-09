@@ -159,14 +159,14 @@ class Pagamento1 extends React.Component {
                         <div styleName="wrapper1 wr">
                             <span>
                                 <label>Nome completo</label> <br />
-                                <input id="nome" type="text" placeholder="Fulano da Silva" ></input>
+                                <input id="nome" type="text" placeholder="Fulano da Silva" required></input>
                             </span>
                         </div>
 
                         <div styleName="wrapper2 wr">
                             <span>
                                 <label>Número do cartão</label> <br />
-                                <input maxLength="16" minLength="16" id="cartao" placeholder="1234 **** **** 5678" type="text" onBlur={(event) => this.validadeCardBin(event)}></input>
+                                <input maxLength="16" minLength="16" id="cartao" placeholder="1234 **** **** 5678" type="text" onBlur={(event) => this.validadeCardBin(event)} required></input>
                             </span>
                         </div>
 
@@ -174,12 +174,12 @@ class Pagamento1 extends React.Component {
 
                             <span>
                                 <label>Vencimento</label> <br />
-                                <input maxLength="4" minLength="4" id="vencimento" type="month" placeholder="mm/yy" onBlur={(event) => this.validadeExpirationDate(event)} ></input>
+                                <input maxLength="4" minLength="4" id="vencimento" type="month" placeholder="mm/yy" onBlur={(event) => this.validadeExpirationDate(event)} required></input>
                             </span>
 
                             <span>
                                 <label styleName="lb">Código</label> <br />
-                                <input maxLength="3" minLength="3" id="codigo" styleName="cdg" placeholder="***" type="phone"></input>
+                                <input maxLength="3" minLength="3" id="codigo" styleName="cdg" placeholder="***" type="password" required></input>
                             </span>
 
                         </div>

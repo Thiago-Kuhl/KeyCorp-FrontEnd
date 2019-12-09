@@ -94,14 +94,14 @@ class Pagamento2 extends React.Component {
                         <div styleName="wrapper1 wr">
                             <span>
                                 <label>Instituição</label> <br />
-                                <input id="instituicao" type="text"></input>
+                                <input id="instituicao" type="text" required></input>
                             </span>
                         </div>
 
                         <div styleName="wrapper2 wr">
                             <span>
                                 <label>Nome completo</label> <br />
-                                <input id="nome" type="text"></input>
+                                <input id="nome" type="text" required></input>
                             </span>
                         </div>
 
@@ -109,7 +109,7 @@ class Pagamento2 extends React.Component {
 
                             <span>
                                 <label>Email</label> <br />
-                                <input id="email" type="email"></input>
+                                <input id="email" type="email" required></input>
                             </span>
 
                         </div>
@@ -118,7 +118,7 @@ class Pagamento2 extends React.Component {
 
                             <span>
                                 <label>Curso</label> <br />
-                                <input id="curso" type="text"></input>
+                                <input id="curso" type="text" required></input>
                             </span>
 
                         </div>

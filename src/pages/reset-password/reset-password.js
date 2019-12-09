@@ -4,17 +4,19 @@ import ReactDOM from 'react-dom'; */
 import { Link } from 'react-router-dom';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import CSSModule from 'react-css-modules';
-import style from './login.module.css';
+import style from './reset-password.module.css';
 import axios from 'axios';
+import swal from 'sweetalert';
 import Cookies from 'universal-cookie';
+import Swal from 'sweetalert2';
 
 
-class Login extends React.Component {
+class ResetPassword extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             email: '',
-            password: '',
+            emailConfirmation : ''
         }
     }
 
@@ -34,13 +36,13 @@ class Login extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        const login = {
-            email: this.state.email,
-            senha: this.state.password
-        };
+        const reset = {
+            email: this.state.email
+        }
 
-        axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.post('http://35.237.149.227/login/', login)
+        if(this.state.email == this.state.emailConfirmation){
+            axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+        axios.post('http://35.237.149.227/reset-password/', reset)
             .then(res => {
                 const cookies = new Cookies();
 
@@ -53,14 +55,20 @@ class Login extends React.Component {
                 console.log("Cookie");
 
                 console.log(cookies.get('idUsuario'));
-
-                return window.location.href = "/";
-
+                swal("Enviamos um email para recuperar sua senha!", "Por gentileza, verifique sua caixa de email!",  "success")
+                
             })
-            .catch(error => {
-                return error;
+            .catch(err => {
+                swal("Email informa não cadastrado"," Por gentileza, digite um email válido ou" 
+                + " crie uma conta!", "error")
             }
             )
+        }
+        else{
+            swal("Os emails devem coincidem"," Por gentileza, digite novamente o email!", "error")
+        }
+
+        
     }
 
     render() {
@@ -76,16 +84,16 @@ class Login extends React.Component {
 
                     <form onSubmit={this.handleSubmit}>
 
-                        <h1>Entre em sua conta</h1>
+                        <h1>Altere sua senha</h1>
                         <br />
 
                         <label> E-mail</label>
-                        <input onChange={(event) => this.handleChange(event)} id="email" styleName='input' type="text" name="email" required></input>
+                        <input onChange={(event) => this.handleChange(event)} id="email" styleName='input' type="email" name="email" required></input>
 
-                        <label> Senha</label>
-                        <input onChange={(event) => this.handleChange(event)} id="password" styleName='input' type="password" name="password" required></input>
+                        <label> Repita seu E-mail</label>
+                        <input onChange={(event) => this.handleChange(event)} id="emailConfirmation" styleName='input' type="email" name="emailConfirmation" required></input>
 
-                        <span><a href="./reset-password">Esqueceu sua senha?</a></span>
+                        <span><a href="./login">Login</a></span>
                         <span><a href="./cadastro">Cadastre-se</a></span>
 
                         <br />
@@ -100,4 +108,4 @@ class Login extends React.Component {
     }
 }
 
-export default CSSModule(Login, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })
+export default CSSModule(ResetPassword, style, { allowMultiple: true, handleNotFoundStyleName: "ignore" })

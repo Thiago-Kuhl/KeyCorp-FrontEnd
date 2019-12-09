@@ -84,19 +84,19 @@ class Password extends React.Component {
                             <div className="row">
                                 <div className="col-12">
                                     <label> Senha Atual</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="current" styleName='input' type="password" name="current"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="current" styleName='input' type="password" name="current" required></input>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12">
                                     <label> Nova Senha</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="new" styleName='input' type="password" name="new"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="new" styleName='input' type="password" name="new" required></input>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12">
                                     <label> Repita a Nova Senha</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="new-_repeat" styleName='input' type="password" name="new_repeat"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="new-_repeat" styleName='input' type="password" name="new_repeat" required></input>
                                 </div>
                             </div>
 
