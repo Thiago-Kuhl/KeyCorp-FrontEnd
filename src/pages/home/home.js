@@ -35,8 +35,6 @@ class Home extends React.Component {
     
                 var resposta = res.data;
 
-                console.log(resposta);
-
                 sessionStorage.setItem("idProduto", resposta[id].idProduto)
                 sessionStorage.setItem('titulo', resposta[id].nomeProduto);
                 sessionStorage.setItem('valor', resposta[id].valorBase);
@@ -89,13 +87,13 @@ class Home extends React.Component {
                                 </div>
                             
                             </div>
-                            <div className="col-3" onClick={() => id = 0}>
+                            <div className="col-3" onClick={() => id = 1}>
                                     <div styleName="bloco" onClick={this.handleSubmit} id="1">
                                         <Link styleName="bl">
-                                            <h3>Postman</h3>
+                                            <h3>VS Code</h3>
                                             <div styleName="img img-prod2"></div>
                                             <div styleName="desc">
-                                                <h3>Testes de API Web</h3>
+                                                <h3>Editor de código fonte</h3>
                                             </div>
                                         </Link>
                                     </div>

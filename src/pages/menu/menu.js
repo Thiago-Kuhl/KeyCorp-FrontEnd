@@ -140,13 +140,13 @@ class Menu extends React.Component {
                                 <div styleName="prod-options">
                                     <ul>
                                         <li>
-                                            <FontAwesomeIcon styleName="icon1" icon="chevron-down" />
+                                            {/* <FontAwesomeIcon styleName="icon1" icon="chevron-down" /> */}
                                             <a href="categoria">Produtos</a>
-                                            <ul styleName="ul">
+                                            {/* <ul styleName="ul">
                                                 <li><a href="">Exclusivos</a></li>
                                                 <li><a href="">Escola</a></li>
                                                 <li><a href="">Criatividade</a></li>
-                                            </ul>
+                                            </ul> */}
                                         </li>
 
                                         <li>
