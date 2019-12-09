@@ -13,6 +13,7 @@ import Cookies from 'universal-cookie';
 import mastercard from '../../../image/mastercard-logo.png'
 import visa from '../../../image/visa-logo.png'
 
+var img;
 class Pagamento1 extends React.Component {
 
     constructor(props) {
@@ -52,17 +53,16 @@ class Pagamento1 extends React.Component {
         axios.get(url)
         .then( res => {
           console.log(res.data);
-            var img;
+         
             //Recebe a bandeira do cartão de crédito
             switch(res.data.scheme){
-
                 case "visa": 
                 img = visa;
 
                 break;
 
                 case "mastercard":
-                img = mastercard
+                img = mastercard;
                 break;
 
                 default: alert("Cartão inválido!")

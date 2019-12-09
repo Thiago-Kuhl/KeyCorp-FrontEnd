@@ -13,7 +13,7 @@ import photoshopEducation from '../../../image/photoshop.png'
 import vscode from '../../../image/vscode.png'
 
 var img;
-export var desconto = 0.10; //Exemplo
+export var desconto = 0.00; //Exemplo
 var valor = sessionStorage.getItem('valor');
 var valorFinal =  valor -= valor * desconto;
 class Resumo extends React.Component {

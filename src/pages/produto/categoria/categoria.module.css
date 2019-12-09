@@ -22,13 +22,12 @@
 .produtos {
     position: relative;
     width: 800px;
-    height: 592px;
+    height: 800px;
     left: 400px;
     margin-top: -500px;
     margin-left: -10px;
     margin-bottom: 450px;
 }
-
 
 .card {
     width: 15rem;

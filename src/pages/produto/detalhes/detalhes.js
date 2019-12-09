@@ -104,7 +104,7 @@ class Detalhes extends React.Component {
                 <div aria-label="breadcrumb" styleName="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
-                        <li className="breadcrumb-item" aria-current="page">Meus favoritos</li>
+                        <li className="breadcrumb-item" aria-current="page">Detalhes</li>
                         <li className="breadcrumb-item" aria-current="page">{sessionStorage.getItem("titulo")}</li>
                     </ol>
                 </div>

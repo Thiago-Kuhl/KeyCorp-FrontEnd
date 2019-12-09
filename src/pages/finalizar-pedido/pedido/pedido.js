@@ -126,14 +126,14 @@ class Pedido extends React.Component {
                         <div styleName="wrapper1 wr">
                             <span>
                                 <label>Nome</label> <br />
-                                <input type="text" placeholder=""></input>
+                                <input type="text" placeholder="Fulano da Silva"></input>
                             </span>
                         </div>
 
                         <div styleName="wrapper2 wr">
                             <span>
                                 <label>CPF</label> <br />
-                                <input id="cpf" type="text"></input>
+                                <input id="cpf" type="text" placeholder="___.___.___-__"></input>
                             </span>
                         </div>
 
