@@ -165,7 +165,7 @@ class Pagamento1 extends React.Component {
 
                             <span>
                                 <label>Validade </label> <br />
-                                <input maxLength="6" id="vencimento" type="text" placeholder="mm/yy" onBlur={(event) => this.validadeExpirationDate(event)} required></input>
+                                <input maxLength="4" id="vencimento" type="text" placeholder="mm/yy" onBlur={(event) => this.validadeExpirationDate(event)} required></input>
                             </span>
 
                             <span>
