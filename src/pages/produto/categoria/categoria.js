@@ -154,8 +154,37 @@ import visio from '../../../image/visio.jpg'
 //     }
 // }
 
+var id;
 class Categoria extends React.Component {
+    handleSubmit = (event) => {
+        event.preventDefault();
 
+        axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+        axios.get('http://35.237.149.227/search/products')
+            .then(res =>  {
+
+                console.log(res.status);
+                console.log(res.data[id])
+    
+                var resposta = res.data;
+
+                sessionStorage.setItem("idProduto", resposta[id].idProduto)
+                sessionStorage.setItem('titulo', resposta[id].nomeProduto);
+                sessionStorage.setItem('valor', resposta[id].valorBase);
+                sessionStorage.setItem('descricao', resposta[id].descProduto);
+                sessionStorage.setItem('id', id);
+
+                console.log(resposta[id].nomeProduto);
+
+                return window.location.href="./detalhes";
+
+                }   
+            )
+            .catch(error => {
+                return error;
+            }
+            )     
+    }
     render() {
         return (
             <>
@@ -176,7 +205,7 @@ class Categoria extends React.Component {
                             <div styleName="produtos">
                                 <h3 styleName="heading">Produtos</h3>
                                 <div className="row">
-                                    <Card style={{ width: '15rem' }} styleName="card">
+                                    <Card onClick={() => id = 0} style={{ width: '15rem' }} styleName="card" >
                                         <Card.Img variant="top" id="img" styleName="img" src={oracle} />
                                         <Card.Body>
                                             <Card.Title id="titulo" name="titulo" styleName="text title">Oracle Database 18c - Enterprise Edition</Card.Title>
@@ -186,13 +215,13 @@ class Categoria extends React.Component {
                                                 </div>
                                                 <div className="col-6">
                                                     <Link to="./pedido">
-                                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                                        <Button onClick={this.handleSubmit} styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" />Ver Mais</Button>
                                                     </Link>
                                                 </div>
                                             </div>
                                         </Card.Body>
                                     </Card>
-                                    <Card style={{ width: '15rem' }} styleName="card">
+                                    <Card onClick={() => id = 1} style={{ width: '15rem' }} styleName="card">
                                         <Card.Img variant="top" id="img" styleName="img" src={vscode2} />
                                         <Card.Body>
                                             <Card.Title id="titulo" name="titulo" styleName="text title">Visual Studio Code</Card.Title>
@@ -202,13 +231,13 @@ class Categoria extends React.Component {
                                                 </div>
                                                 <div className="col-6">
                                                     <Link to="./pedido">
-                                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                                        <Button onClick={this.handleSubmit} styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Ver Mais</Button>
                                                     </Link>
                                                 </div>
                                             </div>
                                         </Card.Body>
                                     </Card>
-                                    <Card style={{ width: '15rem' }} styleName="card">
+                                    <Card onClick={() => id = 2} style={{ width: '15rem' }} styleName="card">
                                         <Card.Img variant="top" id="img" styleName="img" src={photoshopEnterprise} />
                                         <Card.Body>
                                             <Card.Title id="titulo" name="titulo" styleName="text title">Photoshop - Enterprise Edition</Card.Title>
@@ -218,7 +247,7 @@ class Categoria extends React.Component {
                                                 </div>
                                                 <div className="col-6">
                                                     <Link to="./pedido">
-                                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                                        <Button onClick={this.handleSubmit} styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Ver Mais</Button>
                                                     </Link>
                                                 </div>
                                             </div>
@@ -226,7 +255,7 @@ class Categoria extends React.Component {
                                     </Card>
                                 </div>
                                 <div className="row">
-                                    <Card style={{ width: '15rem' }} styleName="card">
+                                    <Card onClick={() => id = 3} style={{ width: '15rem' }} styleName="card">
                                         <Card.Img variant="top" id="img" styleName="img" src={photoshopEducation} />
                                         <Card.Body>
                                             <Card.Title id="titulo" name="titulo" styleName="text title">Photoshop - Education Edition</Card.Title>
@@ -236,13 +265,13 @@ class Categoria extends React.Component {
                                                 </div>
                                                 <div className="col-6">
                                                     <Link to="./pedido">
-                                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                                        <Button onClick={this.handleSubmit} styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Ver Mais</Button>
                                                     </Link>
                                                 </div>
                                             </div>
                                         </Card.Body>
                                     </Card>
-                                    <Card style={{ width: '15rem' }} styleName="card">
+                                    <Card onClick={() => id = 4} style={{ width: '15rem' }} styleName="card">
                                         <Card.Img variant="top" id="img" styleName="img" src={escritorio} />
                                         <Card.Body>
                                             <Card.Title id="titulo" name="titulo" styleName="text title">Office 365 - Home Edition</Card.Title>
@@ -252,13 +281,13 @@ class Categoria extends React.Component {
                                                 </div>
                                                 <div className="col-6">
                                                     <Link to="./pedido">
-                                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                                        <Button onClick={this.handleSubmit} styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Ver Mais</Button>
                                                     </Link>
                                                 </div>
                                             </div>
                                         </Card.Body>
                                     </Card>
-                                    <Card style={{ width: '15rem' }} styleName="card">
+                                    <Card onClick={() => id = 5} style={{ width: '15rem' }} styleName="card">
                                         <Card.Img variant="top" id="img" styleName="img" src={visio} />
                                         <Card.Body>
                                             <Card.Title id="titulo" name="titulo" styleName="text title">Microsoft Visio Professional 2019</Card.Title>
@@ -268,7 +297,7 @@ class Categoria extends React.Component {
                                                 </div>
                                                 <div className="col-6">
                                                     <Link to="./pedido">
-                                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                                        <Button onClick={this.handleSubmit} styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Ver Mais</Button>
                                                     </Link>
                                                 </div>
                                             </div>
@@ -276,7 +305,7 @@ class Categoria extends React.Component {
                                     </Card>
                                 </div>
                                 <div className="row">
-                                    <Card style={{ width: '15rem' }} styleName="card">
+                                    <Card onClick={() => id = 6} style={{ width: '15rem' }} styleName="card">
                                         <Card.Img variant="top" id="img" styleName="img" src={bizagi} />
                                         <Card.Body>
                                             <Card.Title id="titulo" name="titulo" styleName="text title">Bizagi Studio - Professional Edition</Card.Title>
@@ -286,13 +315,13 @@ class Categoria extends React.Component {
                                                 </div>
                                                 <div className="col-6">
                                                     <Link to="./pedido">
-                                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                                        <Button onClick={this.handleSubmit} styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" />Ver Mais</Button>
                                                     </Link>
                                                 </div>
                                             </div>
                                         </Card.Body>
                                     </Card>
-                                    <Card style={{ width: '15rem' }} styleName="card">
+                                    <Card onClick={() => id = 7} style={{ width: '15rem' }} styleName="card">
                                         <Card.Img variant="top" id="img" styleName="img" src={vs} />
                                         <Card.Body>
                                             <Card.Title id="titulo" name="titulo" styleName="text title">Visual Studio - Professional Edition</Card.Title>
@@ -302,13 +331,13 @@ class Categoria extends React.Component {
                                                 </div>
                                                 <div className="col-6">
                                                     <Link to="./pedido">
-                                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                                        <Button onClick={this.handleSubmit} styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Ver Mais</Button>
                                                     </Link>
                                                 </div>
                                             </div>
                                         </Card.Body>
                                     </Card>
-                                    <Card style={{ width: '15rem' }} styleName="card">
+                                    <Card onClick={() => id = 9} style={{ width: '15rem' }} styleName="card">
                                         <Card.Img variant="top" id="img" styleName="img" src={sql} />
                                         <Card.Body>
                                             <Card.Title id="titulo" name="titulo" styleName="text title">SQL Server Database 2017- Enterprise Edition</Card.Title>
@@ -318,7 +347,7 @@ class Categoria extends React.Component {
                                                 </div>
                                                 <div className="col-6">
                                                     <Link to="./pedido">
-                                                        <Button styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Adicionar</Button>
+                                                        <Button onClick={this.handleSubmit} styleName="btn text" href=""><FontAwesomeIcon icon="fa-shopping-cart" /> Ver Mais</Button>
                                                     </Link>
                                                 </div>
                                             </div>

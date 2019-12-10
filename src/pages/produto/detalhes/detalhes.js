@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Cookies from 'universal-cookie';
 
+//Imagens 
+
 import escritorio from '../../../image/escritorio.png'
 import postman from '../../../image/postman.png'
 import oracle from '../../../image/oracle.jpg'
@@ -18,6 +20,10 @@ import photoshopEnterprise from '../../../image/photoshop.png'
 import photoshopEducation from '../../../image/photoshop.png'
 import vscode from '../../../image/vscode.png'
 import vscode2 from '../../../image/vscode2.png'
+import visio from '../../../image/visio.jpg'
+import sql from '../../../image/sql.jpg';
+import vstudio from '../../../image/vstudio.jpg';
+import bizagi from '../../../image/bizagi.jpg';
 
 var img;
 
@@ -93,6 +99,18 @@ class Detalhes extends React.Component {
                 break;
             case "Office 365 - Home Edition":
                 img = escritorio;
+                break;
+            case "Microsoft Visio Professional 2019":
+                img = visio;
+                break;
+            case "SQL Server Database 2017- Enterprise Edition":
+                img = sql;
+                break;
+            case "Visual Studio - Professional Edition":
+                img = vstudio;
+                break;
+            case "Bizagi Studio - Professional Edition":
+                img = bizagi;
                 break;
         }
 
