@@ -44,8 +44,8 @@ class Pagamento1 extends React.Component {
     validadeCardBin = (event) => {
         var cardNumbers = document.getElementById("cartao").value
     
-            const url = 'https://lookup.binlist.net/43898481' /*+ cardNumbers[0]+cardNumbers[1]+cardNumbers[2]+cardNumbers[3]+cardNumbers[4]
-            +cardNumbers[5]+cardNumbers[6]+cardNumbers[7]*/
+            const url = 'https://lookup.binlist.net/43898481' + cardNumbers[0]+cardNumbers[1]+cardNumbers[2]+cardNumbers[3]+cardNumbers[4]
+            +cardNumbers[5]+cardNumbers[6]+cardNumbers[7];
 
         axios.defaults.headers.get['Accept-Version'] = '3';
 
@@ -53,6 +53,8 @@ class Pagamento1 extends React.Component {
         axios.get(url)
         .then( res => {
           console.log(res.data);
+
+          console.log(res.data.scheme);
          
             //Recebe a bandeira do cartão de crédito
             switch(res.data.scheme){
@@ -105,9 +107,9 @@ class Pagamento1 extends React.Component {
                 })
         }
 
-        setInterval(() => {
-            window.location.href = "./";
-        }, 5000);
+        // setInterval(() => {
+        //     window.location.href = "./";
+        // }, 5000);
     }
 
     clearStorage = (event) => {
@@ -138,19 +140,6 @@ class Pagamento1 extends React.Component {
 
                 </div>
 
-                {/* <section styleName="container">
-
-                        <div className="row">
-                            <div className="col-3" onLoad={(event) => this.validadeCardBin(event)}>
-                               
-                                <div onClick={this.handleSubmit}  styleName="bloco">
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </section> */}
-
-
                 <div styleName="container">
                     <form styleName="form">
 
@@ -163,18 +152,20 @@ class Pagamento1 extends React.Component {
                             </span>
                         </div>
 
-                        <div styleName="wrapper2 wr">
-                            <span>
+                        <div  onChange={(event) => this.validadeCardBin(event)} styleName="wrapper2 wr" >
+                            <span onClick={this.handleSubmit}>
                                 <label>Número do cartão</label> <br />
-                                <input maxLength="16" minLength="16" id="cartao" placeholder="1234 **** **** 5678" type="text" onBlur={(event) => this.validadeCardBin(event)} required></input>
+                                <input   maxLength="16" minLength="16" id="cartao" placeholder="1234 **** **** 5678" type="text" onBlur={(event) => this.validadeCardBin(event)} required></input>
+                                <img styleName="bandeira" src={img}  width="100%" alt=""/>
                             </span>
+                         
                         </div>
 
                         <div styleName="wrapper3 wr">
 
                             <span>
-                                <label>Vencimento</label> <br />
-                                <input maxLength="4" minLength="4" id="vencimento" type="month" placeholder="mm/yy" onBlur={(event) => this.validadeExpirationDate(event)} required></input>
+                                <label>Validade</label> <br />
+                                <input maxLength="6" id="vencimento" type="text" placeholder="mm/yy" onBlur={(event) => this.validadeExpirationDate(event)} required></input>
                             </span>
 
                             <span>
