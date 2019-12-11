@@ -22,10 +22,9 @@
     position: absolute;
     width: 420px;
     height: 350px;
-    /* left: 211px;
+    left: 211px;
     background: black;
-    top: 208px;
-    background: url(image.png); */
+    /* background: url(image.png); */
     border-radius: 2%;
 }
 

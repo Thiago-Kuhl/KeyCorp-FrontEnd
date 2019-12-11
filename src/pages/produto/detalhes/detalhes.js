@@ -130,7 +130,7 @@ class Detalhes extends React.Component {
                 <div className="container" styleName="detalhes">
                     <div className="produto">
                         <div className="row">
-                            <div styleName="imgProduct">
+                            <div styleName="">
                                 <img styleName="imgProduct" src={img} alt="some text" width="420" height="350" />
                             </div>
                         </div>
