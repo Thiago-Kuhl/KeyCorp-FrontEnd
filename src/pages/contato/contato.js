@@ -121,10 +121,10 @@ class Contato extends React.Component {
                                 <label>+55 11 8473-9944</label>
                         </span>
 
-                        <span>
+                        {/* <span>
                             <FontAwesomeIcon styleName="icon" icon="envelope-open-text" /> &emsp;
                                 <label>suporte@keycorp.com</label>
-                        </span>
+                        </span> */}
 
                     </div>
                 </section>
