@@ -7,7 +7,7 @@ import Menu from '../menu/menu.js';
 import Footer from '../footer/footer.js';
 import SiteInfo from '../site-info/site-info';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { func } from 'prop-types';
+// import { func } from 'prop-types';
 import 'react-bootstrap';
 import axios from 'axios';
 

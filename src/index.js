@@ -83,9 +83,6 @@ ReactDOM.render(
             <Route path="/ofertas" exact component={Ofertas} />
             <Route path="/detalhes" exact component={Detalhes} />
             <Route path="/sobre" exact component={Sobre} />
-
-
-
         </Switch>
     </BrowserRouter>
     , document.getElementById('root'));

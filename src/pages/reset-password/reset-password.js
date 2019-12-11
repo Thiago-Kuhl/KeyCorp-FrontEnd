@@ -84,17 +84,17 @@ class ResetPassword extends React.Component {
 
                     <form onSubmit={this.handleSubmit}>
 
-                        <h1>Altere sua senha</h1>
+                        <h1>Alterar  senha</h1>
                         <br />
 
-                        <label> E-mail</label>
+                        <label>Endereço de e-mail</label>
                         <input onChange={(event) => this.handleChange(event)} id="email" styleName='input' type="email" name="email" required></input>
 
-                        <label> Repita seu E-mail</label>
+                        <label>Repita seu e-mail</label>
                         <input onChange={(event) => this.handleChange(event)} id="emailConfirmation" styleName='input' type="email" name="emailConfirmation" required></input>
 
                         <span><a href="./login">Login</a></span>
-                        <span><a href="./cadastro">Cadastre-se</a></span>
+                        {/* <span><a href="./cadastro">Cadastre-se</a></span> */}
 
                         <br />
 

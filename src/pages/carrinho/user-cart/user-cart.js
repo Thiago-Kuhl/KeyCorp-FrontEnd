@@ -7,7 +7,7 @@ import Footer from '../../footer/footer'
 
 
 
-var produto = 0; //Aqui vai o id do produto da tela de produto
+// var produto = 0; //Aqui vai o id do produto da tela de produto
 
 
 class UserCart extends React.Component {

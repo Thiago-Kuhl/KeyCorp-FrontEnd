@@ -1,62 +1,15 @@
     .bg {
         height: 665px;
         background-size: cover;
-        background: linear-gradient(229deg, #ff9900, #211230);
-        background-size: 400% 400%;
-        -webkit-animation: AnimationName 17s ease infinite;
-        -moz-animation: AnimationName 17s ease infinite;
-        -o-animation: AnimationName 17s ease infinite;
-        animation: AnimationName 17s ease infinite;
-        @-webkit-keyframes AnimationName {
-            0% {
-                background-position: 81% 0%
-            }
-            50% {
-                background-position: 20% 100%
-            }
-            100% {
-                background-position: 81% 0%
-            }
-        }
-        @-moz-keyframes AnimationName {
-            0% {
-                background-position: 81% 0%
-            }
-            50% {
-                background-position: 20% 100%
-            }
-            100% {
-                background-position: 81% 0%
-            }
-        }
-        @-o-keyframes AnimationName {
-            0% {
-                background-position: 81% 0%
-            }
-            50% {
-                background-position: 20% 100%
-            }
-            100% {
-                background-position: 81% 0%
-            }
-        }
-        @keyframes AnimationName {
-            0% {
-                background-position: 81% 0%
-            }
-            50% {
-                background-position: 20% 100%
-            }
-            100% {
-                background-position: 81% 0%
-            }
-        }
+        background: linear-gradient(227.76deg, #6A43AA -9.18%, rgba(244, 241, 249, 0.0729167) 134.92%, rgba(255, 255, 255, 0) 134.93%), linear-gradient(227.76deg, #6A43AA -9.18%, rgba(255, 153, 0, 0.198379) 115.42%, rgba(244, 241, 249, 0.0729167) 134.92%, rgba(255, 255, 255, 0) 134.93%), #FF9900;
     }
     
     .Login {
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
         width: 400px;
         height: 400px;
         background-color: rgba(0, 0, 0, 0.85);
+        filter: ;
         position: relative;
         padding: 30px 45px 30px 45px;
         border-radius: 2px;

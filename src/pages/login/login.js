@@ -79,7 +79,7 @@ class Login extends React.Component {
                         <h1>Entre em sua conta</h1>
                         <br />
 
-                        <label> E-mail</label>
+                        <label> Endereço de e-mail</label>
                         <input onChange={(event) => this.handleChange(event)} id="email" styleName='input' type="text" name="email" required></input>
 
                         <label> Senha</label>

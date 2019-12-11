@@ -107,7 +107,7 @@ class Contato extends React.Component {
 
 
                         <div styleName="botton">
-                            <button type="submit" >Enviar</button>
+                            <button type="submit">Enviar</button>
                         </div>
 
                     </form>
@@ -120,11 +120,11 @@ class Contato extends React.Component {
                             <FontAwesomeIcon styleName="icon" icon="phone-alt" /> &emsp;
                                 <label>+55 11 8473-9944</label>
                         </span>
-{/* 
+
                         <span>
                             <FontAwesomeIcon styleName="icon" icon="envelope-open-text" /> &emsp;
                                 <label>suporte@keycorp.com</label>
-                        </span> */}
+                        </span>
 
                     </div>
                 </section>
@@ -142,7 +142,6 @@ class Contato extends React.Component {
 
                     </div>
                 </section>
-
             </div>
 
             
