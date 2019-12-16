@@ -28,7 +28,7 @@ class Pagamento1 extends React.Component {
 
     validadeExpirationDate = (event) =>{
         
-        let date = new Date;
+        let date = new Date();
         let year = date.getFullYear().toString().substr(-2);
 
         let expirationDate = document.getElementById("vencimento").value
@@ -44,10 +44,11 @@ class Pagamento1 extends React.Component {
     validadeCardBin = (event) => {
         var cardNumbers = document.getElementById("cartao").value
     
-            const url = 'https://lookup.binlist.net/43898481' + cardNumbers[0]+cardNumbers[1]+cardNumbers[2]+cardNumbers[3]+cardNumbers[4]
+            const url = 'https://lookup.binlist.net/' + cardNumbers[0]+cardNumbers[1]+cardNumbers[2]+cardNumbers[3]+cardNumbers[4]
             +cardNumbers[5]+cardNumbers[6]+cardNumbers[7];
 
         axios.defaults.headers.get['Accept-Version'] = '3';
+        axios.defaults.headers.get['Access-Control-Allow-Origin'] = "*";
 
 
         axios.get(url)
