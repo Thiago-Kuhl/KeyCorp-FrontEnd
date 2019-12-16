@@ -68,7 +68,7 @@ class Home extends React.Component {
                     <section styleName="container">
 
                         <div className="row">
-                            <div className="col-3" onClick={() => id = 4}>
+                            <div className="col-3" onClick={() => id = 5}>
                                
                                 <div onClick={this.handleSubmit}  styleName="bloco">
                                     <Link>
@@ -87,7 +87,7 @@ class Home extends React.Component {
                                 </div>
                             
                             </div>
-                            <div className="col-3" onClick={() => id = 1}>
+                            <div className="col-3" onClick={() => id = 2}>
                                     <div styleName="bloco" onClick={this.handleSubmit} id="1">
                                         <Link styleName="bl">
                                             <h3>VS Code</h3>
@@ -99,7 +99,7 @@ class Home extends React.Component {
                                     </div>
                          
                             </div>
-                            <div className="col-3" onClick={() => id = 2}>
+                            <div className="col-3" onClick={() => id = 3}>
                                 <div styleName="bloco" onClick={this.handleSubmit} id="3">
                                 <Link>
                                         <h3>PhotoShop</h3>
@@ -110,7 +110,7 @@ class Home extends React.Component {
                                 </Link>
                                 </div>
                             </div>
-                            <div className="col-3" onClick={() => id = 0}>
+                            <div className="col-3" onClick={() => id = 1}>
                                 <div styleName="bloco" onClick={this.handleSubmit} id="3" id="4">
                                     <Link>
                                         <h3>Oracle Database</h3>
