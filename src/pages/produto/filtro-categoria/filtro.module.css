@@ -2,7 +2,11 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;
     height: 100%;
+<<<<<<< HEAD
     margin: 100px 0 0 0px;
+=======
+    margin-top: 40px;
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
 }
 
 .container ul {
@@ -31,6 +35,6 @@
 .nav-sidebar li ul li {
     font-size: 14px;
     line-height: 30px;
-    padding-left: 15px;
+    padding-left: 10px;
     font-weight: light;
 }

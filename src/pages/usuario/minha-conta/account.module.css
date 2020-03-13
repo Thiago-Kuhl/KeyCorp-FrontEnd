@@ -9,13 +9,13 @@
 .update-form {
     width: 35%;
     height: 504px;
-    top: 350px;
+    top: 380px;
     left: 40%;
     position: relative;
     padding: 30px 45px 30px 45px;
     border-radius: 5px;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 23px;
     letter-spacing: 0.05em;
     transform: translate(-50%, -50%);
@@ -42,4 +42,17 @@
     width: 150px;
     height: 30px;
     top: 90%;
+}
+
+.breadcrumb {
+    margin: 50px 25px 50px 80px;
+}
+
+.breadcrumb ol {
+    background: #231F20;
+    color: white;
+}
+
+.menu-user {
+    margin: 150px 0 0 -180px;
 }

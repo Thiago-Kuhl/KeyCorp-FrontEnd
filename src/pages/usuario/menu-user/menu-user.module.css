@@ -3,8 +3,13 @@
 }
 
 .menu {
+<<<<<<< HEAD
     height: 100%;
     margin-top: 80px;
+=======
+    height: auto;
+    margin-top: 0;
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
 }
 
 .container {
@@ -26,28 +31,28 @@
     border-bottom: 1px solid white;
     padding-bottom: 10px;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 2em;
+    line-height: 25px;
 }
 
 .nav-sidebar a {
-    font-size: 18px;
+    font-size: 1em;
     line-height: 30px;
     font-weight: light;
 }
 
 .icon1 {
-    margin-left: 140px;
+    margin-left: 141px;
 }
 
 .icon2 {
-    margin-left: 130px;
+    margin-left: 134px;
 }
 
 .icon3 {
-    margin-left: 63px;
+    margin-left: 66px;
 }
 
 .icon4 {
-    margin-left: 119px;
+    margin-left: 120px;
 }

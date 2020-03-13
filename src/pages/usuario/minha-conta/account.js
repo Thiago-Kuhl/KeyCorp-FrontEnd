@@ -42,7 +42,7 @@ class Account extends React.Component {
         };
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.put('http://35.237.84.170/update/user/', update)
+        axios.put('http://35.237.149.227/update/user/', update)
             .then(res => {
                 console.log(res)
                 console.log(res.data)
@@ -65,7 +65,18 @@ class Account extends React.Component {
             <>
                 <Menu />
                 <div styleName="account">
+
+                <div aria-label="breadcrumb" styleName="breadcrumb">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
+                        <li className="breadcrumb-item" aria-current="page">Account</li>
+                    </ol>
+                </div>
+                
+                    <div styleName="menu-user">
                     <MenuUser />
+                    </div>
+                  
                     <div styleName="update-form">
                         <form onSubmit={this.handleSubmit}>
                             <div className="row">

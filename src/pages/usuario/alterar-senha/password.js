@@ -40,7 +40,7 @@ class Password extends React.Component {
 
         if (updatepw.new === updatepw.new_repeat) {
             axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-            axios.put('http://35.237.84.170/update/user/password/', updatepw)
+            axios.put('http://35.237.149.227/update/user/password/', updatepw)
                 .then(res => {
                     console.log(res)
                     console.log(res.data)
@@ -64,26 +64,39 @@ class Password extends React.Component {
         return (
             <>
                 <Menu />
+                
                 <div styleName="password">
+
+                <div aria-label="breadcrumb" styleName="breadcrumb">
+                        <ol className="breadcrumb">
+                            <li className="breadcrumb-item" onClick={(event) => this.clearStorage(event)}><a href="./">Home</a></li>
+                            <li className="breadcrumb-item" aria-current="page">Alterar senha</li>
+                        </ol>
+                </div>
+                <div styleName="menu-user">
                     <MenuUser />
+                </div>
+
+            
+
                     <div styleName="update-form">
                         <form onSubmit={this.handleSubmit}>
                             <div className="row">
                                 <div className="col-12">
                                     <label> Senha Atual</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="current" styleName='input' type="password" name="current"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="current" styleName='input' type="password" name="current" required></input>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12">
                                     <label> Nova Senha</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="new" styleName='input' type="password" name="new"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="new" styleName='input' type="password" name="new" required></input>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12">
                                     <label> Repita a Nova Senha</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="new-_repeat" styleName='input' type="password" name="new_repeat"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="new-_repeat" styleName='input' type="password" name="new_repeat" required></input>
                                 </div>
                             </div>
 

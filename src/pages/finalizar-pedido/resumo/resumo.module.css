@@ -21,6 +21,13 @@
     margin: 180px 0 0 0;
 }
 
+.info-desc {
+    max-width: 100ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .produto span {
     align-items: center;
     text-align: center;
@@ -87,6 +94,5 @@ h3 {
     height: 93%;
     left: 3%;
     margin: 25px 0 0 0;
-    background: url(../imagens/intellij.svg.png) no-repeat;
     background-size: 100px 100px;
 }

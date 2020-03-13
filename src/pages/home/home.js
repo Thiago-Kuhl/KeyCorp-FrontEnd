@@ -7,12 +7,20 @@ import Menu from '../menu/menu.js';
 import Footer from '../footer/footer.js';
 import SiteInfo from '../site-info/site-info';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+<<<<<<< HEAD
 import { func } from 'prop-types';
+=======
+// import { func } from 'prop-types';
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
 import 'react-bootstrap';
 import axios from 'axios';
 
 const cookies = new Cookies();
 var id;
+<<<<<<< HEAD
+=======
+
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -26,7 +34,11 @@ class Home extends React.Component {
         event.preventDefault();
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+<<<<<<< HEAD
         axios.get('http://35.237.84.170/search/products')
+=======
+        axios.get('http://35.237.149.227/search/products')
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
             .then(res =>  {
 
                 console.log(res.status);
@@ -34,16 +46,28 @@ class Home extends React.Component {
     
                 var resposta = res.data;
 
+<<<<<<< HEAD
                 sessionStorage.setItem('titulo', resposta[id].nomeProduto);
                 sessionStorage.setItem('valor', resposta[id].valorBase);
                 sessionStorage.setItem('descricao', resposta[id].descProduto);
+=======
+                sessionStorage.setItem("idProduto", resposta[id].idProduto)
+                sessionStorage.setItem('titulo', resposta[id].nomeProduto);
+                sessionStorage.setItem('valor', resposta[id].valorBase);
+                sessionStorage.setItem('descricao', resposta[id].descProduto);
+                sessionStorage.setItem('id', id);
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
 
                 console.log(resposta[id].nomeProduto);
 
                 return window.location.href="./detalhes";
 
+<<<<<<< HEAD
                 }
                  
+=======
+                }   
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
             )
             .catch(error => {
                 return error;
@@ -60,12 +84,17 @@ class Home extends React.Component {
                 <Menu />
 
                 <div styleName="Home">
+
                     <div styleName="bg"></div>
 
                     <section styleName="container">
 
                         <div className="row">
+<<<<<<< HEAD
                             <div className="col-3" onClick={() => id = 1}>
+=======
+                            <div className="col-3" onClick={() => id = 4}>
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                
                                 <div onClick={this.handleSubmit}  styleName="bloco">
                                     <Link>
@@ -84,19 +113,28 @@ class Home extends React.Component {
                                 </div>
                             
                             </div>
+<<<<<<< HEAD
                             <div className="col-3" onClick={() => id = 0}>
                                     <div styleName="bloco" onClick={this.handleSubmit} id="2">
+=======
+                            <div className="col-3" onClick={() => id = 1}>
+                                    <div styleName="bloco" onClick={this.handleSubmit} id="1">
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                         <Link styleName="bl">
                                             <h3>VS Code</h3>
                                             <div styleName="img img-prod2"></div>
                                             <div styleName="desc">
-                                                <h3>Editor de código-fonte</h3>
+                                                <h3>Editor de código fonte</h3>
                                             </div>
                                         </Link>
                                     </div>
                          
                             </div>
+<<<<<<< HEAD
                             <div className="col-3" onClick={() => id = 0}>
+=======
+                            <div className="col-3" onClick={() => id = 2}>
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                 <div styleName="bloco" onClick={this.handleSubmit} id="3">
                                 <Link>
                                         <h3>PhotoShop</h3>
@@ -150,7 +188,11 @@ class Home extends React.Component {
                             <div styleName="galeria">
                                 <div styleName="galeria1">
 
+<<<<<<< HEAD
                                     <div styleName="g" onClick={() => id = 1}>
+=======
+                                    <div styleName="g" onClick={() => id = 4}>
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                         <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto1"> </div>
                                             <div styleName="categ">
@@ -160,7 +202,11 @@ class Home extends React.Component {
                                     </div>
 
 
+<<<<<<< HEAD
                                     <div styleName="g" onClick={() => id = 1}>
+=======
+                                    <div styleName="g" onClick={() => id = 2}>
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                         <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto2"></div>
                                             <div styleName="categ">
@@ -169,7 +215,11 @@ class Home extends React.Component {
                                         </Link>
                                     </div>
 
+<<<<<<< HEAD
                                     <div styleName="g" onClick={() => id = 1}>
+=======
+                                    <div styleName="g" onClick={() => id = 5}>
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                          <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto3"></div>
                                             <div styleName="categ">
@@ -178,7 +228,11 @@ class Home extends React.Component {
                                         </Link>
                                     </div>
 
+<<<<<<< HEAD
                                     <div styleName="g" onClick={() => id = 1}>
+=======
+                                    <div styleName="g" onClick={() => id = 6}>
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                         <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto4"></div>
                                             <div styleName="categ">
@@ -190,7 +244,11 @@ class Home extends React.Component {
 
                                 <div styleName="galeria2">
 
+<<<<<<< HEAD
                                     <div styleName="g" onClick={() => id = 1}>
+=======
+                                    <div styleName="g" onClick={() => id = 7}>
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                          <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto1"> </div>
                                             <div styleName="categ">
@@ -199,7 +257,11 @@ class Home extends React.Component {
                                         </Link>
                                     </div>
 
+<<<<<<< HEAD
                                     <div styleName="g" onClick={() => id = 1}>
+=======
+                                    <div styleName="g" onClick={() => id = 8}>
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                         <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto2"></div>
                                             <div styleName="categ">
@@ -208,7 +270,11 @@ class Home extends React.Component {
                                         </Link>
                                     </div>
 
+<<<<<<< HEAD
                                     <div styleName="g" onClick={() => id = 1}>
+=======
+                                    <div styleName="g" onClick={() => id = 9}>
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                         <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto3"></div>
                                             <div styleName="categ">
@@ -217,7 +283,11 @@ class Home extends React.Component {
                                         </Link>
                                     </div>
 
+<<<<<<< HEAD
                                     <div styleName="g" onClick={() => id = 1}>
+=======
+                                    <div styleName="g" onClick={() => id = 10}>
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                                           <Link onClick={this.handleSubmit}>
                                             <div styleName="image foto4"></div>
                                             <div styleName="categ">

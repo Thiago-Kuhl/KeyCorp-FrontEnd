@@ -8,7 +8,11 @@ import Menu from '../menu/menu.js';
 import Footer from '../footer/footer.js';
 import SiteInfo from '../site-info/site-info.js';
 import axios from 'axios';
+<<<<<<< HEAD
 import { Redirect } from 'react-router';
+=======
+// import { Redirect } from 'react-router';
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
 import Cookies from 'universal-cookie';
 
 
@@ -49,10 +53,11 @@ class Cadastro extends React.Component {
         };
 
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.post('http://35.237.84.170/signup/', signup)
+        axios.post('http://35.237.149.227/signup/', signup)
             .then(res => {
                 console.log(res)
                 console.log(res.data)
+<<<<<<< HEAD
                 axios.post('http://35.237.84.170/login/', { "email": signup.email, "senha": signup.senha }).then(res => {
                     const cookies = new Cookies();    
                     console.log(res)
@@ -60,6 +65,15 @@ class Cadastro extends React.Component {
                     cookies.set('idUsuario', res.data.idUsuario, { path: '/' });
                     cookies.set('nome', res.data.nome , {path: '/'});
                     return window.location.href="http://localhost:3000/";
+=======
+                axios.post('http://35.237.149.227/login/', { "email": signup.email, "senha": signup.senha }).then(res => {
+                    const cookies = new Cookies();    
+                    console.log(res)
+                    console.log(res.data);
+                    cookies.set('idUsuario', res.data.idUsuario/*, { path: '/' }*/);
+                    cookies.set('nome', res.data.nome/*, { path: '/' }*/);
+                    return window.location.href="/";
+>>>>>>> dc200670c6c0c3b52528392eed390f8aed635d53
                 })
             })
             .catch(error => {
@@ -72,7 +86,7 @@ class Cadastro extends React.Component {
                 return error;
             }
 
-            )
+        )
     }
 
     render() {
@@ -90,32 +104,32 @@ class Cadastro extends React.Component {
                             <div className="row">
                                 <div className="col-12">
                                     <label> Nome Completo</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="nome" styleName='input' type="text" name="nome"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="nome" styleName='input' type="text" name="nome" required></input>
                                 </div>
                             </div>
 
                             <div className="row">
                                 <div className="col-6">
                                     <label> CPF</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="cpf" styleName='input' type="text" name="cpf"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="cpf" styleName='input' type="text" name="cpf" required></input>
                                 </div>
                                 <div className="col-6">
                                     <label> Data de Nascimento</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="dtNasc" styleName='input' type="date" name="dtNasc"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="dtNasc" styleName='input' type="date" name="dtNasc" required></input>
                                 </div>
                             </div>
 
                             <div className="row">
                                 <div className="col-12">
                                     <label> E-mail</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="email" styleName='input' type="text" name="email"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="email" styleName='input' type="text" name="email" required></input>
                                 </div>
                             </div>
 
                             <div className="row">
                                 <div className="col-12">
                                     <label> Senha</label><br />
-                                    <input onChange={(event) => this.handleChange(event)} id="password" styleName='input' type="password" name="password"></input>
+                                    <input onChange={(event) => this.handleChange(event)} id="password" styleName='input' type="password" name="password" required></input>
                                 </div>
                             </div>
 
